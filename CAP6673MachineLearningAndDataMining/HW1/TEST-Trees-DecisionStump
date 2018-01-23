@@ -1,0 +1,43 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.DecisionStump 
+Relation:     FIT
+Instances:    188
+Attributes:   9
+              NUMUORS
+              NUMUANDS
+              TOTOTORS
+              TOTOPANDS
+              VG
+              NLOGIC
+              LOC
+              ELOC
+              FAULTS
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Decision Stump
+
+Classifications
+
+NLOGIC <= 14.0 : 1.3806818181818181
+NLOGIC > 14.0 : 15.333333333333334
+NLOGIC is missing : 2.271276595744681
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correlation coefficient                  0.7111
+Mean absolute error                      2.2952
+Root mean squared error                  4.1928
+Relative absolute error                 73.2439 %
+Root relative squared error             71.5571 %
+Total Number of Instances               94     
+

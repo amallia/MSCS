@@ -1,0 +1,295 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Figure 12</title>
+</head>
+
+<body bgcolor="#FFFFCC">
+
+<p align="center">&nbsp; </p>
+<p align="center">&nbsp; </p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 1.9 Financial Aid Update Function">Figure
+        1.9 Financial Aid Update Function</a></font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font size="3" color="#0000FF"><b>#include &lt;cassert&gt;
+
+void updateFinancialAid(int numRecords, StudentAidRecord studentRecord[],
+                        double percent)
+  /*--------------------------------------------------------------------------
+  Increase the amount of all financial aid awards in an array of
+  student financial aid records by a specified percentage.
+
+  Precondition:   numRecords &gt; 0 and percent &gt; 0 is a expressed 
+       as a decimal. 
+  Postcondition:  Each record in finAidArray has been modified by 
+      increasing the amount of each financial aid award in each
+      record by the specified percentage.
+      -------------------------------------------------------------------------*/
+{
+  assert (numRecords &gt; 0 &amp;&amp; percent &gt; 0);
+  for (int record = 0; record &lt; numRecords; record++)
+  {
+    int awardCount = studentRecord[record].getNumAwards();
+    for (int count = 0; count &lt; awardCount; count++)
+    {
+      FinancialAidAward aid = studentRecord[record].getFinancialAid(count);
+      double newAmount = aid.getAmount();
+      newAmount += percent * newAmount;
+      aid.setAmount(newAmount);
+      studentRecord[record].setFinancialAid(count, aid);
+    }
+  }
+}</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 1.10 Test-Driver for Financial Aid Update Function">Figure
+        1.10 Test-Driver for Financial Aid Update Function</a></font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font size="3" color="#0000FF"><b>
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+#include &quot;FinancialAidAward.h&quot;  // Financial aid awards
+#include &quot;StudentAidRecord.h&quot;   // Student financial-aid records
+
+//-- Prototype of updateFinancialAid(); definition follows main()
+
+void updateFinancialAid(int numRecords, StudentAidRecord studentRecord[],
+                        double percent);
+
+int main()
+{
+  const int NUM_RECORDS = 3;
+  StudentAidRecord arr[NUM_RECORDS];
+  double percent = .10;
+  int id, awards;
+  string name, source;
+  double amount;
+  for (int i = 0; i &lt; NUM_RECORDS; i++)
+  {
+    cout &lt;&lt; &quot;\nEnter student's id, name: &quot;;
+    cin &gt;&gt; id;
+    getline(cin, name);
+    arr[i].setId(id);
+    arr[i].setName(name);
+    cout &lt;&lt; &quot;Enter number of awards for &quot; &lt;&lt; id &lt;&lt; &quot;: &quot;;
+    cin &gt;&gt; awards;
+    arr[i].setNumAwards(awards);
+    for (int a = 0; a &lt; awards; a++)
+    {
+      cout &lt;&lt; &quot;Award &quot; &lt;&lt; a + 1 &lt;&lt; &quot;'s amount and source: &quot;;
+      cin &gt;&gt; amount;
+      getline(cin, source);
+      FinancialAidAward finaid(source, amount);
+      arr[i].setFinancialAid(a, finaid);
+    }
+  }
+  updateFinancialAid(NUM_RECORDS, arr, percent);
+
+  cout &lt;&lt; &quot;\nUpdated Financial Aid Records:&quot;
+    &quot;\n==============================&quot; &lt;&lt; endl;
+  for (int i = 0; i &lt; NUM_RECORDS; ++i)
+  {
+    arr[i].display();
+    cout &lt;&lt; endl;
+  }
+}
+
+//-- Insert contents of Figure 1.9 here.</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 1.11 Header File for the FinancialAidAward Class">Figure
+        1.11 Header File for the FinancialAidAward Class</a></font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font size="3" color="#0000FF"><b>/*- FinancialAid.h ---------------------------------------------------------
+  Header file of the class library for the class FinancialAid that 
+  models student financial aid records.   
+ -----------------------------------------------------------------------*/
+
+#ifndef FINAIDAWARD
+#define FINAIDAWARD
+
+#include &lt;string&gt; 
+
+class FinancialAidAward
+{
+ public: // Function members
+
+   //-- Constructors
+   FinancialAidAward();
+   /*-----------------------------------------------------------------------
+     Default constructor
+     Precondition:  None.
+     Postcondition: FinancialAidAward object has been constructed in which
+        idNumber is 0, name and source are empty strings, and amount is 0. 
+   -----------------------------------------------------------------------*/
+ 
+   FinancialAidAward(string src, double amt);
+   /*-----------------------------------------------------------------------
+     Explicit-value constructor
+     Precondition: id &gt; 0 and amt &gt;= 0
+     Postcondition: FinancialAidAward object has been constructed with 
+         idNumber = id, sourced = src, amount = amt.
+   -----------------------------------------------------------------------*/
+
+   //-- Accessors   
+   double getAmount() const;
+   /*-----------------------------------------------------------------------
+     Postcondition: Value stored in amount is returned.
+   -----------------------------------------------------------------------*/
+
+   string getSource() const;
+   /*-----------------------------------------------------------------------
+     Postcondition: Value stored in source is returned.
+   -----------------------------------------------------------------------*/
+
+   //-- Mutators   
+   void setAmount(double newAmount);
+   /*-----------------------------------------------------------------------
+     Precondition:  newAmount &gt;= 0
+     Postcondition: amount has been changed to newAmount.
+   -----------------------------------------------------------------------*/
+
+   void setSource(string newSource);
+   /*-----------------------------------------------------------------------
+     Precondition:  None. 
+     Postcondition: source has been changed to newSource.
+   -----------------------------------------------------------------------*/
+
+   //-- Output
+   void display() const;
+   /*-----------------------------------------------------------------------
+     Precondition:  None.
+     Postcondition: FinancialAid object has been output to cout.
+   -----------------------------------------------------------------------*/
+
+ private: // Data members
+   string source;     // source of financial aid
+   double amount;     // amount of financial aid
+                                               }; // end of class declaration
+
+#endif
+</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 1.12 Implementation File for the FinancialAidAward Class">Figure
+        1.12 Implementation File for the FinancialAidAward Class</a></font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font size="3" color="#0000FF"><b>/*- FinancialAid.cpp -------------------------------------------------------
+   Implementation file of the class library for the class FinancialAid 
+   that models student financial aid records. 
+  -----------------------------------------------------------------------*/
+
+#include &lt;iostream&gt;     // cout
+#include &lt;string&gt;       // string
+#include &lt;cassert&gt;      // assert
+using namespace std;
+
+#include &quot;FinancialAidAward.h&quot;
+
+//-- Default constructor
+FinancialAidAward::FinancialAidAward()
+: source(&quot;&quot;), amount(0)
+{ }
+
+//-- Explicit-value constructor
+FinancialAidAward::FinancialAidAward(string src, double amt)
+{
+   assert(amt &gt;= 0);  // check preconditions
+   amount = amt;
+   source = src;
+}
+
+
+//-- Accessors
+double FinancialAidAward::getAmount() const
+{ return amount; }
+ 
+string FinancialAidAward::getSource() const
+{ return source; }
+
+
+//-- Mutators
+void FinancialAidAward::setAmount(double newAmount)
+{ 
+  assert(amount &gt;= 0);
+  amount = newAmount; 
+}
+
+void FinancialAidAward::setSource(string newSource)
+{ source = newSource; }
+
+//-- Output
+void FinancialAidAward::display() const
+{
+   cout &lt;&lt; source &lt;&lt; &quot;: $&quot; &lt;&lt; amount; 
+}
+</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+
+</body>
+
+</html>

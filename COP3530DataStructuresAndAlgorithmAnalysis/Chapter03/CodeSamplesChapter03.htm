@@ -1,0 +1,595 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Figure 12</title>
+</head>
+
+<body bgcolor="#FFFFCC">
+
+<p align="center"><font face="Arial">Nyhoff, ADTs, Data Structures and Problem Solving with C++, Second Edition,&nbsp;<br>
+ © 2005 Pearson Education, Inc. All rights reserved. 0-13-140909-3&nbsp;</font> </p>
+<p align="center">&nbsp; </p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 3.3 Array Output Function">Figure
+        3.3 Array Output Function</a> </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>void display(int theArray[], int numValues)
+
+/*-----------------------------------------------------------------
+
+Display values in an array of integers.
+
+Precondition:  0 &lt;= numValues &lt; capacity of theArray.
+
+Postcondition: The first numValues integers stored in theArray have
+    been output to cout.
+
+-------------------------------------------------------------------------*/
+{
+   for (int i = 0; i &lt; n~~Values; i++)
+      cout « theArray[i] « 00 &quot; .
+   cout « endl;
+}</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 3.4 Array Input Function">Figure
+        3.4 Array Input Function</a> </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>#include &lt;cassert&gt;
+
+void read(IntArray theArray, int capacity, int numValues)
+
+/*-------------------------------------------------------------------------
+Input values into an array of integers from the keyboard.
+
+Preconditions: 0 &lt;= numValues &lt; capacity, which is the capacity of theArray.
+Postcondition: numValues integers entered from the keyboard 
+    have been stored in the first NumValues positions of theArray
+
+-------------------------------------------------------------------------/*
+{
+    assert (numValues &gt;= 0 &amp;&amp; numValues &lt;= capacity);
+
+    for (int i = 0; i &lt; nurnValues; i++) 
+        cin » theArray[i] ; 
+}</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 3.5 Demonstration of">Figure
+        3.5 Demonstration of&nbsp;</a><br>
+        Out of Range Indices </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>/*-------------------------------------------------------------------------- 
+ Demonstration of what can happen when array indices get out of bounds.
+
+  Input:  Three arrays of integers
+  Output: The three arrays before and after modification using
+          out-of-range indices.
+ -------------------------------------------------------------------------*/
+
+#include &lt;iostream&gt;
+using namespace std;
+
+const int CAPACITY = 4;
+typedef int IntArray[CAPACITY];
+
+void read(IntArray theArray, int capacity, int numValues);
+void display(IntArray theArray, int numValues);
+
+int main()
+{
+   IntArray a, b, c;
+   
+   cout &lt;&lt; &quot;Enter &quot; &lt;&lt; CAPACITY &lt;&lt; &quot; integer values for:\n&quot;;
+   cout &lt;&lt; &quot;Array a: &quot;;
+   read(a, CAPACITY, CAPACITY);
+   cout &lt;&lt; &quot;Array b: &quot;;
+   read(b, CAPACITY, CAPACITY);
+   cout &lt;&lt; &quot;Array b: &quot;;
+   read(c, CAPACITY, CAPACITY);
+
+   cout &lt;&lt; &quot;\n------ Part I of the demonstration -----\n\n&quot;
+           &quot;The arrays are:\n&quot;;
+   cout &lt;&lt; &quot;a: &quot;;
+   display(a, CAPACITY);
+   cout &lt;&lt; &quot;b: &quot;;
+   display(b, CAPACITY);
+   cout &lt;&lt; &quot;c: &quot;;
+   display(c, CAPACITY);
+
+   //--- Now change array elements in b, but using
+   //--- some out-of-range indices.
+   int below = -3,
+       above = 6;
+   b[below] = -999;
+   b[above] = 999;
+
+   cout &lt;&lt; &quot;\n------ Part II of the demonstration -----\n\n&quot;
+           &quot;The arrays after out-of-range errors are:\n&quot;;
+   cout &lt;&lt; &quot;a: &quot;;
+   display(a, CAPACITY);
+   cout &lt;&lt; &quot;b: &quot;;
+   display(b, CAPACITY);
+   cout &lt;&lt; &quot;c: &quot;;
+   display(c, CAPACITY);
+   cout &lt;&lt; endl;
+   return 0;
+}
+//--- Insert here the definition of read() from Figure 3-4
+//--- and the definition of display() from Figure 3-3
+
+//--- Definitions of array i/o functions
+#include &lt;cassert&gt;
+void read(IntArray theArray, int capacity, int numValues)
+/*-------------------------------------------------------------------------
+  Input values into an array of integers from the keyboard.
+
+  Preconditions: 0 &lt;= numValues &lt; capacity, which is the capacity of
+       theArray.
+  Postcondition: numValues integers entered from the keyboard have been
+       stored in the first numValues positions of theArray.
+ -------------------------------------------------------------------------*/
+{
+   assert (numValues &gt;= 0 &amp;&amp; numValues &lt;= capacity);
+
+   for (int i = 0; i &lt; numValues; i++)
+      cin &gt;&gt; theArray[i];
+}
+
+void display(int theArray[], int numValues)
+/*-------------------------------------------------------------------------
+  Display values in an array of integers.
+ 
+  Precondition:  0 &lt;= numValues &lt; capacity of theArray.
+  Postcondition: The first numValues integers stored in theArray have
+      been output to cout.
+ -------------------------------------------------------------------------*/
+{
+  for (int i = 0; i &lt; numValues; i++)
+    cout &lt;&lt; theArray[i] &lt;&lt; &quot;  &quot;;
+  cout &lt;&lt; endl;
+}&nbsp;</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 3.8 Failure of new -- Version 1">Figure
+        3.8 Failure of <font face="Courier New"><b>new</b></font> -- Version 1</a></font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>&nbsp;//-- Demonstration #1 of new failure -- Uncaught bad_alloc exception
+
+#include &lt;iostream&gt;
+#include &lt;new&gt;      // new, bad_alloc
+using namespace std;
+
+int main()
+{
+   const int NUM_ARRAYS = 10; 
+   cout &lt;&lt; &quot;How large should the arrays of doubles be? &quot;;
+   int capacity;
+   cin &gt;&gt; capacity;
+
+   double * arrayPtr[NUM_ARRAYS];
+   int i;
+   for (i = 0; i &lt; NUM_ARRAYS; i++)
+   {
+       arrayPtr[i] = new double [capacity];
+       cout &lt;&lt; &quot;Allocated &quot; &lt;&lt; capacity 
+	    &lt;&lt; &quot; doubles for i = &quot; &lt;&lt; i &lt;&lt; endl;
+   }
+   cout &lt;&lt; &quot;All &quot; &lt;&lt; NUM_ARRAYS &lt;&lt; &quot; arrays of &quot;
+	&lt;&lt; capacity &lt;&lt; &quot; doubles were allocated successfully.&quot; &lt;&lt; endl;
+}</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 3.9 Failure of new -- Version 2">Figure
+        3.9 Failure of <font face="Courier New"><b>new</b></font> -- Version 2</a></font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>&nbsp;//-- Demonstration #2 of new failure -- Use try-catch mechanixm
+//-- to handle bad_alloc exception.
+
+#include &lt;iostream&gt;
+#include &lt;new&gt;
+using namespace std;
+
+int main()
+{
+   const int NUM_ARRAYS = 10; 
+   cout &lt;&lt; &quot;How large should the arrays of doubles be? &quot;;
+   int capacity;
+   cin &gt;&gt; capacity;
+
+   double * arrayPtr[NUM_ARRAYS];
+   int i;
+   try
+   {
+      for (i = 0; i &lt; NUM_ARRAYS; i++)
+      {
+	 arrayPtr[i] = new double [capacity];
+	 cout &lt;&lt; &quot;Allocated &quot; &lt;&lt; capacity 
+	      &lt;&lt; &quot; doubles for i = &quot; &lt;&lt; i &lt;&lt; endl;
+      }
+   }
+   catch (bad_alloc ex)
+   {
+      cout &lt;&lt; &quot;\nException: &quot; &lt;&lt; ex.what() 
+	   &lt;&lt; &quot; -- for i = &quot; &lt;&lt; i &lt;&lt; endl;
+      exit(1);
+   }
+   cout &lt;&lt; &quot;All &quot; &lt;&lt; NUM_ARRAYS &lt;&lt; &quot; arrays of &quot;
+        &lt;&lt; capacity &lt;&lt; &quot; doubles were allocated successfully.&quot; &lt;&lt; endl;
+}</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 3.11 Time Data Type">Figure
+        3.11a Time Data Type</a><br>
+        Procedural Approach</font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>&nbsp;/*== Time.h ===============================================================
+ 
+  This header file defines the data type Time for processing time.
+  Basic operations are:
+     set:      To set the time
+     display:  To display the time
+     advance:  To advance the time by a certain amount
+     lessThan: To determine if one time is less than another
+
+=========================================================================*/
+
+#include &lt;iostream&gt;
+using namespace std;
+
+struct Time
+{
+  unsigned hour,
+           minute;
+  char AMorPM;        // 'A' or 'P'
+  unsigned milTime;   // military time equivalent
+};
+
+void set(Time &amp; t, unsigned hours, unsigned minutes, char AMPM);
+/*-------------------------------------------------------------------------
+  Set the time to a specified value.
+
+  Receive:   Time object t
+             hours, the number of hours in standard time
+             minutes, the number of minutes in standard time
+             AMPM ('A' if AM, 'P' if PM)
+  Pass back: The modified Time t with data members set to the
+               specified values
+-------------------------------------------------------------------------*/
+
+void display(const Time &amp; t, ostream &amp; out);
+/*-------------------------------------------------------------------------
+  Display time t in standard and military format using output stream out.
+
+  Receive:   Time t and ostream out
+  Output:    The time t to out
+  Pass back: The modified ostream out with a representation of t  
+               inserted into it
+  ------------------------------------------------------------------------*/
+
+void advance(Time &amp; t, unsigned hours, unsigned minutes);
+/*-------------------------------------------------------------------------
+  Increment a time by a specified value.
+
+  Receive:   Time object t
+             hours, the number of hours to add
+             minutes, the number of minutes to add
+  Pass back: The modified Time t with data members incremented by the
+               specified values
+-------------------------------------------------------------------------*/
+
+bool lessThan(const Time &amp; t1, const Time &amp; t2);
+/*-------------------------------------------------------------------------
+/* Determines if one time is less than another time.
+ * 
+ *  Receive:  Times t1 and t2
+ *  Return:   True if t1 &lt; t2, false otherwise.
+-------------------------------------------------------------------------*/</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 3.11b Time.cpp">Figure
+        3.11b Time.cpp</a> </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>&nbsp;/*== Time.cpp =============================================================
+  
+   Implementations of the function members of class Time.
+   Prototypes are in Time.h.
+
+ ========================================================================*/
+
+#include &quot;Time.h&quot;
+
+/** Utility functions -- might be added as basic operations later **/
+
+int toMilitary(unsigned hours, unsigned minutes, char AMPM);
+void toStandard(unsigned military,
+                unsigned &amp; hours, unsigned &amp; minutes, char &amp; AMPM);
+
+
+//--- Definition of set() -------------------------------------------------
+void set(Time &amp; t, unsigned hours, unsigned minutes, char AMPM)
+{
+   if (hours &gt;= 1 &amp;&amp; hours &lt;= 12 &amp;&amp; 
+       minutes &gt;= 0 &amp;&amp; minutes &lt;= 59 &amp;&amp; 
+       (AMPM == 'A' || AMPM == 'P'))
+   {
+      t.hour = hours;
+      t.minute = minutes;
+      t.AMorPM = AMPM;
+      t.milTime = toMilitary(hours, minutes, AMPM);
+   }
+   else
+      cerr &lt;&lt; &quot;*** Can't set time with these values ***\n&quot;;
+      // t remains unchanged
+}
+
+//--- Definition of display() ---------------------------------------------
+void display(const Time &amp; t, ostream &amp; out)
+{
+   out &lt;&lt; t.hour &lt;&lt; ':'
+       &lt;&lt; (t.minute &lt; 10 ? &quot;0&quot; : &quot;&quot;) &lt;&lt; t.minute
+       &lt;&lt; ' ' &lt;&lt; t.AMorPM &lt;&lt; &quot;.M.  (&quot;
+       &lt;&lt; t.milTime &lt;&lt; &quot; mil. time)&quot;;
+}
+
+//--- Definition of advance() ---------------------------------------------
+void advance(Time &amp; t, unsigned hours, unsigned minutes)
+{
+   // Advance using military time
+   t.milTime += 100 * hours + minutes;
+   unsigned milHours = t.milTime / 100,
+             milMins = t.milTime % 100;
+
+   // Adjust to proper format
+   milHours +=  milMins / 60;
+   milMins %= 60;
+   milHours %= 24;
+   t.milTime = 100 * milHours + milMins;
+
+   // Now set standard time
+   toStandard(t.milTime, t.hour, t.minute, t.AMorPM);
+}
+
+//--- Definition of lessThan() --------------------------------------------
+bool lessThan(const Time &amp; t1, const Time &amp; t2)
+{
+   return (t1.milTime &lt; t2.milTime);
+}
+
+
+//----- DEFINITIONS OF UTILITY FUNCTIONS -------
+
+int toMilitary (unsigned hours, unsigned minutes, char AMPM)
+/*-------------------------------------------------------------------------
+   Convert standard time to military time.
+
+   Receive: hours, minutes, AMPM
+   Return:  The military time equivalent
+-------------------------------------------------------------------------*/
+{
+   if (hours == 12)
+     hours = 0;
+   return hours * 100 + minutes + (AMPM == 'P' ? 1200 : 0);
+}
+
+void toStandard(unsigned military,
+                unsigned &amp; hours, unsigned &amp; minutes, char &amp; AMPM)
+/*-------------------------------------------------------------------------
+   Convert military time to standard time.
+ 
+   Receive: military, a time in military format
+   Return:  hours, minutes, AMPM -- equivalent standard time
+-------------------------------------------------------------------------*/
+{
+   hours = (military / 100) % 12;
+   if (hours == 0)
+      hours = 12;
+   minutes = military % 100;
+   AMPM = (military / 100) &lt; 12 ? 'A' : 'P';
+}</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Parameters with Multi-Dimensional Arrays">Parameters
+        with Multi-Dimensional Arrays</a></font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>&nbsp;
+const int NUM_ROWS = 30, NUM_COLUMNS = 5 ;
+typedef double TwoDimArray[NUM_ROWS] [NUM_COLUMNS] ;
+
+void display(TwoDimArray the2DArray, int rowsUsed, int colurnnsUsed) ;
+
+int main()
+{
+
+    TwoDimArray scoresTable ;
+
+    // -- Statements to input scores into scoresTable
+
+    display(scoresTable, int nurnStudents, numTests)
+
+}</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 3.11c Driver">Figure
+        3.11c Driver</a> </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>&nbsp;/*== Driver ==============================================================
+  
+              Driver program to test Time library.
+
+ ========================================================================*/
+
+#include &quot;Time.h&quot;
+#include &lt;iostream&gt;
+#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+   Time mealTime,
+        goToWorkTime;
+   set(mealTime, 5, 30, 'P');
+   cout &lt;&lt; &quot;We'll be eating at &quot;;
+   display(mealTime, cout);
+   cout &lt;&lt; endl;
+   set(goToWorkTime, 5, 30, 'P');  // Try other values also: 'A' -&gt; 'P'
+   cout &lt;&lt; &quot;You leave for work at &quot;;
+   display(goToWorkTime, cout);
+   cout &lt;&lt; endl;
+   if (lessThan(mealTime, goToWorkTime))
+      cout &lt;&lt; &quot;If you hurry, you can eat first.\n&quot;;
+   else
+      cout &lt;&lt; &quot;Sorry you can't eat with us.\n&quot;;
+   advance(goToWorkTime, 0, 30);   // Try other values also: 0 -&gt; 12)
+   cout &lt;&lt; &quot;Your boss called.  You go in later at &quot;;
+   display(goToWorkTime, cout);
+   cout &lt;&lt; endl;
+   if (lessThan(mealTime, goToWorkTime))
+      cout &lt;&lt; &quot;If you hurry, you can eat first.\n&quot;;
+   else
+      cout &lt;&lt; &quot;Sorry you can't eat with us.\n&quot;;
+   cout &lt;&lt; endl;
+}</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+
+</body>
+
+</html>

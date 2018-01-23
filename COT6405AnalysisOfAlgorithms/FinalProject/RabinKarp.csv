@@ -1,0 +1,196 @@
+size: 1024 Elapsed time: 4895 us. fill: 27 us.
+size: 2048 Elapsed time: 1785 us. fill: 49 us.
+size: 4096 Elapsed time: 7788 us. fill: 92 us.
+size: 8192 Elapsed time: 8379 us. fill: 182 us.
+size: 16384 Elapsed time: 16922 us. fill: 368 us.
+size: 32768 Elapsed time: 33200 us. fill: 1102 us.
+size: 65536 Elapsed time: 64216 us. fill: 1470 us.
+size: 131072 Elapsed time: 106766 us. fill: 3444 us.
+size: 262144 Elapsed time: 162240 us. fill: 6278 us.
+size: 524288 Elapsed time: 299298 us. fill: 13794 us.
+size: 1048576 Elapsed time: 540389 us. fill: 27217 us.
+size: 2097152 Elapsed time: 1078939 us. fill: 50628 us.
+size: 4194304 Elapsed time: 2157282 us. fill: 100512 us.
+size: 8388608 Elapsed time: 4295531 us. fill: 204902 us.
+size: 16777216 Elapsed time: 8599575 us. fill: 395963 us.
+size: 33554432 Elapsed time: 17009748 us. fill: 794255 us.
+size: 67108864 Elapsed time: 34232907 us. fill: 1584842 us.
+size: 134217728 Elapsed time: 68315490 us. fill: 3136201 us.
+size: 268435456 Elapsed time: 137263966 us. fill: 6315783 us.
+size: 536870912 Elapsed time: 275148353 us. fill: 12718544 us.
+size: 1073741824 Elapsed time: 551609924 us. fill: 25420585 us.
+
+Radix '}' - ' '
+size: 1024 Elapsed time: 461 us. fill: 26 us.
+size: 2048 Elapsed time: 4370 us. fill: 47 us.
+size: 4096 Elapsed time: 1163 us. fill: 93 us.
+size: 8192 Elapsed time: 6146 us. fill: 177 us.
+size: 16384 Elapsed time: 9479 us. fill: 369 us.
+size: 32768 Elapsed time: 17285 us. fill: 750 us.
+size: 65536 Elapsed time: 35928 us. fill: 1511 us.
+size: 131072 Elapsed time: 46359 us. fill: 4038 us.
+size: 262144 Elapsed time: 86975 us. fill: 7200 us.
+size: 524288 Elapsed time: 161796 us. fill: 12358 us.
+size: 1048576 Elapsed time: 270481 us. fill: 24563 us.
+size: 2097152 Elapsed time: 541465 us. fill: 57248 us.
+size: 4194304 Elapsed time: 1038661 us. fill: 99775 us.
+size: 8388608 Elapsed time: 2112362 us. fill: 197518 us.
+size: 16777216 Elapsed time: 4152181 us. fill: 391387 us.
+size: 33554432 Elapsed time: 8574265 us. fill: 824302 us.
+size: 67108864 Elapsed time: 16566306 us. fill: 1552713 us.
+size: 134217728 Elapsed time: 33023605 us. fill: 3117183 us.
+size: 268435456 Elapsed time: 66396258 us. fill: 6308158 us.
+size: 536870912 Elapsed time: 132322859 us. fill: 12332540 us.
+size: 1073741824 Elapsed time: 264749619 us. fill: 24852019 us.
+Hello world
+
+radix '}' - ' ' +1
+size: 1024 Elapsed time: 457 us. fill: 26 us.
+size: 2048 Elapsed time: 694 us. fill: 48 us.
+size: 4096 Elapsed time: 1196 us. fill: 866 us.
+size: 8192 Elapsed time: 2902 us. fill: 187 us.
+size: 16384 Elapsed time: 18716 us. fill: 607 us.
+size: 32768 Elapsed time: 11156 us. fill: 731 us.
+size: 65536 Elapsed time: 30409 us. fill: 1864 us.
+size: 131072 Elapsed time: 44727 us. fill: 3416 us.
+size: 262144 Elapsed time: 108019 us. fill: 6397 us.
+size: 524288 Elapsed time: 151146 us. fill: 18192 us.
+size: 1048576 Elapsed time: 294720 us. fill: 30241 us.
+size: 2097152 Elapsed time: 519231 us. fill: 49182 us.
+size: 4194304 Elapsed time: 1031636 us. fill: 108868 us.
+size: 8388608 Elapsed time: 2072045 us. fill: 194424 us.
+size: 16777216 Elapsed time: 4129456 us. fill: 441286 us.
+size: 33554432 Elapsed time: 8194157 us. fill: 777680 us.
+size: 67108864 Elapsed time: 16403666 us. fill: 1575148 us.
+size: 134217728 Elapsed time: 33069693 us. fill: 3091093 us.
+size: 268435456 Elapsed time: 67510956 us. fill: 6619465 us.
+size: 536870912 Elapsed time: 134698868 us. fill: 13485587 us.
+size: 1073741824 Elapsed time: 268805737 us. fill: 25517876 us.
+Hello world
+
+
+
+radix '}' - ' ' + 1 Prime=2147483647
+
+size: 1024 Elapsed time: 530 us. fill: 35 us.
+size: 2048 Elapsed time: 8293 us. fill: 311 us.
+size: 4096 Elapsed time: 5285 us. fill: 96 us.
+size: 8192 Elapsed time: 2626 us. fill: 210 us.
+size: 16384 Elapsed time: 4391 us. fill: 7240 us.
+size: 32768 Elapsed time: 11995 us. fill: 856 us.
+size: 65536 Elapsed time: 31563 us. fill: 1557 us.
+size: 131072 Elapsed time: 58084 us. fill: 3179 us.
+size: 262144 Elapsed time: 190523 us. fill: 37998 us.
+size: 524288 Elapsed time: 220975 us. fill: 37097 us.
+size: 1048576 Elapsed time: 618195 us. fill: 87633 us.
+size: 2097152 Elapsed time: 1003070 us. fill: 158394 us.
+size: 4194304 Elapsed time: 1109639 us. fill: 134810 us.
+size: 8388608 Elapsed time: 2174801 us. fill: 262644 us.
+size: 16777216 Elapsed time: 4155847 us. fill: 470257 us.
+size: 33554432 Elapsed time: 8186923 us. fill: 861518 us.
+size: 67108864 Elapsed time: 16782892 us. fill: 1841504 us.
+size: 134217728 Elapsed time: 33986890 us. fill: 3860478 us.
+size: 268435456 Elapsed time: 65442630 us. fill: 7218219 us.
+size: 536870912 Elapsed time: 129633400 us. fill: 13532029 us.
+size: 1073741824 Elapsed time: 260962260 us. fill: 26040337 us.
+Hello world
+
+radix '}' - ' '  prime 127
+size: 1024 Elapsed time: 554 us. fill: 26 us.
+size: 2048 Elapsed time: 827 us. fill: 47 us.
+size: 4096 Elapsed time: 4422 us. fill: 93 us.
+size: 8192 Elapsed time: 2890 us. fill: 181 us.
+size: 16384 Elapsed time: 10605 us. fill: 4209 us.
+size: 32768 Elapsed time: 26486 us. fill: 1018 us.
+size: 65536 Elapsed time: 68135 us. fill: 1465 us.
+size: 131072 Elapsed time: 112601 us. fill: 2988 us.
+size: 262144 Elapsed time: 225253 us. fill: 18550 us.
+size: 524288 Elapsed time: 223815 us. fill: 38131 us.
+size: 1048576 Elapsed time: 325186 us. fill: 25891 us.
+size: 2097152 Elapsed time: 606048 us. fill: 51686 us.
+size: 4194304 Elapsed time: 1189198 us. fill: 101325 us.
+size: 8388608 Elapsed time: 2443938 us. fill: 223349 us.
+size: 16777216 Elapsed time: 4820604 us. fill: 442329 us.
+size: 33554432 Elapsed time: 9119791 us. fill: 791668 us.
+size: 67108864 Elapsed time: 18752893 us. fill: 1548424 us.
+size: 134217728 Elapsed time: 37066372 us. fill: 3103687 us.
+size: 268435456 Elapsed time: 75782132 us. fill: 6260780 us.
+size: 536870912 Elapsed time: 148825857 us. fill: 13183109 us.
+size: 1073741824 Elapsed time: 299651442 us. fill: 25290871 us.
+Hello world
+
+
+radix '}' - ' ' prime 131071
+
+size: 1024 Elapsed time: 520 us. fill: 26 us.
+size: 2048 Elapsed time: 796 us. fill: 49 us.
+size: 4096 Elapsed time: 1307 us. fill: 93 us.
+size: 8192 Elapsed time: 4982 us. fill: 181 us.
+size: 16384 Elapsed time: 18134 us. fill: 363 us.
+size: 32768 Elapsed time: 14743 us. fill: 728 us.
+size: 65536 Elapsed time: 38857 us. fill: 1699 us.
+size: 131072 Elapsed time: 111691 us. fill: 7410 us.
+size: 262144 Elapsed time: 79227 us. fill: 6394 us.
+size: 524288 Elapsed time: 283480 us. fill: 17606 us.
+size: 1048576 Elapsed time: 446309 us. fill: 25216 us.
+size: 2097152 Elapsed time: 636405 us. fill: 121629 us.
+size: 4194304 Elapsed time: 1146720 us. fill: 104355 us.
+size: 8388608 Elapsed time: 2309737 us. fill: 200963 us.
+size: 16777216 Elapsed time: 4455766 us. fill: 394603 us.
+size: 33554432 Elapsed time: 9001951 us. fill: 778706 us.
+size: 67108864 Elapsed time: 18138993 us. fill: 1551819 us.
+size: 134217728 Elapsed time: 36496997 us. fill: 3112153 us.
+size: 268435456 Elapsed time: 73721597 us. fill: 6392902 us.
+size: 536870912 Elapsed time: 150341922 us. fill: 12542627 us.
+size: 1073741824 Elapsed time: 300310546 us. fill: 27418815 us.
+Hello world
+
+radix '}' - ' ' prime 8191
+size: 1024 Elapsed time: 664 us. fill: 35 us.
+size: 2048 Elapsed time: 787 us. fill: 52 us.
+size: 4096 Elapsed time: 1695 us. fill: 98 us.
+size: 8192 Elapsed time: 2372 us. fill: 1631 us.
+size: 16384 Elapsed time: 8960 us. fill: 593 us.
+size: 32768 Elapsed time: 18462 us. fill: 858 us.
+size: 65536 Elapsed time: 40857 us. fill: 2082 us.
+size: 131072 Elapsed time: 87111 us. fill: 3743 us.
+size: 262144 Elapsed time: 206881 us. fill: 20137 us.
+size: 524288 Elapsed time: 496910 us. fill: 44802 us.
+size: 1048576 Elapsed time: 653891 us. fill: 95364 us.
+size: 2097152 Elapsed time: 630082 us. fill: 117330 us.
+size: 4194304 Elapsed time: 1250860 us. fill: 121711 us.
+size: 8388608 Elapsed time: 2721794 us. fill: 333287 us.
+siize: 16777216 Elapsed time: 4841862 us. fill: 642006 us.
+size: 33554432 Elapsed time: 10039726 us. fill: 1246516 us.
+size: 67108864 Elapsed time: 20179336 us. fill: 2237985 us.
+size: 134217728 Elapsed time: 40155796 us. fill: 4060565 us.
+size: 268435456 Elapsed time: 78678684 us. fill: 7488943 us.
+size: 536870912 Elapsed time: 150142537 us. fill: 15191414 us.
+size: 1073741824 Elapsed time: 296995648 us. fill: 28288349 us.
+Hello world
+
+
+radix '}' - ' '+1 prime 127
+size: 1024 Elapsed time: 529 us. fill: 26 us.
+size: 2048 Elapsed time: 874 us. fill: 1033 us.
+size: 4096 Elapsed time: 1371 us. fill: 143 us.
+size: 8192 Elapsed time: 4574 us. fill: 2031 us.
+size: 16384 Elapsed time: 13417 us. fill: 1179 us.
+size: 32768 Elapsed time: 13763 us. fill: 1290 us.
+size: 65536 Elapsed time: 35578 us. fill: 7320 us.
+size: 131072 Elapsed time: 129243 us. fill: 15959 us.
+size: 262144 Elapsed time: 124207 us. fill: 10306 us.
+size: 524288 Elapsed time: 326651 us. fill: 65427 us.
+size: 1048576 Elapsed time: 487824 us. fill: 39491 us.
+size: 2097152 Elapsed time: 646848 us. fill: 136677 us.
+size: 4194304 Elapsed time: 1239506 us. fill: 103627 us.
+size: 8388608 Elapsed time: 2402232 us. fill: 210135 us.
+size: 16777216 Elapsed time: 4994007 us. fill: 401492 us.
+size: 33554432 Elapsed time: 9412426 us. fill: 791374 us.
+size: 67108864 Elapsed time: 18788378 us. fill: 1613817 us.
+size: 134217728 Elapsed time: 37752933 us. fill: 3167228 us.
+size: 268435456 Elapsed time: 75665880 us. fill: 6502890 us.
+size: 536870912 Elapsed time: 152325578 us. fill: 12828846 us.
+size: 1073741824 Elapsed time: 311821505 us. fill: 26453874 us.
+Hello world
+

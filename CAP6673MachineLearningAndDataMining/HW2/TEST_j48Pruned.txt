@@ -1,0 +1,88 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     FIT-weka.filters.unsupervised.attribute.Remove-R9
+Instances:    188
+Attributes:   9
+              NUMUORS
+              NUMUANDS
+              TOTOTORS
+              TOTOPANDS
+              VG
+              NLOGIC
+              LOC
+              ELOC
+              FAULTPRONE
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+J48 pruned tree
+------------------
+
+NUMUANDS <= 115
+|   ELOC <= 50: nfp (106.0/2.0)
+|   ELOC > 50
+|   |   ELOC <= 105
+|   |   |   NLOGIC <= 0: nfp (12.0)
+|   |   |   NLOGIC > 0
+|   |   |   |   ELOC <= 54: fp (6.0/1.0)
+|   |   |   |   ELOC > 54: nfp (5.0)
+|   |   ELOC > 105: fp (5.0)
+NUMUANDS > 115
+|   VG <= 29: fp (16.0)
+|   VG > 29
+|   |   LOC <= 1158: nfp (10.0/1.0)
+|   |   LOC > 1158: fp (28.0/2.0)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+
+Attribute mappings:
+
+Model attributes      	    Incoming attributes
+----------------------	    ----------------
+(numeric) NUMUORS     	--> 1 (numeric) NUMUORS
+(numeric) NUMUANDS    	--> 2 (numeric) NUMUANDS
+(numeric) TOTOTORS    	--> 3 (numeric) TOTOTORS
+(numeric) TOTOPANDS   	--> 4 (numeric) TOTOPANDS
+(numeric) VG          	--> 5 (numeric) VG
+(numeric) NLOGIC      	--> 6 (numeric) NLOGIC
+(numeric) LOC         	--> 7 (numeric) LOC
+(numeric) ELOC        	--> 8 (numeric) ELOC
+(nominal) FAULTPRONE  	--> 10 (nominal) FAULTPRONE
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          80               85.1064 %
+Incorrectly Classified Instances        14               14.8936 %
+Kappa statistic                          0.6287
+Mean absolute error                      0.1629
+Root mean squared error                  0.3648
+Relative absolute error                 39.0586 %
+Root relative squared error             79.7603 %
+Total Number of Instances               94     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.924    0.321    0.871      0.924    0.897      0.632    0.859     0.906     nfp
+                 0.679    0.076    0.792      0.679    0.731      0.632    0.859     0.721     fp
+Weighted Avg.    0.851    0.248    0.848      0.851    0.848      0.632    0.859     0.851     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 61  5 |  a = nfp
+  9 19 |  b = fp
+

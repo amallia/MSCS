@@ -1,0 +1,1728 @@
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	2
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	3
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	2
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	3
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	2
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	3
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	2
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	3
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	17
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	33
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	17
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	33
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	2
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	3
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	2
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	3
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	19
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	37
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	18
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	35
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	19
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	37
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	18
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	35
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	2
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	3
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	2
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	3
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	18
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	35
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	18
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	35
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	17
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	33
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	17
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	33
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	5
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	9
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	5
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	9
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	20
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	39
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	5
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	9
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	5
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	9
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	20
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	39
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	16
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	31
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	8
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	15
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	18
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	35
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	3
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	5
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	4
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	7
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	7
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	13
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	13
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	25
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	14
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	27
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	12
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	23
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	6
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	11
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	11
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	21
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	15
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	29
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	9
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	17
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	18
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	35
+CostSensitive_AdaBoostM1_J48.txt:Number of Leaves  : 	10
+CostSensitive_AdaBoostM1_J48.txt:Size of the tree : 	19
+CostSensitive_DecisionTree.txt:Number of Leaves  : 	2
+CostSensitive_DecisionTree.txt:Size of the tree : 	3
+CostSensitive_DecisionTree.txt:Number of Leaves  : 	2
+CostSensitive_DecisionTree.txt:Size of the tree : 	3
+CostSensitive_DecisionTree.txt:Number of Leaves  : 	8
+CostSensitive_DecisionTree.txt:Size of the tree : 	15
+CostSensitive_DecisionTree.txt:Number of Leaves  : 	8
+CostSensitive_DecisionTree.txt:Size of the tree : 	15
+CostSensitive_DecisionTree.txt:Number of Leaves  : 	8
+CostSensitive_DecisionTree.txt:Size of the tree : 	15
+CostSensitive_DecisionTree.txt:Number of Leaves  : 	8
+CostSensitive_DecisionTree.txt:Size of the tree : 	15
+CostSensitive_DecisionTree.txt:Number of Leaves  : 	2
+CostSensitive_DecisionTree.txt:Size of the tree : 	3
+CostSensitive_DecisionTree.txt:Number of Leaves  : 	2
+CostSensitive_DecisionTree.txt:Size of the tree : 	3
+CostSensitive_DecisionTree.txt:Number of Leaves  : 	3
+CostSensitive_DecisionTree.txt:Size of the tree : 	5
+CostSensitive_DecisionTree.txt:Number of Leaves  : 	3
+CostSensitive_DecisionTree.txt:Size of the tree : 	5
+CostSensitive_DecisionTree.txt:Number of Leaves  : 	3
+CostSensitive_DecisionTree.txt:Size of the tree : 	5
+CostSensitive_DecisionTree.txt:Number of Leaves  : 	3
+CostSensitive_DecisionTree.txt:Size of the tree : 	5
+CostSensitive_DecisionTree.txt:Number of Leaves  : 	3
+CostSensitive_DecisionTree.txt:Size of the tree : 	5
+CostSensitive_DecisionTree.txt:Number of Leaves  : 	3
+CostSensitive_DecisionTree.txt:Size of the tree : 	5
+CostSensitive_DecisionTree.txt:Number of Leaves  : 	3
+CostSensitive_DecisionTree.txt:Size of the tree : 	5
+CostSensitive_DecisionTree.txt:Number of Leaves  : 	3
+CostSensitive_DecisionTree.txt:Size of the tree : 	5
+CostSensitive_DecisionTree.txt:Number of Leaves  : 	3
+CostSensitive_DecisionTree.txt:Size of the tree : 	5
+CostSensitive_DecisionTree.txt:Number of Leaves  : 	3
+CostSensitive_DecisionTree.txt:Size of the tree : 	5
+CostSensitive_DecisionTree.txt:Number of Leaves  : 	3
+CostSensitive_DecisionTree.txt:Size of the tree : 	5
+CostSensitive_DecisionTree.txt:Number of Leaves  : 	3
+CostSensitive_DecisionTree.txt:Size of the tree : 	5
+CostSensitive_DecisionTree.txt:Number of Leaves  : 	3
+CostSensitive_DecisionTree.txt:Size of the tree : 	5
+CostSensitive_DecisionTree.txt:Number of Leaves  : 	3
+CostSensitive_DecisionTree.txt:Size of the tree : 	5
+CostSensitive_DecisionTree.txt:Number of Leaves  : 	3
+CostSensitive_DecisionTree.txt:Size of the tree : 	5
+CostSensitive_DecisionTree.txt:Number of Leaves  : 	3
+CostSensitive_DecisionTree.txt:Size of the tree : 	5

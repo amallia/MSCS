@@ -1,0 +1,23 @@
+size: 1024 Elapsed time: 190 us. fill: 25 us.
+size: 2048 Elapsed time: 196 us. fill: 48 us.
+size: 4096 Elapsed time: 267 us. fill: 94 us.
+size: 8192 Elapsed time: 250 us. fill: 919 us.
+size: 16384 Elapsed time: 319 us. fill: 355 us.
+size: 32768 Elapsed time: 460 us. fill: 766 us.
+size: 65536 Elapsed time: 665 us. fill: 5214 us.
+size: 131072 Elapsed time: 26557 us. fill: 3048 us.
+size: 262144 Elapsed time: 2295 us. fill: 29290 us.
+size: 524288 Elapsed time: 16143 us. fill: 54942 us.
+size: 1048576 Elapsed time: 38144 us. fill: 93850 us.
+size: 2097152 Elapsed time: 54406 us. fill: 136482 us.
+size: 4194304 Elapsed time: 89394 us. fill: 239119 us.
+size: 8388608 Elapsed time: 258137 us. fill: 421122 us.
+size: 16777216 Elapsed time: 467777 us. fill: 1214843 us.
+size: 33554432 Elapsed time: 581710 us. fill: 2060204 us.
+size: 67108864 Elapsed time: 633251 us. fill: 1632081 us.
+size: 134217728 Elapsed time: 1316857 us. fill: 3223431 us.
+size: 268435456 Elapsed time: 2640157 us. fill: 6364780 us.
+size: 536870912 Elapsed time: 5150678 us. fill: 12885025 us.
+size: 1073741824 Elapsed time: 9579136 us. fill: 25543042 us.
+Hello world
+

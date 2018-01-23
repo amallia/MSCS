@@ -1,0 +1,215 @@
+[chris@euclid HW5]$ ls
+Debug  hw5  HW5.cpp  HW5.o  Release
+[chris@euclid HW5]$ pwd
+/home/chris/workspace/HW5
+[chris@euclid HW5]$ cd ../../Dropbox/MSCS/MAP*
+[chris@euclid MAP6264QueueingTheory]$ ls
+b1997-Heyman-Lakshman-Neidhardt.pdf  hw3excel.odc    hw3outputg.txt  hw4output.pdf  hw5case1.txt                       MAP6264_HW3.pdf
+erlang.cpp                          hw3excel.xlsx   hw3outputh.txt  hw4output.txt  hw5case2.txt                       MAP6264_HW4.pdf
+erlang.h                            hw3outputa.txt  hw3output.txt   hw4.save       hw5.cpp                            markerfile
+hw0bcc.bas                          hw3outputb.txt  hw4a.bas        hw4save.bas    hw5.o                              QueueingTheory_solns.pdf
+hw2intuitive.bas                    hw3outputc.txt  hw4aoutput.txt  HW4Save.txt    hw5save.bas
+hw2output.txt                       hw3outputd.txt  hw4.bas         HW4.txt        Intro_Data_Nets.pdf
+hw3a.bas                            hw3outpute.txt  hw4outputb.pdf  hw5a.bas       IntroToQueueingTheory_Cooper.pdf
+hw3.bas                             hw3outputf.txt  hw4outputb.txt  hw5.bas        'Lec12_MM1k_Queueing System2.pdf'
+[chris@euclid MAP6264QueueingTheory]$ basic
+Chipmunk BASIC 367b5
+>load "hw5.bas"
+>run
+? 4
+881468  586961  880948.761768   1112895.560336 
+rho=    0.705165        PI(n+1)=        0.118532        P(W>0)= 0.586961        W(N)=   1.262548        E(W)=   1.578185 
+>run
+? 0
+555404  0       555737.871547   0 
+rho=    0.44483         PI(n+1)=        0.444596        P(W>0)= 0       W(N)=   0       E(W)=   0 
+>run
+? 1
+670392  206330  670176.125667   206515.259074 
+rho=    0.535869        PI(n+1)=        0.329608        P(W>0)= 0.20633         W(N)=   0.308051        E(W)=   0.385064 
+>run
+? 2
+768111  383805  768344.873697   460289.899007 
+rho=    0.614869        PI(n+1)=        0.231889        P(W>0)= 0.383805        W(N)=   0.599249        E(W)=   0.749061 
+>run
+? 4
+881490  586214  881102.488067   1111367.416977 
+rho=    0.704679        PI(n+1)=        0.11851         P(W>0)= 0.586214        W(N)=   1.260783        E(W)=   1.575978 
+>run
+? 8
+960246  730475  961452.073888   2324699.796179 
+rho=    0.769954        PI(n+1)=        0.039754        P(W>0)= 0.730475        W(N)=   2.420942        E(W)=   3.026177 
+>run
+? 16
+994227  788162  993510.262048   3536855.422926 
+rho=    0.794266        PI(n+1)=        5.773000E-03    P(W>0)= 0.788162        W(N)=   3.557392        E(W)=   4.44674 
+>run
+? 32
+999824  801110  999886.96186    3996551.456607 
+rho=    0.800999        PI(n+1)=        1.760000E-04    P(W>0)= 0.80111         W(N)=   3.997255        E(W)=   4.996569 
+>run
+? 0
+555721  0       555350.636978   0 
+rho=    0.444781        PI(n+1)=        0.444279        P(W>0)= 0       W(N)=   0       E(W)=   0 
+>run
+? 1
+669840  206325  669674.426183   206360.213829 
+rho=    0.536149        PI(n+1)=        0.33016         P(W>0)= 0.206325        W(N)=   0.308074        E(W)=   0.385092 
+>run
+? 2
+768138  383475  769039.765955   459538.134537 
+rho=    0.615932        PI(n+1)=        0.231862        P(W>0)= 0.383475        W(N)=   0.598249        E(W)=   0.747812 
+>run
+? 3
+836258  506237  838205.768811   777433.856737 
+rho=    0.669876        PI(n+1)=        0.163742        P(W>0)= 0.506237        W(N)=   0.929658        E(W)=   1.162072 
+>run
+? 4
+881507  587187  883705.164775   1115804.721443 
+rho=    0.706134        PI(n+1)=        0.118493        P(W>0)= 0.587187        W(N)=   1.265792        E(W)=   1.58224 
+>run
+? 8
+960744  729090  960347.719981   2309742.140872 
+rho=    0.768181        PI(n+1)=        0.039256        P(W>0)= 0.72909         W(N)=   2.404118        E(W)=   3.005148 
+>run
+? 16
+994493  789554  993320.614897   3538953.223161 
+rho=    0.795867        PI(n+1)=        5.507000E-03    P(W>0)= 0.789554        W(N)=   3.55855         E(W)=   4.448188 
+>run
+? 32
+999914  799396  999772.26045    3983699.731801 
+rho=    0.800411        PI(n+1)=        8.600000E-05    P(W>0)= 0.799396        W(N)=   3.984042        E(W)=   4.980053 
+>list
+10 dim q(1000)
+60 svctim = 1
+70 arrate = 0.8
+80 customers = 1000000
+90 input n
+100 for i = 1 to customers
+110 ia = -(1/arrate)*log(rnd(1))
+120 t = t+ia
+125 w = w-ia
+126 if w < 0 then w = 0
+130 if nq = 0 then 300
+139 rem have any queued entries been finished
+150 for j = 1 to n
+160 if q(j) > t then 200
+170 if q(j) = 0 then 200
+180 nq = nq-1
+190 q(j) = 0
+200 next j
+300 rem process incoming call
+310 x = -svctim*log(rnd(1))
+320 if w = 0 then 380
+330 rem queue it if possible
+340 j = 0
+345 j = j+1
+350 if q(j) <> 0 then 345
+353 if j > n then 400
+355 sw = sw+w
+360 q(j) = t+w+x
+365 k = k+1
+370 nq = nq+1
+380 c = c+1
+385 w = w+x
+390 sx = sx+x
+400 next i
+410 print c,k,sx,sw
+420 print "rho=",sx/t,"PI(n+1)=",(customers-c)/customers,"P(W>0)=",k/customers,"W(N)=",(sw/svctim)/c,"E(W)=",(sw/svctim)/(c*arrate)
+430 end
+>70 arrate=1.2
+>list
+10 dim q(1000)
+60 svctim = 1
+70 arrate = 1.2
+80 customers = 1000000
+90 input n
+100 for i = 1 to customers
+110 ia = -(1/arrate)*log(rnd(1))
+120 t = t+ia
+125 w = w-ia
+126 if w < 0 then w = 0
+130 if nq = 0 then 300
+139 rem have any queued entries been finished
+150 for j = 1 to n
+160 if q(j) > t then 200
+170 if q(j) = 0 then 200
+180 nq = nq-1
+190 q(j) = 0
+200 next j
+300 rem process incoming call
+310 x = -svctim*log(rnd(1))
+320 if w = 0 then 380
+330 rem queue it if possible
+340 j = 0
+345 j = j+1
+350 if q(j) <> 0 then 345
+353 if j > n then 400
+355 sw = sw+w
+360 q(j) = t+w+x
+365 k = k+1
+370 nq = nq+1
+380 c = c+1
+385 w = w+x
+390 sx = sx+x
+400 next i
+410 print c,k,sx,sw
+420 print "rho=",sx/t,"PI(n+1)=",(customers-c)/customers,"P(W>0)=",k/customers,"W(N)=",(sw/svctim)/c,"E(W)=",(sw/svctim)/(c*arrate)
+430 end
+>run
+? 0
+455111  0       454339.244404   0 
+rho=    0.545271        PI(n+1)=        0.544889        P(W>0)= 0       W(N)=   0       E(W)=   0 
+>run
+? 1
+540113  191008  541368.493618   191973.742549 
+rho=    0.651109        PI(n+1)=        0.459887        P(W>0)= 0.191008        W(N)=   0.355433        E(W)=   0.296194 
+>run
+? 2
+624885  375167  625504.891448   449513.757407 
+rho=    0.750413        PI(n+1)=        0.375115        P(W>0)= 0.375167        W(N)=   0.719354        E(W)=   0.599462 
+>run
+? 4
+724636  590492  721911.247683   1271027.518095 
+rho=    0.8656  PI(n+1)=        0.275364        P(W>0)= 0.590492        W(N)=   1.754022        E(W)=   1.461685 
+>run
+? 8
+793964  743845  793450.511614   3494258.218778 
+rho=    0.950727        PI(n+1)=        0.206036        P(W>0)= 0.743845        W(N)=   4.401029        E(W)=   3.667524 
+>run
+? 16
+824874  815073  825470.894457   8994260.072124 
+rho=    0.990504        PI(n+1)=        0.175126        P(W>0)= 0.815073        W(N)=   10.903799       E(W)=   9.086499 
+>run
+? 32
+833553  833217  833202.327555   21722481.493951 
+rho=    0.999717        PI(n+1)=        0.166447        P(W>0)= 0.833217        W(N)=   26.060108       E(W)=   21.716757 
+>run
+? 0
+454489  0       454097.520039   0 
+rho=    0.54443         PI(n+1)=        0.545511        P(W>0)= 0       W(N)=   0       E(W)=   0 
+>run
+? 1
+540923  191104  541976.493407   192069.934577 
+rho=    0.651044        PI(n+1)=        0.459077        P(W>0)= 0.191104        W(N)=   0.355078        E(W)=   0.295898 
+>run
+? 2
+624277  374972  625184.922722   449656.016183 
+rho=    0.75073         PI(n+1)=        0.375723        P(W>0)= 0.374972        W(N)=   0.720283        E(W)=   0.600236 
+>run
+? 4
+722147  589663  722057.777167   1274795.89488 
+rho=    0.867314        PI(n+1)=        0.277853        P(W>0)= 0.589663        W(N)=   1.765286        E(W)=   1.471072 
+>run
+? 8
+793629  743055  791754.818539   3491077.170289 
+rho=    0.950327        PI(n+1)=        0.206371        P(W>0)= 0.743055        W(N)=   4.398878        E(W)=   3.665732 
+>run
+? 16
+824779  814961  825092.638193   8995470.786286 
+rho=    0.990469        PI(n+1)=        0.175221        P(W>0)= 0.814961        W(N)=   10.906523       E(W)=   9.088769 
+>run
+? 32
+834164  833783  832303.299061   21709130.061679 
+rho=    0.999692        PI(n+1)=        0.165836        P(W>0)= 0.833783        W(N)=   26.025014       E(W)=   21.687512 
+>

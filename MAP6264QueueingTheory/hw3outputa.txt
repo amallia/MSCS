@@ -1,0 +1,1040 @@
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(j) < a then goto 210
+200 ab = ab+c(j)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+220 c(j) = c(j)+x
+230 for i = 2 to s
+240 if c(i) < m then m = c(i)
+250 next i
+260 if m > a then ab = ab+m-a
+270 next d
+280 print k/nstop,ab/a
+>280 print ab/k
+>list
+100 dim c(50)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(j) < a then goto 210
+200 ab = ab+c(j)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+220 c(j) = c(j)+x
+230 for i = 2 to s
+240 if c(i) < m then m = c(i)
+250 next i
+260 if m > a then ab = ab+m-a
+270 next d
+280 print ab/k
+>230
+>240
+>250
+>list
+100 dim c(50)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(j) < a then goto 210
+200 ab = ab+c(j)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+220 c(j) = c(j)+x
+260 if m > a then ab = ab+m-a
+270 next d
+280 print ab/k
+>run
+? 10,10000
+10644.576245 
+>280 print ab/nstop  
+>list
+100 dim c(50)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(j) < a then goto 210
+200 ab = ab+c(j)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+220 c(j) = c(j)+x
+260 if m > a then ab = ab+m-a
+270 next d
+280 print ab/nstop
+>run
+? 10,100000
+106543.469167 
+>
+>280 print a, ab, k
+>
+>
+>
+>
+>
+>
+>
+>list
+100 dim c(50)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(j) < a then goto 210
+200 ab = ab+c(j)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+220 c(j) = c(j)+x
+260 if m > a then ab = ab+m-a
+270 next d
+280 print a,ab,k
+>run
+? 10,10000
+2531.681285     108723141.961247        9999 
+>190 if c(m) < a then goto 210
+>list
+100 dim c(50)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(m) < a then goto 210
+200 ab = ab+c(j)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+220 c(j) = c(j)+x
+260 if m > a then ab = ab+m-a
+270 next d
+280 print a,ab,k
+>run
+? 10,10000
+2485.301209     0.256481        0 
+>200 ab = ab+c(m)-a
+>220 c(m)=c(m)+x
+>260 if c(m) > a then ab=ab+m-a
+>list
+100 dim c(50)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(m) < a then goto 210
+200 ab = ab+c(m)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+220 c(m) = c(m)+x
+260 if c(m) > a then ab = ab+m-a
+270 next d
+280 print a,ab,k
+>run
+? 10,10000
+2486.410729     -91581.529548   398 
+>260 if c(m) > a then ab = ab + c(m) - a
+>list
+100 dim c(50)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(m) < a then goto 210
+200 ab = ab+c(m)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+220 c(m) = c(m)+x
+260 if c(m) > a then ab = ab+c(m)-a
+270 next d
+280 print a,ab,k
+>run
+? 10,100000
+24993.73861     21006.000139    1422 
+>280 print a, ab, k, ab/k
+>list
+100 dim c(50)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(m) < a then goto 210
+200 ab = ab+c(m)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+220 c(m) = c(m)+x
+260 if c(m) > a then ab = ab+c(m)-a
+270 next d
+280 print a,ab,k,ab/k
+>run
+? 10,100000
+24861.589148    1052.565553     129     8.159423 
+>run
+? 10,1000000
+249913.906005   145.510563      0       INF 
+>
+>    
+>
+>
+>
+>
+>list
+100 dim c(50)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(m) < a then goto 210
+200 ab = ab+c(m)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+220 c(m) = c(m)+x
+260 if c(m) > a then ab = ab+c(m)-a
+270 next d
+280 print a,ab,k,ab/k
+>260
+>list
+100 dim c(50)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(m) < a then goto 210
+200 ab = ab+c(m)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+220 c(m) = c(m)+x
+270 next d
+280 print a,ab,k,ab/k
+>run
+? 10,10000
+2499.089256     0.020075        1       0.020075 
+>run
+? 10,1000000
+249975.204463   0       0       -INF 
+>
+>list
+100 dim c(50)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(m) < a then goto 210
+200 ab = ab+c(m)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+220 c(m) = c(m)+x
+270 next d
+280 print a,ab,k,ab/k
+>save "hw3a.bas"
+>list
+100 dim c(50)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(m) < a then goto 210
+200 ab = ab+c(m)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+220 c(m) = c(m)+x
+270 next d
+280 print a,ab,k,ab/k
+>185 if c(m) < a then c(m) = a
+>list
+100 dim c(50)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+185 if c(m) < a then c(m) = a
+190 if c(m) < a then goto 210
+200 ab = ab+c(m)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+220 c(m) = c(m)+x
+270 next d
+280 print a,ab,k,ab/k
+>rin
+ Syntax error 
+>run
+? 10,10000
+2506.112203     85937.196971    10000   8.59372 
+>run
+? 10,1000000
+
+249722.705831   4787465.056904  1000000         4.787465 
+>>
+>
+>run
+? 10,1000000
+249629.851356   5269228.190772  1000000         5.269228 
+>run
+? 10,1000000
+249779.749877   5176027.442713  1000000         5.176027 
+>run
+? 10,1000000
+249948.948085   5669817.687491  1000000         5.669818 
+>list
+100 dim c(50)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+185 if c(m) < a then c(m) = a
+190 if c(m) < a then goto 210
+200 ab = ab+c(m)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+220 c(m) = c(m)+x
+270 next d
+280 print a,ab,k,ab/k
+>280 print a, ab, ab/k, ab/(k*2.4)
+>
+>
+>
+>
+>list
+100 dim c(50)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+185 if c(m) < a then c(m) = a
+190 if c(m) < a then goto 210
+200 ab = ab+c(m)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+220 c(m) = c(m)+x
+270 next d
+280 print a,ab,ab/k,ab/(k*2.4)
+>run
+? 10,1000000
+250192.964972   5397894.882774  5.397895        2.249123 
+>280 print k, ab, ab/k, ab/(k*2.4)
+>list
+100 dim c(50)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+185 if c(m) < a then c(m) = a
+190 if c(m) < a then goto 210
+200 ab = ab+c(m)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+220 c(m) = c(m)+x
+270 next d
+280 print k,ab,ab/k,ab/(k*2.4)
+>run 
+? 10,1000000
+
+1000000         5240350.543906  5.240351        2.183479 
+>>
+>
+>185
+>lists
+ Syntax error 
+>list
+100 dim c(50)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(m) < a then goto 210
+200 ab = ab+c(m)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+220 c(m) = c(m)+x
+270 next d
+280 print k,ab,ab/k,ab/(k*2.4)
+>215 if c(m) < a then c(m) = a
+>list
+100 dim c(50)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(m) < a then goto 210
+200 ab = ab+c(m)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+215 if c(m) < a then c(m) = a
+220 c(m) = c(m)+x
+270 next d
+280 print k,ab,ab/k,ab/(k*2.4)
+>run
+? 10,1000000
+855661  5491196.785795  6.417491        2.673955 
+>run
+? 10,1000000
+861676  5398376.56788   6.264973        2.610405 
+>run
+? 10,1000000
+853837  4986616.123251  5.840244        2.433435 
+>
+>280 print k, ab, k/nstop, ab/k, ab/(2.4 * k)
+>list
+100 dim c(50)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(m) < a then goto 210
+200 ab = ab+c(m)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+215 if c(m) < a then c(m) = a
+220 c(m) = c(m)+x
+270 next d
+280 print k,ab,k/nstop,ab/k,ab/(2.4*k)
+>run
+? 10,1000000
+854283  5134852.108339  0.854283        6.010716        2.504465 
+>100 dim c(50), w(20)
+>195 wt=c(m)-a
+>100 dim c(50), ab(10)
+>200 dim c(50), w(20)
+>list
+100 dim c(50),ab(10)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(m) < a then goto 210
+195 wt = c(m)-a
+200 dim c(50),w(20)
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+215 if c(m) < a then c(m) = a
+220 c(m) = c(m)+x
+270 next d
+280 print k,ab,k/nstop,ab/k,ab/(2.4*k)
+>200 ab = ab+c(m)-a
+>list
+100 dim c(50),ab(10)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(m) < a then goto 210
+195 wt = c(m)-a
+200 ab = ab+c(m)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+215 if c(m) < a then c(m) = a
+220 c(m) = c(m)+x
+270 next d
+280 print k,ab,k/nstop,ab/k,ab/(2.4*k)
+>100 dim c(50),wt(10)
+>list
+100 dim c(50),wt(10)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(m) < a then goto 210
+195 wt = c(m)-a
+200 ab = ab+c(m)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+215 if c(m) < a then c(m) = a
+220 c(m) = c(m)+x
+270 next d
+280 print k,ab,k/nstop,ab/k,ab/(2.4*k)
+>195 wx=c(m)-a
+>list
+100 dim c(50),wt(10)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(m) < a then goto 210
+195 wx = c(m)-a
+200 ab = ab+c(m)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+215 if c(m) < a then c(m) = a
+220 c(m) = c(m)+x
+270 next d
+280 print k,ab,k/nstop,ab/k,ab/(2.4*k)
+>197 for i = 0 to 9
+>198 if (wx < i*2.4) then wt(i) = wt(i)+1
+>199 next i
+>
+>list
+100 dim c(50),wt(10)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(m) < a then goto 210
+195 wx = c(m)-a
+197 for i = 0 to 9
+198 if (wx < i*2.4) then wt(i) = wt(i)+1
+199 next i
+200 ab = ab+c(m)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+215 if c(m) < a then c(m) = a
+220 c(m) = c(m)+x
+270 next d
+280 print k,ab,k/nstop,ab/k,ab/(2.4*k)
+>
+>
+>
+>
+>290 print wt
+>list rin
+100 dim c(50),wt(10)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(m) < a then goto 210
+195 wx = c(m)-a
+197 for i = 0 to 9
+198 if (wx < i*2.4) then wt(i) = wt(i)+1
+199 next i
+200 ab = ab+c(m)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+215 if c(m) < a then c(m) = a
+220 c(m) = c(m)+x
+270 next d
+280 print k,ab,k/nstop,ab/k,ab/(2.4*k)
+290 print wt
+ Syntax error, missing ,  
+>   
+>list
+100 dim c(50),wt(10)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(m) < a then goto 210
+195 wx = c(m)-a
+197 for i = 0 to 9
+198 if (wx < i*2.4) then wt(i) = wt(i)+1
+199 next i
+200 ab = ab+c(m)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+215 if c(m) < a then c(m) = a
+220 c(m) = c(m)+x
+270 next d
+280 print k,ab,k/nstop,ab/k,ab/(2.4*k)
+290 print wt
+>run
+? 10,100000
+87238   631656.10934    0.87238         7.240607        3.01692 
+0 
+>290 for i = 1 to 10
+>300 print wt(i)
+>310 next i
+>run
+? 10,10000
+8484    39576.486935    0.8484  4.664838        1.943683 
+2789 
+5221 
+6711 
+7443 
+7994 
+8269 
+8448 
+8484 
+8484 
+0 
+>list
+100 dim c(50),wt(10)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(m) < a then goto 210
+195 wx = c(m)-a
+197 for i = 0 to 9
+198 if (wx < i*2.4) then wt(i) = wt(i)+1
+199 next i
+200 ab = ab+c(m)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+215 if c(m) < a then c(m) = a
+220 c(m) = c(m)+x
+270 next d
+280 print k,ab,k/nstop,ab/k,ab/(2.4*k)
+290 for i = 1 to 10
+300 print wt(i)
+310 next i
+>198 if (wx > i*2.4) then wt(i) = wt(i)+1
+>list
+100 dim c(50),wt(10)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(m) < a then goto 210
+195 wx = c(m)-a
+197 for i = 0 to 9
+198 if (wx > i*2.4) then wt(i) = wt(i)+1
+199 next i
+200 ab = ab+c(m)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+215 if c(m) < a then c(m) = a
+220 c(m) = c(m)+x
+270 next d
+280 print k,ab,k/nstop,ab/k,ab/(2.4*k)
+290 for i = 1 to 10
+300 print wt(i)
+310 next i
+>run
+? 10,10000
+7604    21389.610089    0.7604  2.812942        1.172059 
+3571 
+1390 
+580 
+73 
+0 
+0 
+0 
+0 
+0 
+0 
+>run
+? 10,100000
+86161   592469.07306    0.86161         6.876302        2.865126 
+58483 
+41739 
+29617 
+21355 
+15336 
+11675 
+9036 
+7238 
+5151 
+0 
+>run
+? 10,1000000
+867274  5749991.142212  0.867274        6.629959        2.762483 
+596513 
+411325 
+280898 
+193401 
+135549 
+99065 
+74339 
+54805 
+41965 
+0 
+>list
+100 dim c(50),wt(10)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(m) < a then goto 210
+195 wx = c(m)-a
+197 for i = 0 to 9
+198 if (wx > i*2.4) then wt(i) = wt(i)+1
+199 next i
+200 ab = ab+c(m)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+215 if c(m) < a then c(m) = a
+220 c(m) = c(m)+x
+270 next d
+280 print k,ab,k/nstop,ab/k,ab/(2.4*k)
+290 for i = 1 to 10
+300 print wt(i)
+310 next i
+>280 print k/nstop, ab/k, ab/(2.4*k)
+>200 print wt(i)/k
+>200 ab = ab+c(m)-a
+>300 print wt(i)/nstop
+>list
+100 dim c(50),wt(10)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(m) < a then goto 210
+195 wx = c(m)-a
+197 for i = 0 to 9
+198 if (wx > i*2.4) then wt(i) = wt(i)+1
+199 next i
+200 ab = ab+c(m)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+215 if c(m) < a then c(m) = a
+220 c(m) = c(m)+x
+270 next d
+280 print k/nstop,ab/k,ab/(2.4*k)
+290 for i = 1 to 10
+300 print wt(i)/nstop
+310 next i
+>run
+? 10,1000000
+0.850461        5.82989         2.429121 
+0.558194 
+0.36963 
+0.242922 
+0.161176 
+0.10818 
+0.073854 
+0.05089 
+0.034342 
+0.022079 
+0 
+>198 if (wx > i*2.4) then wt(i+1) = wt(i+1)+1
+>300 print "P(w>", i-1, ")=", wt(i)
+>list
+100 dim c(50),wt(10)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(m) < a then goto 210
+195 wx = c(m)-a
+197 for i = 0 to 9
+198 if (wx > i*2.4) then wt(i+1) = wt(i+1)+1
+199 next i
+200 ab = ab+c(m)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+215 if c(m) < a then c(m) = a
+220 c(m) = c(m)+x
+270 next d
+280 print k/nstop,ab/k,ab/(2.4*k)
+290 for i = 1 to 10
+300 print "P(w>",i-1,")=",wt(i)
+310 next i
+>run
+? 10,1000000
+0.85335         5.892758        2.455316 
+P(w>    0       )=      853350 
+P(w>    1       )=      567795 
+P(w>    2       )=      377125 
+P(w>    3       )=      248793 
+P(w>    4       )=      164889 
+P(w>    5       )=      109754 
+P(w>    6       )=      74166 
+P(w>    7       )=      50856 
+P(w>    8       )=      34144 
+P(w>    9       )=      22061 
+>300 print "P(w>",i-1,")=",wt(i)/nstop
+>run
+? 10,1000000
+0.860559        6.110373        2.545989 
+P(w>    0       )=      0.860559 
+P(w>    1       )=      0.585378 
+P(w>    2       )=      0.39764 
+P(w>    3       )=      0.265926 
+P(w>    4       )=      0.176365 
+P(w>    5       )=      0.119834 
+P(w>    6       )=      0.081262 
+P(w>    7       )=      0.055278 
+P(w>    8       )=      0.03731 
+P(w>    9       )=      0.02552 
+>run
+? 10,10000000
+
+
+0.857877        6.03854         2.516058 
+P(w>    0       )=      0.857877 
+P(w>    1       )=      0.575064 
+P(w>    2       )=      0.386642 
+P(w>    3       )=      0.259489 
+P(w>    4       )=      0.175137 
+P(w>    5       )=      0.118774 
+P(w>    6       )=      0.080545 
+P(w>    7       )=      0.054279 
+P(w>    8       )=      0.036683 
+P(w>    9       )=      0.024625 
+>>>
+>
+>
+>list
+100 dim c(50),wt(10)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(m) < a then goto 210
+195 wx = c(m)-a
+197 for i = 0 to 9
+198 if (wx > i*2.4) then wt(i+1) = wt(i+1)+1
+199 next i
+200 ab = ab+c(m)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+215 if c(m) < a then c(m) = a
+220 c(m) = c(m)+x
+270 next d
+280 print k/nstop,ab/k,ab/(2.4*k)
+290 for i = 1 to 10
+300 print "P(w>",i-1,")=",wt(i)/nstop
+310 next i
+>run
+? 10,1000000
+0.860043        5.922319        2.467633 
+P(w>    0       )=      0.860043 
+P(w>    1       )=      0.577767 
+P(w>    2       )=      0.385948 
+P(w>    3       )=      0.251714 
+P(w>    4       )=      0.163214 
+P(w>    5       )=      0.107171 
+P(w>    6       )=      0.071726 
+P(w>    7       )=      0.050344 
+P(w>    8       )=      0.035514 
+P(w>    9       )=      0.025912 
+>run
+? 10,1000000
+0.861339        6.569758        2.737399 
+P(w>    0       )=      0.861339 
+P(w>    1       )=      0.591137 
+P(w>    2       )=      0.405263 
+P(w>    3       )=      0.273741 
+P(w>    4       )=      0.188353 
+P(w>    5       )=      0.131265 
+P(w>    6       )=      0.091714 
+P(w>    7       )=      0.064781 
+P(w>    8       )=      0.045389 
+P(w>    9       )=      0.032412 
+>run
+? 10,1000000
+0.853743        5.65901         2.357921 
+P(w>    0       )=      0.853743 
+P(w>    1       )=      0.56948 
+P(w>    2       )=      0.378489 
+P(w>    3       )=      0.247609 
+P(w>    4       )=      0.158985 
+P(w>    5       )=      0.104478 
+P(w>    6       )=      0.067336 
+P(w>    7       )=      0.040483 
+P(w>    8       )=      0.022925 
+P(w>    9       )=      0.013711 
+>run
+? 10,1000000
+0.859275        6.037378        2.515574 
+P(w>    0       )=      0.859275 
+P(w>    1       )=      0.575722 
+P(w>    2       )=      0.385679 
+P(w>    3       )=      0.258125 
+P(w>    4       )=      0.171381 
+P(w>    5       )=      0.116075 
+P(w>    6       )=      0.081687 
+P(w>    7       )=      0.05479 
+P(w>    8       )=      0.037896 
+P(w>    9       )=      0.026638 
+>save "hw3.bas"
+>
+>
+>exit
+[chris@euclid MAP6264QueueingTheory]$ ls
+hw0bcc.bas        hw2output.txt  hw3.bas        Intro_Data_Nets.pdf               MAP6264_HW3.pdf  QueueingTheory_solns.pdf
+hw2intuitive.bas  hw3a.bas       hw3output.txt  IntroToQueueingTheory_Cooper.pdf  markerfile
+[chris@euclid MAP6264QueueingTheory]$ vi hw3output.txt
+vi: Symbol `ospeed' has different size in shared object, consider re-linking
+[chris@euclid MAP6264QueueingTheory]$ vi hw3output.txt
+vi: Symbol `ospeed' has different size in shared object, consider re-linking
+[chris@euclid MAP6264QueueingTheory]$ basic
+Chipmunk BASIC 367b5
+>load "hw3.bas"
+>list
+100 dim c(50),wt(10)
+110 input s,nstop
+120 for d = 1 to nstop
+130 ia = -0.25*log(rnd(1))
+140 a = a+ia
+150 m = 1
+160 for j = 2 to s
+170 if c(j) < c(m) then m = j
+180 next j
+190 if c(m) < a then goto 210
+195 wx = c(m)-a
+197 for i = 0 to 9
+198 if (wx > i*2.4) then wt(i+1) = wt(i+1)+1
+199 next i
+200 ab = ab+c(m)-a
+205 k = k+1
+210 x = -2.4*log(rnd(1))
+215 if c(m) < a then c(m) = a
+220 c(m) = c(m)+x
+270 next d
+280 print k/nstop,ab/k,ab/(2.4*k)
+290 for i = 1 to 10
+300 print "P(w>",i-1,")=",wt(i)/nstop
+310 next i
+>run
+? 10,1000000
+0.861607        6.601564        2.750651 
+P(w>    0       )=      0.861607 
+P(w>    1       )=      0.585147 
+P(w>    2       )=      0.406945 
+P(w>    3       )=      0.288502 
+P(w>    4       )=      0.206062 
+P(w>    5       )=      0.146173 
+P(w>    6       )=      0.10286 
+P(w>    7       )=      0.072579 
+P(w>    8       )=      0.051385 
+P(w>    9       )=      0.037355 
+>run
+? 10,1000000
+
+0.862597        6.274518        2.614382 
+P(w>    0       )=      0.862597 
+P(w>    1       )=      0.588114 
+P(w>    2       )=      0.403062 
+P(w>    3       )=      0.27314 
+P(w>    4       )=      0.183137 
+P(w>    5       )=      0.121208 
+P(w>    6       )=      0.079931 
+P(w>    7       )=      0.054237 
+P(w>    8       )=      0.03929 
+P(w>    9       )=      0.030153 
+>>run
+? 10,10000000
+0.859843        6.072032        2.530013 
+P(w>    0       )=      0.859843 
+P(w>    1       )=      0.580758 
+P(w>    2       )=      0.39108 
+P(w>    3       )=      0.261943 
+P(w>    4       )=      0.175032 
+P(w>    5       )=      0.116755 
+P(w>    6       )=      0.077964 
+P(w>    7       )=      0.052165 
+P(w>    8       )=      0.035979 
+P(w>    9       )=      0.02505 
+>

@@ -1,0 +1,388 @@
+[chris@euclid ~]$ cd Dropbox
+[chris@euclid Dropbox]$ cd MSCS
+[chris@euclid MSCS]$ cd MAP*
+[chris@euclid MAP6264QueueingTheory]$ ls
+1997-Heyman-Lakshman-Neidhardt.pdf  hw3outputg.txt  hw5.cpp
+bstj48-3-675.pdf                    hw3outputh.txt  hw5.o
+Cooper_1970.pdf                     hw3output.txt   hw5.pdf
+erlang.cpp                          hw4a.bas        hw5save.bas
+erlang.h                            hw4aoutput.txt  hw5theory.txt
+hw0bcc.bas                          hw4.bas         hw5.txt
+hw2intuitive.bas                    hw4outputb.pdf  hw6cooper.bas
+hw2output.txt                       hw4outputb.txt  hw6simulation.txt
+hw3a.bas                            hw4output.pdf   Intro_Data_Nets.pdf
+hw3.bas                             hw4output.txt   IntroToQueueingTheory_Cooper.pdf
+hw3excel.odc                        hw4.save        'Lec12_MM1k_Queueing System2.pdf'
+hw3excel.xlsx                       hw4save.bas     MAP6264_HW3.pdf
+hw3outputa.txt                      HW4Save.txt     MAP6264_HW4.pdf
+hw3outputb.txt                      HW4.txt         markerfile
+hw3outputc.txt                      hw5a.bas        PrenticeHallTextModD.pdf
+hw3outputd.txt                      hw5.bas         QueueingTheory_solns.pdf
+hw3outpute.txt                      hw5case1.txt
+hw3outputf.txt                      hw5case2.txt
+[chris@euclid MAP6264QueueingTheory]$ basic
+Chipmunk BASIC 367b5
+>load "hw6cooper.bas"
+>list
+10 rem MAP6264 HW5 Simulation based on Lindley
+15 customers = 1000000
+20 dim q(100)
+95 input n
+100 for i = 1 to customers
+110 ia = -1*(1/0.8)*log(rnd(1))
+120 t = t+ia
+130 w = w+x-ia
+140 if w < 0 then w = 0
+150 if w > 0 then 205
+160 sw = sw+w
+170 x = 1
+180 sx = sx+x
+190 next i
+200 print sx/t,c/customers,sw/(customers-c)
+202 end
+205 j = 0
+210 j = j+1
+215 if j > n then c = c+1
+220 if j > n then 190
+230 if q(j) > t then 210
+240 q(j) = t+w
+250 goto 160
+>run
+? 0
+0.15978         0.800318        0 
+>run
+? 1
+0.470092        0.412469        0.878097 
+>run
+? 2
+0.618713        0.226679        1.214231 
+>run 
+? 4
+0.740081        0.074595        1.596473 
+>run
+? 8
+0.791715        0.010336        1.916279 
+>run
+? 16
+0.799854        2.270000E-04    1.985651 
+>run
+? 32
+0.800836        0       2.008308 
+>run
+? 64
+0.799381        0       1.991424 
+>110 ia = -1*(1.0/1.2)*log(rnd(1))
+>run                                                                                                                                                
+? 0                                                                                                                                                 
+1.198755E-06    0.999999        0                                                                                                                   
+>run                                                                                                                                                
+? 1                                                                                                                                                 
+8.053571E-05    0.999933        14013.841598                                                                                                        
+>run                                                                                                                                                
+? 2                                                                                                                                                 
+1.535233E-04    0.999872        13671.202664                                                                                                        
+>run                                                                                                                                                
+? 3                                                                                                                                                 
+2.353097E-04    0.999804        14991.705479                                                                                                        
+>run                                                                                                                                                
+? 4                                                                                                                                                 
+2.845239E-04    0.999763        14465.259179                                                                                                        
+>run                                                                                                                                                 
+? 8
+6.704627E-04    0.999441        13462.052686 
+>run
+? 16
+1.098016E-03    0.999084        16173.040356 
+>run
+? 32
+1.932996E-03    0.998393        17470.786891 
+>run
+? 64
+3.802229E-03    0.996834        18063.097167 
+>load "hw5.bas"
+Overwrite Without Saving?y
+>list
+10 dim q(1000)
+60 svctim = 1
+70 arrate = 0.8
+80 customers = 10000000
+90 input n
+100 for i = 1 to customers
+110 ia = -(1/arrate)*log(rnd(1))
+120 t = t+ia
+125 w = w-ia
+126 if w < 0 then w = 0
+130 if nq = 0 then 300
+139 rem have any queued entries been finished
+150 for j = 1 to n
+160 if q(j) > t then 200
+170 if q(j) = 0 then 200
+180 nq = nq-1
+190 q(j) = 0
+200 next j
+300 rem process incoming call
+310 x = -svctim*log(rnd(1))
+320 if w = 0 then 380
+330 rem queue it if possible
+340 j = 0
+345 j = j+1
+350 if q(j) <> 0 then 345
+353 if j > n then 400
+355 sw = sw+w
+360 q(j) = t+w+x
+365 k = k+1
+370 nq = nq+1
+380 c = c+1
+385 w = w+x
+390 sx = sx+x
+400 next i
+410 print c,k,sx,sw,nq,w
+420 print "rho=",(sx-w)/t,"PI(n+1)=",(customers-c-nq)/customers,"P(W>0)=",k/customers,"W(N)=",((sw-w)/svctim)/c,"E(W)=",(sw/svctim)/(c*arrate)
+430 end
+>310 x = 1
+>run
+? 0
+5556892         0       5556892         0       0       1 
+rho=    0.444372        PI(n+1)=        0.444311        P(W>0)= 0       W(N)=   -1.799567E-07   E(W)=   0 
+>run 
+? 1
+6918886         2458135         6918886         1390817.661451  1       1.187287 
+rho=    0.554003        PI(n+1)=        0.308111        P(W>0)= 0.245813        W(N)=   0.201017        E(W)=   0.251272 
+>run
+? 2
+8239999         4829033         8239999         3264077.300673  0       1 
+rho=    0.659022        PI(n+1)=        0.176   P(W>0)= 0.482903        W(N)=   0.396126        E(W)=   0.495157 
+>run
+? 4
+9416946         6953671         9416946         9129709.928058  3       2.759328 
+rho=    0.753553        PI(n+1)=        0.058305        P(W>0)= 0.695367        W(N)=   0.969498        E(W)=   1.211872 
+>run
+? 8
+9914390         7847056         9914390         16625139.833998         3       2.379336 
+rho=    0.793567        PI(n+1)=        8.560700E-03    P(W>0)= 0.784706        W(N)=   1.676869        E(W)=   2.096087 
+>list
+10 dim q(1000)
+60 svctim = 1
+70 arrate = 0.8
+80 customers = 10000000
+90 input n
+100 for i = 1 to customers
+110 ia = -(1/arrate)*log(rnd(1))
+120 t = t+ia
+125 w = w-ia
+126 if w < 0 then w = 0
+130 if nq = 0 then 300
+139 rem have any queued entries been finished
+150 for j = 1 to n
+160 if q(j) > t then 200
+170 if q(j) = 0 then 200
+180 nq = nq-1
+190 q(j) = 0
+200 next j
+300 rem process incoming call
+310 x = 1
+320 if w = 0 then 380
+330 rem queue it if possible
+340 j = 0
+345 j = j+1
+350 if q(j) <> 0 then 345
+353 if j > n then 400
+355 sw = sw+w
+360 q(j) = t+w+x
+365 k = k+1
+370 nq = nq+1
+380 c = c+1
+385 w = w+x
+390 sx = sx+x
+400 next i
+410 print c,k,sx,sw,nq,w
+420 print "rho=",(sx-w)/t,"PI(n+1)=",(customers-c-nq)/customers,"P(W>0)=",k/customers,"W(N)=",((sw-w)/svctim)/c,"E(W)=",(sw/svctim)/(c*arrate)
+430 end
+>80 customers = 1000000
+>run
+? 1
+691461  246086  691461  139090.385776   1       1.384261 
+rho=    0.55393         PI(n+1)=        0.308538        P(W>0)= 0.246086        W(N)=   0.201152        E(W)=   0.251443 
+>run
+? 2
+823217  482489  823217  326164.885792   2       1.635631 
+rho=    0.659743        PI(n+1)=        0.176781        P(W>0)= 0.482489        W(N)=   0.396206        E(W)=   0.49526 
+>run
+? 4
+941180  695053  941180  913142.473585   3       2.452153 
+rho=    0.753384        PI(n+1)=        0.058817        P(W>0)= 0.695053        W(N)=   0.970208        E(W)=   1.212763 
+>run
+? 8
+991443  785527  991443  1669589.863809  0       1 
+rho=    0.793812        PI(n+1)=        8.557000E-03    P(W>0)= 0.785527        W(N)=   1.683999        E(W)=   2.105 
+>run
+? 16
+999783  799208  999783  1972726.647553  4       3.635502 
+rho=    0.799899        PI(n+1)=        2.130000E-04    P(W>0)= 0.799208        W(N)=   1.973151        E(W)=   2.466444 
+>run
+? 32
+1000000         800004  1000000         1990543.86364   3       2.725738 
+rho=    0.799905        PI(n+1)=        -3.000000E-06   P(W>0)= 0.800004        W(N)=   1.990541        E(W)=   2.48818 
+>run
+? 64
+1000000         799177  1000000         1987564.51005   7       6.482502 
+rho=    0.799241        PI(n+1)=        -7.000000E-06   P(W>0)= 0.799177        W(N)=   1.987558        E(W)=   2.484456 
+>load "hw6cooper.bas"
+Overwrite Without Saving?y
+>list
+10 rem MAP6264 HW5 Simulation based on Lindley
+15 customers = 1000000
+20 dim q(100)
+95 input n
+100 for i = 1 to customers
+110 ia = -1*(1/0.8)*log(rnd(1))
+120 t = t+ia
+130 w = w+x-ia
+140 if w < 0 then w = 0
+150 if w > 0 then 205
+160 sw = sw+w
+170 x = 1
+180 sx = sx+x
+190 next i
+200 print sx/t,c/customers,sw/(customers-c)
+202 end
+205 j = 0
+210 j = j+1
+215 if j > n then c = c+1
+220 if j > n then 190
+230 if q(j) > t then 210
+240 q(j) = t+w
+250 goto 160
+>run
+? 64
+0.799888        0       1.997105 
+>run
+? 32
+0.800682        0       1.993264 
+>run
+? 16
+0.799555        1.730000E-04    1.999003 
+>run
+? 8
+0.79181         0.010192        1.906388 
+>run
+? 4
+0.740002        0.074983        1.599195 
+>run
+? 2
+0.618524        0.226128        1.212432 
+>run
+? 1
+0.47041         0.411757        0.87584 
+>run
+? 0
+0.1607  0.79906         0 
+>list
+10 rem MAP6264 HW5 Simulation based on Lindley
+15 customers = 1000000
+20 dim q(100)
+95 input n
+100 for i = 1 to customers
+110 ia = -1*(1/0.8)*log(rnd(1))
+120 t = t+ia
+130 w = w+x-ia
+140 if w < 0 then w = 0
+150 if w > 0 then 205
+160 sw = sw+w
+170 x = 1
+180 sx = sx+x
+190 next i
+200 print sx/t,c/customers,sw/(customers-c)
+202 end
+205 j = 0
+210 j = j+1
+215 if j > n then c = c+1
+220 if j > n then 190
+230 if q(j) > t then 210
+240 q(j) = t+w
+250 goto 160
+>170 x = -log(rnd(1))
+>218 if j > n then x = 0
+>list
+10 rem MAP6264 HW5 Simulation based on Lindley
+15 customers = 1000000
+20 dim q(100)
+95 input n
+100 for i = 1 to customers
+110 ia = -1*(1/0.8)*log(rnd(1))
+120 t = t+ia
+130 w = w+x-ia
+140 if w < 0 then w = 0
+150 if w > 0 then 205
+160 sw = sw+w
+170 x = -log(rnd(1))
+180 sx = sx+x
+190 next i
+200 print sx/t,c/customers,sw/(customers-c)
+202 end
+205 j = 0
+210 j = j+1
+215 if j > n then c = c+1
+218 if j > n then x = 0
+220 if j > n then 190
+230 if q(j) > t then 210
+240 q(j) = t+w
+250 goto 160
+>run
+? 1
+0.590766        0.26251         0.444008 
+>run
+? 2
+0.65993         0.173479        0.848276 
+>run
+? 4
+0.72762         0.089981        1.562985 
+>run
+? 8
+0.774153        0.030216        2.605255 
+>run
+? 16
+0.795803        4.106000E-03    3.612506 
+>run
+? 32
+0.801251        7.900000E-05    4.042382 
+>run
+? 64
+0.800767        0       4.040937 
+>save "hw5cooper.bas"
+>170 x = 1
+>run
+? 1
+0.640548        0.198843        0.311326 
+>run
+? 2
+0.717105        0.103296        0.660826 
+>run
+? 3
+0.75309         0.059354        0.965062 
+>run
+? 4
+0.771354        0.035547        1.211369 
+>run
+? 8
+0.796611        5.720000E-03    1.7704 
+>run
+? 16
+0.799716        1.390000E-04    1.971439 
+>ru
+ Syntax error 
+>run
+? 32
+0.799636        3.000000E-06    1.994368 
+>run
+? 64
+0.800997        0       2.014293 
+>run
+? 0
+0.4449  0.444018        0 
+>load "hw5cooper.bas"
+Overwrite Without Saving?y
+>run
+? 0
+0.444794        0.44456         0 
+>

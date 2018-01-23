@@ -1,0 +1,61 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.01 -M 2
+Relation:     FIT
+Instances:    188
+Attributes:   10
+              NUMUORS
+              NUMUANDS
+              TOTOTORS
+              TOTOPANDS
+              VG
+              NLOGIC
+              LOC
+              ELOC
+              FAULTS
+              FAULTPRONE
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+FAULTS <= 1: nfp (133.0)
+FAULTS > 1: fp (55.0)
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          94              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances               94     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     nfp
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     fp
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 66  0 |  a = nfp
+  0 28 |  b = fp
+

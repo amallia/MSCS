@@ -1,0 +1,45 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 -num-decimal-places 4
+Relation:     FIT
+Instances:    188
+Attributes:   9
+              NUMUORS
+              NUMUANDS
+              TOTOTORS
+              TOTOPANDS
+              VG
+              NLOGIC
+              LOC
+              ELOC
+              FAULTS
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+Linear Regression Model
+
+FAULTS =
+
+     -0.0516 * NUMUORS +
+      0.0341 * NUMUANDS +
+     -0.0027 * TOTOTORS +
+     -0.0372 * VG +
+      0.2119 * NLOGIC +
+      0.0018 * LOC +
+      0.005  * ELOC +
+     -0.3091
+
+Time taken to build model: 0.22 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.7935
+Mean absolute error                      1.7017
+Root mean squared error                  2.8612
+Relative absolute error                 58.8734 %
+Root relative squared error             61.3972 %
+Total Number of Instances              188     
+

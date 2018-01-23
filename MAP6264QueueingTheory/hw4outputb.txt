@@ -1,0 +1,283 @@
+>list
+100 dim c(50),a(1100)
+107 s = 10
+108 nstop = 1000000
+110 input n
+120 for d = 1 to nstop
+130 in = 1
+132 for i = 2 to n
+134 if a(i) < a(in) then in = i
+136 next i
+137 ahat = 9.6/(n-9.6)
+138 gamma = ahat/2.4
+139 tt = (-1/gamma)*log(rnd(1))
+140 clock = a(in)
+145 a(in) = a(in)+tt
+150 j = 0
+160 j = j+1
+170 if j = s+1 then k = k+1
+180 if j = s+1 then 270
+190 if clock < c(j) then 160
+200 x = -2.4*log(rnd(1))
+205 sx = sx+x
+210 c(j) = clock+x
+215 a(in) = a(in)+x
+220 m = c(1)
+230 for i = 2 to s
+240 if c(i) < m then m = c(i)
+250 next i
+260 if m > clock then ab = ab+m-clock
+270 next d
+300 print "P10[",n,"]=",ab/clock," Pi(10)[",n,"]=",k/nstop," rho[",n,"]=",sx/clock/s
+>run
+? 10
+P10[    10      ]=      0.665549         Pi(10)[        10      ]=      0        rho[   10      ]=      0.960112 
+>run
+? 11
+P10[    11      ]=      0.461827         Pi(10)[        11      ]=      0.255722         rho[   11      ]=      0.91958 
+>run
+? 12
+P10[    12      ]=      0.390058         Pi(10)[        12      ]=      0.257434         rho[   12      ]=      0.897174 
+>run
+? 13
+P10[    13      ]=      0.350094         Pi(10)[        13      ]=      0.251076         rho[   13      ]=      0.881698 
+>run
+? 14
+P10[    14      ]=      0.326344         Pi(10)[        14      ]=      0.246402         rho[   14      ]=      0.870262 
+>run
+? 15
+P10[    15      ]=      0.308706         Pi(10)[        15      ]=      0.241269         rho[   15      ]=      0.861156 
+>run
+? 25
+P10[    25      ]=      0.24421          Pi(10)[        25      ]=      0.217596         rho[   25      ]=      0.818084 
+>run
+? 50
+P10[    50      ]=      0.217578         Pi(10)[        50      ]=      0.207237         rho[   50      ]=      0.793274 
+>run
+? 100
+P10[    100     ]=      0.204579         Pi(10)[        100     ]=      0.200489         rho[   100     ]=      0.781327 
+>run
+? 1000
+P10[    1000    ]=      0.197115         Pi(10)[        1000    ]=      0.197521         rho[   1000    ]=      0.772598 
+>list
+100 dim c(50),a(1100)
+107 s = 10
+108 nstop = 1000000
+110 input n
+120 for d = 1 to nstop
+130 in = 1
+132 for i = 2 to n
+134 if a(i) < a(in) then in = i
+136 next i
+137 ahat = 9.6/(n-9.6)
+138 gamma = ahat/2.4
+139 tt = (-1/gamma)*log(rnd(1))
+140 clock = a(in)
+145 a(in) = a(in)+tt
+150 j = 0
+160 j = j+1
+170 if j = s+1 then k = k+1
+180 if j = s+1 then 270
+190 if clock < c(j) then 160
+200 x = -2.4*log(rnd(1))
+205 sx = sx+x
+210 c(j) = clock+x
+215 a(in) = a(in)+x
+220 m = c(1)
+230 for i = 2 to s
+240 if c(i) < m then m = c(i)
+250 next i
+260 if m > clock then ab = ab+m-clock
+270 next d
+300 print "P10[",n,"]=",ab/clock," Pi(10)[",n,"]=",k/nstop," rho[",n,"]=",sx/clock/s
+>save "hw4.bas"
+>139 tt=-0.25*log(rnd(1))
+>run
+? 10
+P10[    10      ]=      0.371935         Pi(10)[        10      ]=      0        rho[   10      ]=      0.905749 
+>run
+? 11
+P10[    11      ]=      0.580556         Pi(10)[        11      ]=      0.371178         rho[   11      ]=      0.943686 
+>run
+? 12
+P10[    12      ]=      0.69162          Pi(10)[        12      ]=      0.579896         rho[   12      ]=      0.961206 
+>run
+? 13
+P10[    13      ]=      0.759533         Pi(10)[        13      ]=      0.693252         rho[   13      ]=      0.97106 
+>run
+? 14
+P10[    14      ]=      0.802463         Pi(10)[        14      ]=      0.759244         rho[   14      ]=      0.976888 
+>run
+? 15
+P10[    15      ]=      0.834261         Pi(10)[        15      ]=      0.803829         rho[   15      ]=      0.981131 
+>run
+? 25
+P10[    25      ]=      0.935546         Pi(10)[        25      ]=      0.931134         rho[   25      ]=      0.993261 
+>run
+? 50
+P10[    50      ]=      0.974875         Pi(10)[        50      ]=      0.974091         rho[   50      ]=      0.997766 
+>run
+? 100
+P10[    100     ]=      0.988747         Pi(10)[        100     ]=      0.98847          rho[   100     ]=      0.999435 
+>run
+? 1000
+
+P10[    1000    ]=      0.9994   Pi(10)[        1000    ]=      0.998955         rho[   1000    ]=      1.008058 
+>>list
+100 dim c(50),a(1100)
+107 s = 10
+108 nstop = 1000000
+110 input n
+120 for d = 1 to nstop
+130 in = 1
+132 for i = 2 to n
+134 if a(i) < a(in) then in = i
+136 next i
+137 ahat = 9.6/(n-9.6)
+138 gamma = ahat/2.4
+139 tt = -0.25*log(rnd(1))
+140 clock = a(in)
+145 a(in) = a(in)+tt
+150 j = 0
+160 j = j+1
+170 if j = s+1 then k = k+1
+180 if j = s+1 then 270
+190 if clock < c(j) then 160
+200 x = -2.4*log(rnd(1))
+205 sx = sx+x
+210 c(j) = clock+x
+215 a(in) = a(in)+x
+220 m = c(1)
+230 for i = 2 to s
+240 if c(i) < m then m = c(i)
+250 next i
+260 if m > clock then ab = ab+m-clock
+270 next d
+300 print "P10[",n,"]=",ab/clock," Pi(10)[",n,"]=",k/nstop," rho[",n,"]=",sx/clock/s
+>200 x=2.4                
+>list
+100 dim c(50),a(1100)
+107 s = 10
+108 nstop = 1000000
+110 input n
+120 for d = 1 to nstop
+130 in = 1
+132 for i = 2 to n
+134 if a(i) < a(in) then in = i
+136 next i
+137 ahat = 9.6/(n-9.6)
+138 gamma = ahat/2.4
+139 tt = -0.25*log(rnd(1))
+140 clock = a(in)
+145 a(in) = a(in)+tt
+150 j = 0
+160 j = j+1
+170 if j = s+1 then k = k+1
+180 if j = s+1 then 270
+190 if clock < c(j) then 160
+200 x = 2.4
+205 sx = sx+x
+210 c(j) = clock+x
+215 a(in) = a(in)+x
+220 m = c(1)
+230 for i = 2 to s
+240 if c(i) < m then m = c(i)
+250 next i
+260 if m > clock then ab = ab+m-clock
+270 next d
+300 print "P10[",n,"]=",ab/clock," Pi(10)[",n,"]=",k/nstop," rho[",n,"]=",sx/clock/s
+>run
+? 10
+P10[    10      ]=      0.37045          Pi(10)[        10      ]=      0        rho[   10      ]=      0.905819 
+>run
+? 11
+P10[    11      ]=      0.581274         Pi(10)[        11      ]=      0.371184         rho[   11      ]=      0.94377 
+>run
+? 12
+P10[    12      ]=      0.69253          Pi(10)[        12      ]=      0.580183         rho[   12      ]=      0.961332 
+>run
+? 13
+P10[    13      ]=      0.760001         Pi(10)[        13      ]=      0.69277          rho[   13      ]=      0.970954 
+>run
+? 14
+P10[    14      ]=      0.803741         Pi(10)[        14      ]=      0.759669         rho[   14      ]=      0.977129 
+>run
+? 15
+P10[    15      ]=      0.833854         Pi(10)[        15      ]=      0.803407         rho[   15      ]=      0.981017 
+>run
+? 25
+P10[    25      ]=      0.935818         Pi(10)[        25      ]=      0.931386         rho[   25      ]=      0.993238 
+>run
+? 50
+P10[    50      ]=      0.974802         Pi(10)[        50      ]=      0.974057         rho[   50      ]=      0.99756 
+>run
+? 100
+P10[    100     ]=      0.988605         Pi(10)[        100     ]=      0.988442         rho[   100     ]=      0.999396 
+>run
+? 1000
+P10[    1000    ]=      0.999165         Pi(10)[        1000    ]=      0.99895          rho[   1000    ]=      1.000081 
+>list
+100 dim c(50),a(1100)
+107 s = 10
+108 nstop = 1000000
+110 input n
+120 for d = 1 to nstop
+130 in = 1
+132 for i = 2 to n
+134 if a(i) < a(in) then in = i
+136 next i
+137 ahat = 9.6/(n-9.6)
+138 gamma = ahat/2.4
+139 tt = -0.25*log(rnd(1))
+140 clock = a(in)
+145 a(in) = a(in)+tt
+150 j = 0
+160 j = j+1
+170 if j = s+1 then k = k+1
+180 if j = s+1 then 270
+190 if clock < c(j) then 160
+200 x = 2.4
+205 sx = sx+x
+210 c(j) = clock+x
+215 a(in) = a(in)+x
+220 m = c(1)
+230 for i = 2 to s
+240 if c(i) < m then m = c(i)
+250 next i
+260 if m > clock then ab = ab+m-clock
+270 next d
+300 print "P10[",n,"]=",ab/clock," Pi(10)[",n,"]=",k/nstop," rho[",n,"]=",sx/clock/s
+>139 tt=0.25
+>200 x=-2.4 * log(rnd(1))
+>run
+? 10
+P10[    10      ]=      0.370911         Pi(10)[        10      ]=      0        rho[   10      ]=      0.905583 
+>run
+? 11
+P10[    11      ]=      0.580821         Pi(10)[        11      ]=      0.37205          rho[   11      ]=      0.943746 
+>run
+? 12
+P10[    12      ]=      0.692523         Pi(10)[        12      ]=      0.580609         rho[   12      ]=      0.961363 
+>run
+? 13
+P10[    13      ]=      0.759506         Pi(10)[        13      ]=      0.692488         rho[   13      ]=      0.971073 
+>run
+? 14
+P10[    14      ]=      0.803576         Pi(10)[        14      ]=      0.759211         rho[   14      ]=      0.977094 
+>run 
+? 15
+P10[    15      ]=      0.834064         Pi(10)[        15      ]=      0.803064         rho[   15      ]=      0.981077 
+>run 
+? 25
+P10[    25      ]=      0.934847         Pi(10)[        25      ]=      0.931002         rho[   25      ]=      0.993212 
+>run
+? 50
+P10[    50      ]=      0.974897         Pi(10)[        50      ]=      0.974105         rho[   50      ]=      0.997952 
+>run
+? 100
+P10[    100     ]=      0.985722         Pi(10)[        100     ]=      0.988501         rho[   100     ]=      0.999576 
+>run
+? 1000
+
+P10[    1000    ]=      0.964474         Pi(10)[        1000    ]=      0.998923         rho[   1000    ]=      1.005526 
+>>

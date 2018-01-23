@@ -1,0 +1,249 @@
+[chris@euclid Chapter12]$ g++ -o bst bst.cpp bst_driver.cpp
+[chris@euclid Chapter12]$ ./bst
+Test1: default constructor
+Washington      2493
+Liberty 8314
+Lafayette       8942
+Franklin        11596
+Glades  12635
+Jefferson       14658
+Hamilton        14671
+Calhoun 14750
+Union   15388
+Gulf    15844
+Dixie   16486
+Gilchrist       17004
+Madison 19115
+Holmes  19873
+Taylor  22691
+Baker   27154
+Hardee  27887
+Bradford        28255
+Wakulla 30978
+DeSoto  34894
+Sarasota        38213
+Hendry  39089
+Okeechobee      40140
+Levy    40156
+Suwannee        41972
+Gadsden 46151
+Jackson 49292
+Walton  55793
+Columbia        67485
+Monroe  73873
+Putnam  74041
+Nassau  74195
+Flagler 97376
+Sumter  97756
+Highlands       98630
+Indian-River    138894
+Citrus  140031
+Martin  147495
+Santa-Rosa      154104
+Charlotte       160511
+Bay     169856
+Hernando        173094
+Okaloosa        183482
+Clay    192970
+St-Johns        195823
+Alachua 249365
+Leon    277971
+St-Lucie        280379
+Escambia        299114
+Lake    301019
+Manatee 327142
+Collier 328134
+Marion  332529
+Seminole        425071
+Pasco   466457
+Volusia 494804
+Brevard 543566
+Polk    609492
+Lee     631330
+Duval   870709
+Pinellas        917398
+Orange  1.16911e+06
+Hillsborough    1.26778e+06
+Palm-Beach      1.33519e+06
+Broward 1.78017e+06
+Miami-Dade      2.66287e+06
+End Test1
+Test1a: test default destructor 
+Test1a: End
+Test2:insert
+Washington      2493
+Liberty 8314
+Lafayette       8942
+Franklin        11596
+Glades  12635
+Jefferson       14658
+Hamilton        14671
+Calhoun 14750
+Union   15388
+Gulf    15844
+Dixie   16486
+Gilchrist       17004
+Madison 19115
+Holmes  19873
+Taylor  22691
+Baker   27154
+Hardee  27887
+Bradford        28255
+Wakulla 30978
+DeSoto  34894
+Sarasota        38213
+Hendry  39089
+Okeechobee      40140
+Levy    40156
+Suwannee        41972
+Gadsden 46151
+Jackson 49292
+Walton  55793
+Columbia        67485
+Monroe  73873
+Putnam  74041
+Nassau  74195
+Flagler 97376
+Sumter  97756
+Highlands       98630
+Indian-River    138894
+Citrus  140031
+Martin  147495
+Santa-Rosa      154104
+Charlotte       160511
+Bay     169856
+Hernando        173094
+Okaloosa        183482
+Clay    192970
+St-Johns        195823
+new-county      234658
+Alachua 249365
+Leon    277971
+St-Lucie        280379
+Escambia        299114
+Lake    301019
+Manatee 327142
+Collier 328134
+Marion  332529
+Seminole        425071
+Pasco   466457
+Volusia 494804
+Brevard 543566
+Polk    609492
+Lee     631330
+Duval   870709
+Pinellas        917398
+Orange  1.16911e+06
+Hillsborough    1.26778e+06
+Palm-Beach      1.33519e+06
+Broward 1.78017e+06
+Miami-Dade      2.66287e+06
+Newer-county    1.23457e+07
+End Test2
+Test3: population_ranges
+Washington
+Liberty
+Lafayette
+Franklin
+Glades
+Jefferson
+Hamilton
+Calhoun
+Union
+Gulf
+Dixie
+Gilchrist
+Madison
+Holmes
+Taylor
+Baker
+Hardee
+Bradford
+Wakulla
+DeSoto
+Sarasota
+Hendry
+Okeechobee
+Levy
+Suwannee
+Gadsden
+Jackson
+End Test3
+Test4: del_populaton
+Washington      2493
+Liberty 8314
+Lafayette       8942
+Franklin        11596
+Glades  12635
+Jefferson       14658
+Hamilton        14671
+Calhoun 14750
+Union   15388
+Gulf    15844
+Dixie   16486
+Gilchrist       17004
+Madison 19115
+Holmes  19873
+Taylor  22691
+Baker   27154
+Hardee  27887
+Bradford        28255
+Wakulla 30978
+DeSoto  34894
+Sarasota        38213
+Hendry  39089
+Okeechobee      40140
+Levy    40156
+Suwannee        41972
+Gadsden 46151
+Jackson 49292
+Walton  55793
+Columbia        67485
+Monroe  73873
+Putnam  74041
+Nassau  74195
+Flagler 97376
+Sumter  97756
+Highlands       98630
+Indian-River    138894
+Citrus  140031
+Martin  147495
+Santa-Rosa      154104
+Charlotte       160511
+Bay     169856
+Okaloosa        183482
+Clay    192970
+St-Johns        195823
+new-county      234658
+Alachua 249365
+Leon    277971
+St-Lucie        280379
+Escambia        299114
+Lake    301019
+Manatee 327142
+Collier 328134
+Marion  332529
+Seminole        425071
+Pasco   466457
+Volusia 494804
+Brevard 543566
+Polk    609492
+Lee     631330
+Duval   870709
+Pinellas        917398
+Orange  1.16911e+06
+Hillsborough    1.26778e+06
+Palm-Beach      1.33519e+06
+Broward 1.78017e+06
+Miami-Dade      2.66287e+06
+Newer-county    1.23457e+07
+End Test4
+Test5: del_name
+First test should fail due to case sensitivity
+Error: Item not found
+End Test5
+Test 5a: delete locally
+End test 4a
+Test6: sorted_info
+End Test6
+[chris@euclid Chapter12]$ 

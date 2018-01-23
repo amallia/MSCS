@@ -1,0 +1,144 @@
+[chris@euclid ~]$ 
+[chris@euclid ~]$ cd workspace/COT6405/Debug
+[chris@euclid Debug]$ ls
+COT6405   objects.mk  StringMatch.d  strstr.d     strstrKMP.o  strstrRK.d  subdir.mk
+makefile  sources.mk  StringMatch.o  strstrKMP.d  strstr.o     strstrRK.o
+[chris@euclid Debug]$ ./COT6405
+size: 1024 Elapsed time: 189 us. fill: 26 us.
+size: 2048 Elapsed time: 218 us. fill: 49 us.
+size: 4096 Elapsed time: 244 us. fill: 95 us.
+size: 8192 Elapsed time: 254 us. fill: 190 us.
+size: 16384 Elapsed time: 331 us. fill: 391 us.
+size: 32768 Elapsed time: 412 us. fill: 782 us.
+size: 65536 Elapsed time: 949 us. fill: 1582 us.
+size: 131072 Elapsed time: 1215 us. fill: 3162 us.
+size: 262144 Elapsed time: 2291 us. fill: 6478 us.
+size: 524288 Elapsed time: 5820 us. fill: 12897 us.
+size: 1048576 Elapsed time: 9157 us. fill: 26685 us.
+size: 2097152 Elapsed time: 19024 us. fill: 58080 us.
+size: 4194304 Elapsed time: 38916 us. fill: 110066 us.
+size: 8388608 Elapsed time: 78258 us. fill: 207521 us.
+size: 16777216 Elapsed time: 141521 us. fill: 402723 us.
+size: 33554432 Elapsed time: 281619 us. fill: 765263 us.
+size: 67108864 Elapsed time: 623335 us. fill: 1587434 us.
+size: 134217728 Elapsed time: 1138312 us. fill: 3328251 us.
+size: 268435456 Elapsed time: 2407155 us. fill: 6824507 us.
+size: 536870912 Elapsed time: 4602832 us. fill: 13387276 us.
+size: 1073741824 Elapsed time: 8989797 us. fill: 27632722 us.
+Hello world
+[chris@euclid Debug]$ ./COT6405
+size: 1024 Elapsed time: 220 us. fill: 25 us.
+size: 2048 Elapsed time: 301 us. fill: 47 us.
+size: 4096 Elapsed time: 254 us. fill: 214 us.
+size: 8192 Elapsed time: 294 us. fill: 180 us.
+size: 16384 Elapsed time: 504 us. fill: 362 us.
+size: 32768 Elapsed time: 462 us. fill: 749 us.
+size: 65536 Elapsed time: 711 us. fill: 1562 us.
+size: 131072 Elapsed time: 1203 us. fill: 3233 us.
+size: 262144 Elapsed time: 2705 us. fill: 5962 us.
+size: 524288 Elapsed time: 4361 us. fill: 12023 us.
+size: 1048576 Elapsed time: 10638 us. fill: 29797 us.
+size: 2097152 Elapsed time: 17858 us. fill: 48838 us.
+size: 4194304 Elapsed time: 37001 us. fill: 96141 us.
+size: 8388608 Elapsed time: 76634 us. fill: 200621 us.
+size: 16777216 Elapsed time: 144621 us. fill: 384212 us.
+size: 33554432 Elapsed time: 282053 us. fill: 795008 us.
+size: 67108864 Elapsed time: 559225 us. fill: 1616720 us.
+size: 134217728 Elapsed time: 1128706 us. fill: 3152911 us.
+size: 268435456 Elapsed time: 2331713 us. fill: 6459595 us.
+size: 536870912 Elapsed time: 4550566 us. fill: 13140851 us.
+size: 1073741824 Elapsed time: 8997465 us. fill: 26182158 us.
+Hello world
+[chris@euclid Debug]$ ./COT6405
+size: 1024 Elapsed time: 190 us. fill: 26 us.
+size: 2048 Elapsed time: 218 us. fill: 47 us.
+size: 4096 Elapsed time: 234 us. fill: 94 us.
+size: 8192 Elapsed time: 253 us. fill: 188 us.
+size: 16384 Elapsed time: 337 us. fill: 382 us.
+size: 32768 Elapsed time: 411 us. fill: 772 us.
+size: 65536 Elapsed time: 692 us. fill: 1518 us.
+size: 131072 Elapsed time: 1193 us. fill: 3440 us.
+size: 262144 Elapsed time: 2289 us. fill: 6437 us.
+size: 524288 Elapsed time: 4211 us. fill: 13091 us.
+size: 1048576 Elapsed time: 10508 us. fill: 26128 us.
+size: 2097152 Elapsed time: 18348 us. fill: 54775 us.
+size: 4194304 Elapsed time: 39925 us. fill: 110488 us.
+size: 8388608 Elapsed time: 79636 us. fill: 220011 us.
+size: 16777216 Elapsed time: 145733 us. fill: 436530 us.
+size: 33554432 Elapsed time: 296514 us. fill: 854930 us.
+size: 67108864 Elapsed time: 565265 us. fill: 1726560 us.
+size: 134217728 Elapsed time: 1153811 us. fill: 3424414 us.
+size: 268435456 Elapsed time: 2410429 us. fill: 6843601 us.
+size: 536870912 Elapsed time: 4634454 us. fill: 13351667 us.
+size: 1073741824 Elapsed time: 9143178 us. fill: 27135350 us.
+Hello world
+[chris@euclid Debug]$ ./COT6405
+size: 1024 Elapsed time: 190 us. fill: 26 us.
+size: 2048 Elapsed time: 228 us. fill: 68 us.
+size: 4096 Elapsed time: 236 us. fill: 94 us.
+size: 8192 Elapsed time: 246 us. fill: 188 us.
+size: 16384 Elapsed time: 315 us. fill: 381 us.
+size: 32768 Elapsed time: 412 us. fill: 780 us.
+size: 65536 Elapsed time: 695 us. fill: 1556 us.
+size: 131072 Elapsed time: 1207 us. fill: 3173 us.
+size: 262144 Elapsed time: 2295 us. fill: 6186 us.
+size: 524288 Elapsed time: 4350 us. fill: 11922 us.
+size: 1048576 Elapsed time: 10133 us. fill: 23544 us.
+size: 2097152 Elapsed time: 18274 us. fill: 48761 us.
+size: 4194304 Elapsed time: 38270 us. fill: 93479 us.
+size: 8388608 Elapsed time: 77715 us. fill: 185885 us.
+size: 16777216 Elapsed time: 142250 us. fill: 372881 us.
+size: 33554432 Elapsed time: 283690 us. fill: 747526 us.
+size: 67108864 Elapsed time: 570835 us. fill: 1493713 us.
+size: 134217728 Elapsed time: 1151733 us. fill: 3011786 us.
+size: 268435456 Elapsed time: 2400798 us. fill: 6888455 us.
+size: 536870912 Elapsed time: 4646743 us. fill: 13575385 us.
+size: 1073741824 Elapsed time: 9127166 us. fill: 25988709 us.
+Hello world
+[chris@euclid Debug]$ ./COT6405
+size: 1024 Elapsed time: 208 us. fill: 35 us.
+size: 2048 Elapsed time: 218 us. fill: 51 us.
+size: 4096 Elapsed time: 224 us. fill: 102 us.
+size: 8192 Elapsed time: 272 us. fill: 204 us.
+size: 16384 Elapsed time: 303 us. fill: 396 us.
+size: 32768 Elapsed time: 410 us. fill: 1736 us.
+size: 65536 Elapsed time: 682 us. fill: 1508 us.
+size: 131072 Elapsed time: 1258 us. fill: 3105 us.
+size: 262144 Elapsed time: 2492 us. fill: 6176 us.
+size: 524288 Elapsed time: 4465 us. fill: 12448 us.
+size: 1048576 Elapsed time: 11194 us. fill: 26427 us.
+size: 2097152 Elapsed time: 19791 us. fill: 51345 us.
+size: 4194304 Elapsed time: 38448 us. fill: 105131 us.
+size: 8388608 Elapsed time: 78869 us. fill: 207281 us.
+size: 16777216 Elapsed time: 144830 us. fill: 419153 us.
+size: 33554432 Elapsed time: 285975 us. fill: 843925 us.
+size: 67108864 Elapsed time: 568276 us. fill: 1599698 us.
+size: 134217728 Elapsed time: 1152150 us. fill: 3187647 us.
+size: 268435456 Elapsed time: 2339664 us. fill: 6339039 us.
+size: 536870912 Elapsed time: 4685802 us. fill: 12820015 us.
+size: 1073741824 Elapsed time: 9355126 us. fill: 26024354 us.
+Hello world
+[chris@euclid Debug]$ ./COT6405
+size: 1024 Elapsed time: 190 us. fill: 26 us.
+size: 2048 Elapsed time: 217 us. fill: 50 us.
+size: 4096 Elapsed time: 224 us. fill: 97 us.
+size: 8192 Elapsed time: 259 us. fill: 194 us.
+size: 16384 Elapsed time: 301 us. fill: 392 us.
+size: 32768 Elapsed time: 419 us. fill: 822 us.
+size: 65536 Elapsed time: 678 us. fill: 1583 us.
+size: 131072 Elapsed time: 1203 us. fill: 3393 us.
+size: 262144 Elapsed time: 2454 us. fill: 6666 us.
+size: 524288 Elapsed time: 4615 us. fill: 12738 us.
+size: 1048576 Elapsed time: 9808 us. fill: 28486 us.
+size: 2097152 Elapsed time: 18216 us. fill: 50148 us.
+size: 4194304 Elapsed time: 37639 us. fill: 100235 us.
+size: 8388608 Elapsed time: 77672 us. fill: 200170 us.
+size: 16777216 Elapsed time: 142435 us. fill: 401694 us.
+size: 33554432 Elapsed time: 284291 us. fill: 811685 us.
+size: 67108864 Elapsed time: 566234 us. fill: 1611334 us.
+size: 134217728 Elapsed time: 1138481 us. fill: 3245850 us.
+size: 268435456 Elapsed time: 2322137 us. fill: 6398133 us.
+size: 536870912 Elapsed time: 4658508 us. fill: 12811203 us.
+size: 1073741824 Elapsed time: 8977949 us. fill: 25578908 us.
+Hello world
+[chris@euclid Debug]$ 

@@ -1,0 +1,223 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Figure 12</title>
+</head>
+
+<body bgcolor="#FFFFCC">
+
+<p align="center">&nbsp; </p>
+<p align="center">&nbsp; </p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 2.1 Overflow Demonstration - version 1">Figure
+        2.1 Overflow Demonstration - version 1</a> </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font size="3" color="#0000FF"><b>&nbsp;//-- Program to demonstrate the effects of overflow 
+ </b></font></pre>
+        <pre><font size="3" color="#0000FF"><b>#include &lt;iostream&gt;  
+using namespace std; 
+ </b></font></pre>
+        <pre><font size="3" color="#0000FF"><b>int main() 
+{ 
+   int number = 2; 
+ </b></font></pre>
+        <pre><font size="3" color="#0000FF"><b>   for (int i = 1; i &lt;= 15; i++) 
+   { 
+      cout &lt;&lt; number &lt;&lt; endl; 
+      number *= 10; 
+   } 
+ </b></font></pre>
+        <pre><font size="3" color="#0000FF"><b>   return 0; 
+} </b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 2.2 Overflow Demonstration - version 2">Figure
+        2.2 Overflow Demonstration - version 2</a></font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font size="3" color="#0000FF"><b>&nbsp;//-- Program to demonstrate the effects of overflow
+
+#include &lt;iostream&gt;
+#include &lt;climits&gt;
+using namespace std;
+
+int main()
+{
+   int number = INT_MAX - 3;
+
+   for (int i = 1; i &lt;= 7; i++)
+   {
+      cout &lt;&lt; number &lt;&lt; endl;
+      number++;
+   }
+}</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 2.3 Overflow Demonstration - version 3">Figure
+        2.3 Overflow Demonstration - version 3</a></font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font size="3" color="#0000FF"><b>&nbsp;//-- Program to demonstrate the effects of overflow
+
+#include &lt;iostream&gt;
+#include &lt;climits&gt;
+using namespace std;
+
+int main()
+{
+   int number = INT_MAX - 3;
+
+   for (int i = 1; i &lt;= 7; i++)
+   {
+      cout &lt;&lt; number &lt;&lt; endl;
+      number++;
+   }
+
+   return 0;
+}</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 2.4 Demonstration of Pointers and Addresses">Figure
+        2.4 Demonstration of Pointers and Addresses</a> </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font size="3" color="#0000FF"><b>&nbsp;//--- Demonstration of pointer variables and addresses
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+  int i = 11, 
+      j = 22;
+  double d = 3.3, 
+         e = 4.4;
+                     // Declare pointer variables that:
+  int * iPtr,        //    store addresses of ints
+      * jPtr;
+  double * dPtr,     //    store addresses of doubles 
+         * ePtr;
+  iPtr = &amp;i;         // value of iPtr is address of i
+  jPtr = &amp;j;         // value of jPtr is address of j
+  dPtr = &amp;d;         // value of dPtr is address of d
+  ePtr = &amp;e;         // value of ePtr is address of e
+  cout &lt;&lt; &quot;&amp;i = &quot; &lt;&lt; iPtr &lt;&lt; endl
+       &lt;&lt; &quot;&amp;j = &quot; &lt;&lt; jPtr &lt;&lt; endl
+       &lt;&lt; &quot;&amp;d = &quot; &lt;&lt; dPtr &lt;&lt; endl
+       &lt;&lt; &quot;&amp;e = &quot; &lt;&lt; ePtr &lt;&lt; endl;
+}</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 2.5 Demonstration of Dereferencing Pointers">Figure
+        2.5 Demonstration of Dereferencing Pointers</a> </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font size="3" color="#0000FF"><b>&nbsp;//--- Demonstration of dereferencing pointers
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+  int i = 11, 
+      j = 22;
+  double d = 3.3, 
+         e = 4.4;
+                     // Declare pointer variables that:
+  int * iPtr,        //    store addresses of ints
+      * jPtr;
+  double * dPtr,     //    store addresses of doubles 
+         * ePtr;
+  iPtr = &amp;i;         // value of iPtr is address of i
+  jPtr = &amp;j;         // value of jPtr is address of j
+  dPtr = &amp;d;         // value of dPtr is address of d
+  ePtr = &amp;e;         // value of ePtr is address of e
+
+  cout &lt;&lt; &quot;\nAt address &quot; &lt;&lt; iPtr
+       &lt;&lt; &quot;, the value &quot; &lt;&lt; *iPtr &lt;&lt; &quot; is stored.\n&quot;
+       &lt;&lt; &quot;\nAt address &quot; &lt;&lt; jPtr
+       &lt;&lt; &quot;, the value &quot; &lt;&lt; *jPtr &lt;&lt; &quot; is stored.\n&quot;
+       &lt;&lt; &quot;\nAt address &quot; &lt;&lt; dPtr
+       &lt;&lt; &quot;, the value &quot; &lt;&lt; *dPtr &lt;&lt; &quot; is stored.\n&quot;
+       &lt;&lt; &quot;\nAt address &quot; &lt;&lt; ePtr
+       &lt;&lt; &quot;, the value &quot; &lt;&lt; *ePtr &lt;&lt; &quot; is stored.\n&quot;;
+}</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+
+</body>
+
+</html>

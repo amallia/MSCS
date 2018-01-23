@@ -1,0 +1,71 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -U -M 2
+Relation:     FIT-weka.filters.unsupervised.attribute.Remove-R9
+Instances:    188
+Attributes:   9
+              NUMUORS
+              NUMUANDS
+              TOTOTORS
+              TOTOPANDS
+              VG
+              NLOGIC
+              LOC
+              ELOC
+              FAULTPRONE
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 unpruned tree
+------------------
+
+NUMUANDS <= 115
+|   ELOC <= 50: nfp (106.0/2.0)
+|   ELOC > 50
+|   |   ELOC <= 105
+|   |   |   NLOGIC <= 0: nfp (12.0)
+|   |   |   NLOGIC > 0
+|   |   |   |   ELOC <= 54: fp (6.0/1.0)
+|   |   |   |   ELOC > 54: nfp (5.0)
+|   |   ELOC > 105: fp (5.0)
+NUMUANDS > 115
+|   NUMUORS <= 42
+|   |   VG <= 29: fp (16.0)
+|   |   VG > 29
+|   |   |   LOC <= 1158: nfp (10.0/1.0)
+|   |   |   LOC > 1158: fp (10.0/2.0)
+|   NUMUORS > 42: fp (18.0)
+
+Number of Leaves  : 	9
+
+Size of the tree : 	17
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         165               87.766  %
+Incorrectly Classified Instances        23               12.234  %
+Kappa statistic                          0.706 
+Mean absolute error                      0.1426
+Root mean squared error                  0.3353
+Relative absolute error                 34.3629 %
+Root relative squared error             73.6758 %
+Total Number of Instances              188     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.910    0.200    0.917      0.910    0.913      0.706    0.816     0.853     nfp
+                 0.800    0.090    0.786      0.800    0.793      0.706    0.816     0.739     fp
+Weighted Avg.    0.878    0.168    0.878      0.878    0.878      0.706    0.816     0.820     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 121  12 |   a = nfp
+  11  44 |   b = fp
+

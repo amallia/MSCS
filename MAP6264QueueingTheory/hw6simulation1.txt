@@ -1,0 +1,63 @@
+[chris@euclid ~]$ cd Dropbox
+[chris@euclid Dropbox]$ cd MSCS
+[chris@euclid MSCS]$ cd MAP*
+[chris@euclid MAP6264QueueingTheory]$ ls
+1997-Heyman-Lakshman-Neidhardt.pdf  hw3excel.odc    hw3output.txt   HW4Save.txt    hw5save.bas                        MAP6264_HW3.pdf
+bstj48-3-675.pdf                    hw3excel.xlsx   hw4a.bas        HW4.txt        hw5theory.txt                      MAP6264_HW4.pdf
+Cooper_1970.pdf                     hw3outputa.txt  hw4aoutput.txt  hw5a.bas       hw5.txt                            markerfile
+erlang.cpp                          hw3outputb.txt  hw4.bas         hw5.bas        hw6case2theory.txt                 PrenticeHallTextModD.pdf
+erlang.h                            hw3outputc.txt  hw4outputb.pdf  hw5case1.txt   hw6cooper.bas                      QueueingTheory_solns.pdf
+hw0bcc.bas                          hw3outputd.txt  hw4outputb.txt  hw5case2.txt   hw6simulation2.txt
+hw2intuitive.bas                    hw3outpute.txt  hw4output.pdf   hw5cooper.bas  hw6simulation.txt
+hw2output.txt                       hw3outputf.txt  hw4output.txt   hw5.cpp        Intro_Data_Nets.pdf
+hw3a.bas                            hw3outputg.txt  hw4.save        hw5.o          IntroToQueueingTheory_Cooper.pdf
+hw3.bas                             hw3outputh.txt  hw4save.bas     hw5.pdf        'Lec12_MM1k_Queueing System2.pdf'
+[chris@euclid MAP6264QueueingTheory]$ basic
+Chipmunk BASIC 367b5
+>load "hw6cooper.bas"
+>list
+10 rem MAP6264 HW5 Simulation based on Lindley
+15 customers = 1000000
+20 dim q(100)
+95 input n
+100 for i = 1 to customers
+110 ia = -1*(1/0.8)*log(rnd(1))                                                                                                                      
+120 t = t+ia                                                                                                                                         
+130 w = w+x-ia                                                                                                                                       
+140 if w < 0 then w = 0                                                                                                                              
+150 if w > 0 then 205                                                                                                                                
+160 sw = sw+w                                                                                                                                        
+170 x = 1                                                                                                                                            
+180 sx = sx+x                                                                                                                                        
+190 next i                                                                                                                                           
+200 print sx/t,c/customers,sw/(customers-c)                                                                                                          
+202 end                                                                                                                                              
+205 j = 0                                                                                                                                            
+210 j = j+1                                                                                                                                          
+215 if j > n then c = c+1                                                                                                                            
+220 if j > n then 190                                                                                                                                
+230 if q(j) > t then 210                                                                                                                             
+240 q(j) = t+w
+250 goto 160
+>run
+? 0
+0.15978         0.800318        0 
+>run
+? 1
+0.470092        0.412469        0.878097 
+>run
+? 2
+0.618713        0.226679        1.214231 
+>run
+? 4
+0.740081        0.074595        1.596473 
+>run
+? 8
+0.791715        0.010336        1.916279 
+>run
+? 16
+0.799854        2.270000E-04    1.985651 
+>run
+? 32
+0.800836        0       2.008308 
+>

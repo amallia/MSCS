@@ -1,0 +1,751 @@
+[chris@euclid ~]$ cd Dropbox
+[chris@euclid Dropbox]$ cd MSCS/MAP*
+[chris@euclid MAP6264QueueingTheory]$ ls
+1997-Heyman-Lakshman-Neidhardt.pdf  hw3a.bas        hw3outputc.txt  hw3output.txt  HW4Save.txt                       markerfile
+erlang.cpp                          hw3.bas         hw3outputd.txt  hw4a.bas       HW4.txt                           QueueingTheory_solns.pdf
+erlang.h                            hw3excel.odc    hw3outpute.txt  hw4.bas        Intro_Data_Nets.pdf
+hw0bcc.bas                          hw3excel.xlsx   hw3outputf.txt  hw4output.txt  IntroToQueueingTheory_Cooper.pdf
+hw2intuitive.bas                    hw3outputa.txt  hw3outputg.txt  hw4.save       MAP6264_HW3.pdf
+hw2output.txt                       hw3outputb.txt  hw3outputh.txt  hw4save.bas    MAP6264_HW4.pdf
+[chris@euclid MAP6264QueueingTheory]$ basic
+Chipmunk BASIC 367b5
+>load "hw4a.bas"
+>list
+100 dim c(50),a(1100)
+107 s = 10
+108 nstop = 1000000
+110 input n
+120 for d = 1 to nstop
+130 in = 1
+132 for i = 2 to n
+134 if a(i) < a(in) then in = i
+136 next i
+138 ia = -0.25*log(rnd(1))
+139 ia = ia/n                                                                                                                                        
+140 a(in) = a(in)+ia                                                                                                                                 
+150 nxt = 1                                                                                                                                          
+160 for j = 2 to s                                                                                                                                   
+170 if c(j) < c(nxt) then nxt = j                                                                                                                    
+180 next j                                                                                                                                           
+190 if c(nxt) <= a(in) then 800                                                                                                                      
+200 k = k+1                                                                                                                                          
+210 for j = 1 to s                                                                                                                                   
+220 if c(j) < a(in) then c(j) = a(in)                                                                                                                
+230 next j                                                                                                                                           
+240 goto 900                                                                                                                                         
+800 x = -2.4*log(rnd(1))                                                                                                                             
+810 sx = sx+x                                                                                                                                        
+820 c(nxt) = c(nxt)+x                                                                                                                                
+830 a(in) = c(nxt)                                                                                                                                   
+900 next d
+910 print k,ab,sx
+920 print k/nstop,ab/nstop,sx/(2.4*n)
+>100 dim a(1100), c(50)
+>list
+100 dim a(1100),c(50)
+107 s = 10
+108 nstop = 1000000
+110 input n
+120 for d = 1 to nstop
+130 in = 1
+132 for i = 2 to n
+134 if a(i) < a(in) then in = i
+136 next i
+138 ia = -0.25*log(rnd(1))
+139 ia = ia/n
+140 a(in) = a(in)+ia
+150 nxt = 1
+160 for j = 2 to s
+170 if c(j) < c(nxt) then nxt = j
+180 next j
+190 if c(nxt) <= a(in) then 800
+200 k = k+1
+210 for j = 1 to s
+220 if c(j) < a(in) then c(j) = a(in)
+230 next j
+240 goto 900
+800 x = -2.4*log(rnd(1))
+810 sx = sx+x
+820 c(nxt) = c(nxt)+x
+830 a(in) = c(nxt)
+900 next d
+910 print k,ab,sx
+920 print k/nstop,ab/nstop,sx/(2.4*n)
+>820 a(in) = a(in)+x 
+>830 c(nxt) = a(in)
+>run
+? 10
+0       0       2400515.590802 
+0       0       100021.48295 
+>    
+>
+>run
+? 15
+986305  0       32666.311059 
+0.986305        0       907.397529 
+>list
+100 dim a(1100),c(50)
+107 s = 10
+108 nstop = 1000000
+110 input n
+120 for d = 1 to nstop
+130 in = 1
+132 for i = 2 to n
+134 if a(i) < a(in) then in = i
+136 next i
+138 ia = -0.25*log(rnd(1))
+139 ia = ia/n
+140 a(in) = a(in)+ia
+150 nxt = 1
+160 for j = 2 to s
+170 if c(j) < c(nxt) then nxt = j
+180 next j
+190 if c(nxt) <= a(in) then 800
+200 k = k+1
+210 for j = 1 to s
+220 if c(j) < a(in) then c(j) = a(in)
+230 next j
+240 goto 900
+800 x = -2.4*log(rnd(1))
+810 sx = sx+x
+820 a(in) = a(in)+x
+830 c(nxt) = a(in)
+900 next d
+910 print k,ab,sx
+920 print k/nstop,ab/nstop,sx/(2.4*n)
+>list
+100 dim a(1100),c(50)
+107 s = 10
+108 nstop = 1000000
+110 input n
+120 for d = 1 to nstop
+130 in = 1
+132 for i = 2 to n
+134 if a(i) < a(in) then in = i
+136 next i
+138 ia = -0.25*log(rnd(1))
+139 ia = ia/n
+140 a(in) = a(in)+ia
+150 nxt = 1
+160 for j = 2 to s
+170 if c(j) < c(nxt) then nxt = j
+180 next j
+190 if c(nxt) <= a(in) then 800
+200 k = k+1
+210 for j = 1 to s
+220 if c(j) < a(in) then c(j) = a(in)
+230 next j
+240 goto 900
+800 x = -2.4*log(rnd(1))
+810 sx = sx+x
+820 a(in) = a(in)+x
+830 c(nxt) = a(in)
+900 next d
+910 print k,ab,sx
+920 print k/nstop,ab/nstop,sx/(2.4*n)
+>137=ahat=9.6/(n=9.6)
+>137 ahat=9.6/(n-9.6)
+>list
+100 dim a(1100),c(50)
+107 s = 10
+108 nstop = 1000000
+110 input n
+120 for d = 1 to nstop
+130 in = 1
+132 for i = 2 to n
+134 if a(i) < a(in) then in = i
+136 next i
+137 ahat = 9.6/(n-9.6)
+138 ia = -0.25*log(rnd(1))
+139 ia = ia/n
+140 a(in) = a(in)+ia
+150 nxt = 1
+160 for j = 2 to s
+170 if c(j) < c(nxt) then nxt = j
+180 next j
+190 if c(nxt) <= a(in) then 800
+200 k = k+1
+210 for j = 1 to s
+220 if c(j) < a(in) then c(j) = a(in)
+230 next j
+240 goto 900
+800 x = -2.4*log(rnd(1))
+810 sx = sx+x
+820 a(in) = a(in)+x
+830 c(nxt) = a(in)
+900 next d
+910 print k,ab,sx
+920 print k/nstop,ab/nstop,sx/(2.4*n)
+>138 gamma = ahat/2.4
+>139 list
+>139 
+>list
+100 dim a(1100),c(50)
+107 s = 10
+108 nstop = 1000000
+110 input n
+120 for d = 1 to nstop
+130 in = 1
+132 for i = 2 to n
+134 if a(i) < a(in) then in = i
+136 next i
+137 ahat = 9.6/(n-9.6)
+138 gamma = ahat/2.4
+140 a(in) = a(in)+ia
+150 nxt = 1
+160 for j = 2 to s
+170 if c(j) < c(nxt) then nxt = j
+180 next j
+190 if c(nxt) <= a(in) then 800
+200 k = k+1
+210 for j = 1 to s
+220 if c(j) < a(in) then c(j) = a(in)
+230 next j
+240 goto 900
+800 x = -2.4*log(rnd(1))
+810 sx = sx+x
+820 a(in) = a(in)+x
+830 c(nxt) = a(in)
+900 next d
+910 print k,ab,sx
+920 print k/nstop,ab/nstop,sx/(2.4*n)
+>140 a(in)=a(in)+1/(n*gamma)
+>list
+100 dim a(1100),c(50)
+107 s = 10
+108 nstop = 1000000
+110 input n
+120 for d = 1 to nstop
+130 in = 1
+132 for i = 2 to n
+134 if a(i) < a(in) then in = i
+136 next i
+137 ahat = 9.6/(n-9.6)
+138 gamma = ahat/2.4
+140 a(in) = a(in)+1/(n*gamma)
+150 nxt = 1
+160 for j = 2 to s
+170 if c(j) < c(nxt) then nxt = j
+180 next j
+190 if c(nxt) <= a(in) then 800
+200 k = k+1
+210 for j = 1 to s
+220 if c(j) < a(in) then c(j) = a(in)
+230 next j
+240 goto 900
+800 x = -2.4*log(rnd(1))
+810 sx = sx+x
+820 a(in) = a(in)+x
+830 c(nxt) = a(in)
+900 next d
+910 print k,ab,sx
+920 print k/nstop,ab/nstop,sx/(2.4*n)
+>run
+? 10
+0       0       2400628.534107 
+0       0       100026.188921 
+>run
+? 15
+926381  0       176578.588432 
+0.926381        0       4904.96079 
+>list
+100 dim a(1100),c(50)
+107 s = 10
+108 nstop = 1000000
+110 input n
+120 for d = 1 to nstop
+130 in = 1
+132 for i = 2 to n
+134 if a(i) < a(in) then in = i
+136 next i
+137 ahat = 9.6/(n-9.6)
+138 gamma = ahat/2.4
+140 a(in) = a(in)+1/(n*gamma)
+150 nxt = 1
+160 for j = 2 to s
+170 if c(j) < c(nxt) then nxt = j
+180 next j
+190 if c(nxt) <= a(in) then 800
+200 k = k+1
+210 for j = 1 to s
+220 if c(j) < a(in) then c(j) = a(in)
+230 next j
+240 goto 900
+800 x = -2.4*log(rnd(1))
+810 sx = sx+x
+820 a(in) = a(in)+x
+830 c(nxt) = a(in)
+900 next d
+910 print k,ab,sx
+920 print k/nstop,ab/nstop,sx/(2.4*n)
+>load hw4.bas
+Overwrite Without Saving?y
+ err: no such member  
+>
+>load "hw4.bas"
+Overwrite Without Saving?y 
+>list
+100 dim c(50),a(1100)
+107 s = 10
+108 nstop = 1000000
+110 input n
+120 for d = 1 to nstop
+130 in = 1
+132 for i = 2 to n
+134 if a(i) < a(in) then in = i
+136 next i
+138 ia = -0.25*log(rnd(1))
+139 ia = ia*n
+140 a(in) = a(in)+ia
+150 j = 0
+160 j = j+1
+170 if j = s+1 then k = k+1
+180 if j = s+1 then 220
+190 if a(in) < c(j) then 160
+200 x = -2.4*log(rnd(1))
+205 sx = sx+x
+210 c(j) = a(in)+x
+220 m = c(1)
+230 for i = 2 to s
+240 if c(i) < m then m = c(i)
+250 next i
+260 if m > a(in) then ab = ab+m-a(in)
+270 next d
+275 print k,ab,sx
+280 print k/nstop,ab/nstop,sx/(2.4*n)
+>137 ahat=9.6/(n-9.6)
+>138 tt=ahat/2.4*log(rnd(1))
+>138 tt=-ahat/2.4*log(rnd(1))
+>139
+>list
+100 dim c(50),a(1100)
+107 s = 10
+108 nstop = 1000000
+110 input n
+120 for d = 1 to nstop
+130 in = 1
+132 for i = 2 to n
+134 if a(i) < a(in) then in = i
+136 next i
+137 ahat = 9.6/(n-9.6)
+138 tt = -ahat/2.4*log(rnd(1))
+140 a(in) = a(in)+ia
+150 j = 0
+160 j = j+1
+170 if j = s+1 then k = k+1
+180 if j = s+1 then 220
+190 if a(in) < c(j) then 160
+200 x = -2.4*log(rnd(1))
+205 sx = sx+x
+210 c(j) = a(in)+x
+220 m = c(1)
+230 for i = 2 to s
+240 if c(i) < m then m = c(i)
+250 next i
+260 if m > a(in) then ab = ab+m-a(in)
+270 next d
+275 print k,ab,sx
+280 print k/nstop,ab/nstop,sx/(2.4*n)
+>140 a(in)=a(in)+tt
+>list
+100 dim c(50),a(1100)
+107 s = 10
+108 nstop = 1000000
+110 input n
+120 for d = 1 to nstop
+130 in = 1
+132 for i = 2 to n
+134 if a(i) < a(in) then in = i
+136 next i
+137 ahat = 9.6/(n-9.6)
+138 tt = -ahat/2.4*log(rnd(1))
+140 a(in) = a(in)+tt
+150 j = 0
+160 j = j+1
+170 if j = s+1 then k = k+1
+180 if j = s+1 then 220
+190 if a(in) < c(j) then 160
+200 x = -2.4*log(rnd(1))
+205 sx = sx+x
+210 c(j) = a(in)+x
+220 m = c(1)
+230 for i = 2 to s
+240 if c(i) < m then m = c(i)
+250 next i
+260 if m > a(in) then ab = ab+m-a(in)
+270 next d
+275 print k,ab,sx
+280 print k/nstop,ab/nstop,sx/(2.4*n)
+>run
+? 10
+2253    7797.839237     2396344.143146 
+2.253000E-03    7.797839E-03    99847.672631 
+>180 if j=s+1 then 270
+>138 gamma = ahat/2.4
+>139 tt=(-1/gamma)*log(rnd(1))
+>list
+100 dim c(50),a(1100)
+107 s = 10
+108 nstop = 1000000
+110 input n
+120 for d = 1 to nstop
+130 in = 1
+132 for i = 2 to n
+134 if a(i) < a(in) then in = i
+136 next i
+137 ahat = 9.6/(n-9.6)
+138 gamma = ahat/2.4
+139 tt = (-1/gamma)*log(rnd(1))
+140 a(in) = a(in)+tt
+150 j = 0
+160 j = j+1
+170 if j = s+1 then k = k+1
+180 if j = s+1 then 270
+190 if a(in) < c(j) then 160
+200 x = -2.4*log(rnd(1))
+205 sx = sx+x
+210 c(j) = a(in)+x
+220 m = c(1)
+230 for i = 2 to s
+240 if c(i) < m then m = c(i)
+250 next i
+260 if m > a(in) then ab = ab+m-a(in)
+270 next d
+275 print k,ab,sx
+280 print k/nstop,ab/nstop,sx/(2.4*n)
+>run
+? 10
+959742  7445.75292      96501.923807 
+0.959742        7.445753E-03    4020.913492 
+>139 tt = -(1.0/gamma)*log(rnd(1))
+>140 clock=a(in)
+>145 a(in) = a(in)+tt
+>190 if clock < c(j) then 160
+>list
+100 dim c(50),a(1100)
+107 s = 10
+108 nstop = 1000000
+110 input n
+120 for d = 1 to nstop
+130 in = 1
+132 for i = 2 to n
+134 if a(i) < a(in) then in = i
+136 next i
+137 ahat = 9.6/(n-9.6)
+138 gamma = ahat/2.4
+139 tt = -(1/gamma)*log(rnd(1))
+140 clock = a(in)
+145 a(in) = a(in)+tt
+150 j = 0
+160 j = j+1
+170 if j = s+1 then k = k+1
+180 if j = s+1 then 270
+190 if clock < c(j) then 160
+200 x = -2.4*log(rnd(1))
+205 sx = sx+x
+210 c(j) = a(in)+x
+220 m = c(1)
+230 for i = 2 to s
+240 if c(i) < m then m = c(i)
+250 next i
+260 if m > a(in) then ab = ab+m-a(in)
+270 next d
+275 print k,ab,sx
+280 print k/nstop,ab/nstop,sx/(2.4*n)
+>run
+? 10
+960132  6794.306812     95663.450913 
+0.960132        6.794307E-03    3985.977121 
+>210 c(j) = clock + x
+>260 if m > clock then ab=ab+m-clock
+>290 print k/nstop, ab/clock, sx/(clock*servers)
+>run
+? 10
+958352  9591.352633     99672.898694 
+0.958352        9.591353E-03    4153.037446 
+0.958352        0.95835         INF 
+>list
+100 dim c(50),a(1100)
+107 s = 10
+108 nstop = 1000000
+110 input n
+120 for d = 1 to nstop
+130 in = 1
+132 for i = 2 to n
+134 if a(i) < a(in) then in = i
+136 next i
+137 ahat = 9.6/(n-9.6)
+138 gamma = ahat/2.4
+139 tt = -(1/gamma)*log(rnd(1))
+140 clock = a(in)
+145 a(in) = a(in)+tt
+150 j = 0
+160 j = j+1
+170 if j = s+1 then k = k+1
+180 if j = s+1 then 270
+190 if clock < c(j) then 160
+200 x = -2.4*log(rnd(1))
+205 sx = sx+x
+210 c(j) = clock+x
+220 m = c(1)
+230 for i = 2 to s
+240 if c(i) < m then m = c(i)
+250 next i
+260 if m > clock then ab = ab+m-clock
+270 next d
+275 print k,ab,sx
+280 print k/nstop,ab/nstop,sx/(2.4*n)
+290 print k/nstop,ab/clock,sx/(clock*servers)
+>139 tt = (-1.0/gamma)*log(rnd(1))
+>215 a(in) = a(in)+x
+>run
+? 10
+0       165920.164708   2396911.446608 
+0       0.16592         99871.310275 
+0       0.664495        INF 
+>run 11
+ Undefined line 
+>rn
+ Syntax error 
+>run
+? 11
+255691  89788.027782    1784870.046118 
+0.255691        0.089788        67608.713868 
+0.255691        0.46267         INF 
+>list
+100 dim c(50),a(1100)
+107 s = 10
+108 nstop = 1000000
+110 input n
+120 for d = 1 to nstop
+130 in = 1
+132 for i = 2 to n
+134 if a(i) < a(in) then in = i
+136 next i
+137 ahat = 9.6/(n-9.6)
+138 gamma = ahat/2.4
+139 tt = (-1/gamma)*log(rnd(1))
+140 clock = a(in)
+145 a(in) = a(in)+tt
+150 j = 0
+160 j = j+1
+170 if j = s+1 then k = k+1
+180 if j = s+1 then 270
+190 if clock < c(j) then 160
+200 x = -2.4*log(rnd(1))
+205 sx = sx+x
+210 c(j) = clock+x
+215 a(in) = a(in)+x
+220 m = c(1)
+230 for i = 2 to s
+240 if c(i) < m then m = c(i)
+250 next i
+260 if m > clock then ab = ab+m-clock
+270 next d
+275 print k,ab,sx
+280 print k/nstop,ab/nstop,sx/(2.4*n)
+290 print k/nstop,ab/clock,sx/(clock*servers)
+>300 print "P10[",n,"]=",ab/clock," \u03A0[",n,"]=",k/nstop," \u03C1[",n,"]=",sx/clock
+>run
+? 11
+256028  89915.273186    1786732.466512 
+0.256028        0.089915        67679.260095 
+0.256028        0.462872        INF 
+P10[    11      ]=      0.462872         \u03A0[        11      ]=      0.256028         \u03C1[11       ]=      9.19787 
+>300 print "P10[",n,"]=",ab/clock," Pi(10)[",n,"]=",k/nstop," rho[",n,"]=",sx/clock/servers
+>run
+? 11
+254961  89496.544956    1782736.255305 
+0.254961        0.089497        67527.888459 
+0.254961        0.46165         INF 
+P10[    11      ]=      0.46165          Pi(10)[        11      ]=      0.254961         rho[   11       ]=      INF 
+>300 print "P10[",n,"]=",ab/clock," Pi(10)[",n,"]=",k/nstop," rho[",n,"]=",sx/clock/s
+>list
+100 dim c(50),a(1100)
+107 s = 10
+108 nstop = 1000000
+110 input n
+120 for d = 1 to nstop
+130 in = 1
+132 for i = 2 to n
+134 if a(i) < a(in) then in = i
+136 next i
+137 ahat = 9.6/(n-9.6)
+138 gamma = ahat/2.4
+139 tt = (-1/gamma)*log(rnd(1))
+140 clock = a(in)
+145 a(in) = a(in)+tt
+150 j = 0
+160 j = j+1
+170 if j = s+1 then k = k+1
+180 if j = s+1 then 270
+190 if clock < c(j) then 160
+200 x = -2.4*log(rnd(1))
+205 sx = sx+x
+210 c(j) = clock+x
+215 a(in) = a(in)+x
+220 m = c(1)
+230 for i = 2 to s
+240 if c(i) < m then m = c(i)
+250 next i
+260 if m > clock then ab = ab+m-clock
+270 next d
+275 print k,ab,sx
+280 print k/nstop,ab/nstop,sx/(2.4*n)
+290 print k/nstop,ab/clock,sx/(clock*servers)
+300 print "P10[",n,"]=",ab/clock," Pi(10)[",n,"]=",k/nstop," rho[",n,"]=",sx/clock/s
+>run
+? 11
+256134  89617.025913    1783154.447087 
+0.256134        0.089617        67543.729056 
+0.256134        0.462173        INF 
+P10[    11      ]=      0.462173         Pi(10)[        11      ]=      0.256134         rho[   11       ]=      0.919608 
+>list
+100 dim c(50),a(1100)                                                                                                                                
+107 s = 10                                                                                                                                           
+108 nstop = 1000000                                                                                                                                  
+110 input n                                                                                                                                          
+120 for d = 1 to nstop                                                                                                                               
+130 in = 1                                                                                                                                           
+132 for i = 2 to n                                                                                                                                   
+134 if a(i) < a(in) then in = i                                                                                                                      
+136 next i                                                                                                                                           
+137 ahat = 9.6/(n-9.6)                                                                                                                               
+138 gamma = ahat/2.4                                                                                                                                 
+139 tt = (-1/gamma)*log(rnd(1))                                                                                                                      
+140 clock = a(in)                                                                                                                                    
+145 a(in) = a(in)+tt                                                                                                                                 
+150 j = 0                                                                                                                                            
+160 j = j+1                                                                                                                                          
+170 if j = s+1 then k = k+1
+180 if j = s+1 then 270
+190 if clock < c(j) then 160
+200 x = -2.4*log(rnd(1))
+205 sx = sx+x
+210 c(j) = clock+x
+215 a(in) = a(in)+x
+220 m = c(1)
+230 for i = 2 to s
+240 if c(i) < m then m = c(i)
+250 next i
+260 if m > clock then ab = ab+m-clock
+270 next d
+275 print k,ab,sx
+280 print k/nstop,ab/nstop,sx/(2.4*n)
+290 print k/nstop,ab/clock,sx/(clock*servers)
+300 print "P10[",n,"]=",ab/clock," Pi(10)[",n,"]=",k/nstop," rho[",n,"]=",sx/clock/s
+>run
+? 10
+0       165991.998911   2397681.535633 
+0       0.165992        99903.397318 
+0       0.664585        INF 
+P10[    10      ]=      0.664585         Pi(10)[        10      ]=      0        rho[   10      ]=      0.959964 
+>run
+? 11
+255323  89525.247097    1784594.564269 
+0.255323        0.089525        67598.27895 
+0.255323        0.46125         INF 
+P10[    11      ]=      0.46125          Pi(10)[        11      ]=      0.255323         rho[   11      ]=      0.919455 
+>run
+? list
+^Cinterrupted by user
+ in line 160
+>list
+100 dim c(50),a(1100)
+107 s = 10
+108 nstop = 1000000
+110 input n
+120 for d = 1 to nstop
+130 in = 1
+132 for i = 2 to n
+134 if a(i) < a(in) then in = i
+136 next i
+137 ahat = 9.6/(n-9.6)
+138 gamma = ahat/2.4
+139 tt = (-1/gamma)*log(rnd(1))
+140 clock = a(in)
+145 a(in) = a(in)+tt
+150 j = 0
+160 j = j+1
+170 if j = s+1 then k = k+1
+180 if j = s+1 then 270
+190 if clock < c(j) then 160
+200 x = -2.4*log(rnd(1))
+205 sx = sx+x
+210 c(j) = clock+x
+215 a(in) = a(in)+x
+220 m = c(1)
+230 for i = 2 to s
+240 if c(i) < m then m = c(i)
+250 next i
+260 if m > clock then ab = ab+m-clock
+270 next d
+275 print k,ab,sx
+280 print k/nstop,ab/nstop,sx/(2.4*n)
+290 print k/nstop,ab/clock,sx/(clock*servers)
+300 print "P10[",n,"]=",ab/clock," Pi(10)[",n,"]=",k/nstop," rho[",n,"]=",sx/clock/s
+>275
+>280
+>290
+>list
+100 dim c(50),a(1100)
+107 s = 10
+108 nstop = 1000000
+110 input n
+120 for d = 1 to nstop
+130 in = 1
+132 for i = 2 to n
+134 if a(i) < a(in) then in = i
+136 next i
+137 ahat = 9.6/(n-9.6)
+138 gamma = ahat/2.4
+139 tt = (-1/gamma)*log(rnd(1))
+140 clock = a(in)
+145 a(in) = a(in)+tt
+150 j = 0
+160 j = j+1
+170 if j = s+1 then k = k+1
+180 if j = s+1 then 270
+190 if clock < c(j) then 160
+200 x = -2.4*log(rnd(1))
+205 sx = sx+x
+210 c(j) = clock+x
+215 a(in) = a(in)+x
+220 m = c(1)
+230 for i = 2 to s
+240 if c(i) < m then m = c(i)
+250 next i
+260 if m > clock then ab = ab+m-clock
+270 next d
+300 print "P10[",n,"]=",ab/clock," Pi(10)[",n,"]=",k/nstop," rho[",n,"]=",sx/clock/s
+>run
+? 10
+P10[    10      ]=      0.665549         Pi(10)[        10      ]=      0        rho[   10      ]=      0.960112 
+>run
+? 11
+P10[    11      ]=      0.461827         Pi(10)[        11      ]=      0.255722         rho[   11      ]=      0.91958 
+>run
+? 12
+P10[    12      ]=      0.390058         Pi(10)[        12      ]=      0.257434         rho[   12      ]=      0.897174 
+>run
+? 13
+P10[    13      ]=      0.350094         Pi(10)[        13      ]=      0.251076         rho[   13      ]=      0.881698 
+>run
+? 14
+P10[    14      ]=      0.326344         Pi(10)[        14      ]=      0.246402         rho[   14      ]=      0.870262 
+>run
+? 15
+P10[    15      ]=      0.308706         Pi(10)[        15      ]=      0.241269         rho[   15      ]=      0.861156 
+>run
+? 25
+P10[    25      ]=      0.24421          Pi(10)[        25      ]=      0.217596         rho[   25      ]=      0.818084 
+>run
+? 50
+P10[    50      ]=      0.217578         Pi(10)[        50      ]=      0.207237         rho[   50      ]=      0.793274 
+>run
+? 100
+P10[    100     ]=      0.204579         Pi(10)[        100     ]=      0.200489         rho[   100     ]=      0.781327 
+>run
+? 1000
+P10[    1000    ]=      0.197115         Pi(10)[        1000    ]=      0.197521         rho[   1000    ]=      0.772598 
+>

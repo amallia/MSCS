@@ -1,0 +1,957 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Figure 12</title>
+</head>
+
+<body bgcolor="#FFFFCC">
+
+<p align="center"><font face="Arial">Nyhoff, ADTs, Data Structures and Problem Solving with C++, Second Edition,&nbsp;<br>
+ © 2005 Pearson Education, Inc. All rights reserved. 0-13-140909-3&nbsp;</font> </p>
+<p align="center">&nbsp; </p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 4.2 OOP Interface for Time">Figure 4.2 OOP Interface for
+        </a> </font><a name="Figure 4.2 OOP Interface for Time"><font face="Courier New" color="#0000FF">Time</font></a></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>&nbsp;/*-- Time.h ---------------------------------------------------------------
+ 
+  This header file defines the data type Time for processing time.
+  Basic operations are:
+     set:     To set the time
+     display: To display the time
+-------------------------------------------------------------------------*/
+
+#include &lt;iostream&gt;
+
+class Time
+{
+ public:
+ /******** Function Members ********/
+  void set(unsigned hours, unsigned minutes, char am_pm);
+  /*----------------------------------------------------------------------
+    Set the data members of a Time object to specified values.
+
+    Preconditions: 1 &lt;= hours &lt;= 12, 0 &lt;= minutes &lt;= 59,
+        and am_pm is either 'A' or 'P'.
+    Postcondition: Data members myHours, myMinutes, and myAMorPM  
+        are set to hours, minutes, and am_pm, respectively, and 
+        myMilTime to the equivalent military time
+   ----------------------------------------------------------------------*/
+
+  void display(ostream &amp; out) const;
+  /*----------------------------------------------------------------------
+     Display time in standard and military format using output stream out.
+
+     Precondition:  The ostream out is open.
+     Postcondition: The time represented by this Time object has been
+         inserted into ostream out. 
+   ----------------------------------------------------------------------*/
+ 
+ private:
+ /********** Data Members **********/
+  unsigned myHours,
+           myMinutes;
+  char myAMorPM;        // 'A' or 'P'
+  unsigned myMilTime;   // military time equivalent
+
+}; // end of class declaration</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure 4.3 OOP Implementation
+        of </font><font face="Courier New" color="#0000FF">Time</font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>/*--<a name="Time.cpp-"> Time.cpp-</a>-----------------------------------------------------------
+ 
+   Definitions of the function members of the Time class declared
+   in Time.h and definitions of utility functions that convert
+   between military and standard time.
+
+-------------------------------------------------------------------------*/
+
+#include &lt;iostream&gt;
+using namespace std;
+
+<span style="background-color: #00FFFF"><a name="#include &quot;Time.h&quot; in class definitions">#include &quot;Time.h&quot;</a></span>
+
+/*** Utility Functions -- Prototypes ***/
+
+int toMilitary(unsigned hours, unsigned minutes, char am_pm);
+
+//----- Definition of set function -----
+
+void Time::set(unsigned hours, unsigned minutes, char am_pm)
+{ 
+   // Check class invariant
+   if (hours &gt;= 1 &amp;&amp; hours &lt;= 12 &amp;&amp; 
+       minutes &gt;= 0 &amp;&amp; minutes &lt;= 59 &amp;&amp; 
+       (am_pm == 'A' || am_pm == 'P'))
+   {
+      myHours = hours;
+      myMinutes = minutes;
+      myAMorPM = am_pm;
+      myMilTime = toMilitary(hours, minutes, am_pm);
+   }
+   else
+     cerr &lt;&lt; &quot;*** Can't set time with these values ***\n&quot;;
+   // Object's data members remain unchanged
+}
+
+//----- Definition of display function -----
+
+void Time::display(ostream &amp; out) const
+{
+   out &lt;&lt; myHours &lt;&lt; ':'
+       &lt;&lt; (myMinutes &lt; 10 ? &quot;0&quot; : &quot;&quot;) &lt;&lt; myMinutes 
+       &lt;&lt; ' ' &lt;&lt; myAMorPM &lt;&lt; &quot;.M.  (&quot;
+       &lt;&lt; myMilTime &lt;&lt; &quot; mil. time)&quot;;
+}
+
+/*** Utility Functions -- Definitions ***/
+int toMilitary(unsigned hours, unsigned minutes, char am_pm)
+/*-------------------------------------------------------------------------
+   Convert standard time to military time.
+
+   Precondition:  hours, minutes, am_pm satisfy the class invariant.
+   Postcondition: Military time equivalent is returned.
+-------------------------------------------------------------------------*/
+{
+   if (hours == 12)
+      hours = 0;
+
+   return hours * 100 + minutes + (am_pm == 'P' ? 1200 : 0);
+}&nbsp;</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 4.4 Test Driver for Time Class">Figure 4.4 Test Driver for
+        </a> </font><a name="Figure 4.4 Test Driver for Time Class"><font face="Courier New" color="#0000FF">Time</font><font color="#FF0000">
+        Class</font></a></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><b><font color="#0000FF">//--- Test driver for class Time
+
+#include &lt;iostream&gt;
+using namespace std;
+<span style="background-color: #00FFFF"><a name="#include &quot;Time.h&quot; in program">#include &quot;Time.h&quot;</a></span>
+
+int main()
+{
+   Time mealTime;
+
+   mealTime.set(5, 30, 'P');
+
+   cout &lt;&lt; &quot;We'll be eating at &quot;;
+   mealTime.display(cout);
+   cout &lt;&lt; endl;
+
+   cout &lt;&lt; &quot;\nNow trying to set time with illegal hours (13)&quot; &lt;&lt; endl;
+   mealTime.set(13, 0, 'A');
+   cout &lt;&lt; &quot;Now trying to set time with illegal minutes (60)&quot; &lt;&lt; endl;
+   mealTime.set(5, 60, 'A');
+   cout &lt;&lt; &quot;Now trying to set time with illegal AM/PM ('X')&quot; &lt;&lt; endl;
+   mealTime.set(5, 30, 'X'); 
+}&nbsp;</font></b></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 4.5A Expanded Time.h">Figure
+        4.5A Expanded </a></font><a name="Figure 4.5A Expanded Time.h"><font face="Courier New" color="#0000FF">Time.h</font></a></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>&nbsp;/*-- Time.h ---------------------------------------------------------------
+ 
+  This header file defines the data type Time for processing time.
+  Basic operations are:
+     Default constructor -- Initializes object to 12:00 AM
+     Explicit-value constructor
+     read:      To read a time
+     display:   To display the time
+     &gt;&gt;, &lt;&lt;:    Input and Output operators
+     accessors: getHours, getMinutes, getAMPM, getMilTime
+     set:       To set the time
+     advance:   To advance the time by a certain amount
+     relops:    &lt;, &gt;, ==, &lt;=, &gt;=, !=
+
+-------------------------------------------------------------------------*/
+
+#include &lt;iostream&gt;
+using namespace std;
+
+<span style="background-color: #66FF99">#<a name="ifndef TIME">ifndef TIME</a>
+#define TIME</span>
+
+class Time
+{
+ public:
+ /******** Function Members ********/
+ <span style="background-color: #FFFF00"><a name="/***** Class constructors *****/">/***** Class constructors *****/</a></span>
+  Time();
+  /*----------------------------------------------------------------------
+      Construct a class object (default).
+
+      Precondition:  None.
+      Postcondition: Time object is initialized to 12:00 A.M.; 
+          that is, myHours, myMinutes, and myAMorPM are initialized
+          to 12, 0, 'A', respectively, and myMilTime to 0.
+  -----------------------------------------------------------------------*/
+ 
+  Time(unsigned initHours, unsigned initMinutes, char initAMPM);
+  /*----------------------------------------------------------------------
+      Construct a class object (explicit values).
+
+      Precondition: initHours, initMinutes, and initAMPM are initial
+          values for the data members; they must preserve the class
+          invariant.
+      Postcondition: Data members myHours, myMinutes, and myAMorPM 
+          have been initialized to initHours, initMinutes, and initAMPM,
+          respectively, and myMilTime to the corresponding military time.
+   -----------------------------------------------------------------------*/
+
+   <span style="background-color: #FFFF00"><a name="/***** Accessors *****/">/***** Accessors *****/</a></span>
+   unsigned getHours() const;
+   /*----------------------------------------------------------------------
+      Retrieve the value stored in the myHours data member. 
+
+      Precondition:  None.
+      Postcondition: Value stored in myHours is returned.
+   -----------------------------------------------------------------------*/ 
+
+   unsigned getMinutes() const;
+   /*----------------------------------------------------------------------
+      Retrieve the value stored in the myMinutes data member. 
+
+      Precondition:  None.
+      Postcondition: Value stored in myMinutes is returned.
+   -----------------------------------------------------------------------*/ 
+
+   unsigned getAMPM() const;
+   /*----------------------------------------------------------------------
+      Retrieve the value stored in the myAMorPM data member. 
+
+      Precondition:  None.
+      Postcondition: Value stored in myAMorPM is returned.
+   -----------------------------------------------------------------------*/ 
+   
+   unsigned getMilTime() const;
+   /*----------------------------------------------------------------------
+      Retrieve the value stored in the myMilTime data member. 
+
+      Precondition:  None.
+      Postcondition: Value stored in myMilTime is returned.
+   -----------------------------------------------------------------------*/ 
+
+  <a name="/***** Input/Output *****/"> <span style="background-color: #FFFF00">/***** Input/Output *****/</span></a>
+   void display(ostream &amp; out) const;
+   /*----------------------------------------------------------------------
+     Display time in standard and military format using output stream out.
+
+     Precondition:  The ostream out is open.
+     Postcondition: The time represented by this Time object has been
+         inserted into ostream out. 
+   ----------------------------------------------------------------------*/
+ 
+   void read(istream &amp; in);
+   /*----------------------------------------------------------------------
+     Read a time value from input stream in.
+
+     Precondition:  The istream in is open; input from in has the form
+         hh:mm xM; values hh, mm, and X satisfy the class invariant.
+     Postcondition: Input values have been removed from in and stored
+         in the data members.
+   ----------------------------------------------------------------------*/
+
+   <span style="background-color: #FFFF00"><a name="/***** Set operation *****/">/***** Set operation *****/</a></span>
+   void set(unsigned hours, unsigned minutes, char am_pm);
+   /*----------------------------------------------------------------------
+     Set  the data members of a Time object to specified values.
+
+     Preconditions: 1 &lt;= hours &lt;= 12, 0 &lt;= minutes &lt;= 59,
+         and am_pm is either 'A' or 'P'.
+
+     Postconditon: Data members myHours, myMinutes, and myAMorPM  
+         are set to hours, minutes, and am_pm, respectively, and 
+         myMilTime to the equivalent military time
+   ----------------------------------------------------------------------*/
+
+   <span style="background-color: #FFFF00">/***** Increment operation *****/</span>
+   void advance(unsigned hours, unsigned minutes);
+   /*----------------------------------------------------------------------
+      Increment a Time object by a specified value.
+
+      Precondition:  hours is the number of hours to add and minutes
+          is the number of minutes to add.
+      Postcondition: The time represented by this Time object had been
+          incremented by this number of hour and minutes. 
+   ----------------------------------------------------------------------*/
+
+ private:
+<span style="background-color: #FFFF00"> <a name="/********** Data Members **********/">/********** Data Members **********/</a></span>
+   unsigned myHours,
+            myMinutes;
+   char myAMorPM;        // 'A' or 'P'
+   unsigned myMilTime;   // military time equivalent
+
+}; // end of class declaration
+
+<span style="background-color: #FFFF00"><a name="//----- &lt;&lt; and &gt;&gt; operators">//----- &lt;&lt; and &gt;&gt; operators</a></span>
+
+ostream &amp; operator&lt;&lt;(ostream &amp; out, const Time &amp; t);
+/*------------------------------------------------------------------------
+  Overloaded ouput operator
+
+  Precondition:  The ostream out is open.
+  Postcondition: The time represented by this Time object has been
+      inserted into ostream out (via display()); reference to out
+      is returned.
+------------------------------------------------------------------------*/
+
+istream &amp; operator&gt;&gt;(istream &amp; in, Time &amp; t);
+/*------------------------------------------------------------------------
+  Overloaded input operator
+
+  Precondition:  The istream in is open; input from in has the form
+      hh:mm xM; values hh, mm, and X satisfy the class invariant. 
+  Postcondition: Values have been extracted from in (via read()) and 
+      stored in this Time object's data members; reference to in is
+      returned.
+--------------------------------------------------------------------------*/
+
+<span style="background-color: #FFFF00"><a name="/***** Relational operators *****/">/***** Relational operators *****/</a></span>
+bool operator&lt;(const Time &amp; t1, const Time &amp; t2);
+/*----------------------------------------------------------------------
+   Determine if one Time object is less than (i.e., earlier than)
+   another Time object.
+
+   Precondition:  None.
+   Postcondition: true is returned if t1 is less than t2 and
+       false otherwise.
+ ---------------------------------------------------------------------*/
+
+bool operator&gt;(const Time &amp; t1, const Time &amp; t2);
+/*----------------------------------------------------------------------
+   Determine if one Time object is greater than (i.e., later than)
+   another Time object.
+
+   Precondition:  None.
+   Postcondition: true is returned if t1 is greater than t2 and
+       false otherwise.
+----------------------------------------------------------------------*/
+
+bool operator==(const Time &amp; t1, const Time &amp; t2);
+/*----------------------------------------------------------------------
+   Determine if one Time object is equal to another Time object.
+
+   Precondition:  None.
+   Postcondition: true is returned if t1 is equal to t2 and
+      false otherwise.
+----------------------------------------------------------------------*/
+
+bool operator&lt;=(const Time &amp; t1, const Time &amp; t2);
+/*----------------------------------------------------------------------
+   Determine if one Time object is less than or equal to 
+   (i.e., earlier than or the same as) another Time object.
+
+   Precondition:  None.
+   Postcondition: true is returned if t1 is less than or equal 
+       to t2 and false otherwise.
+----------------------------------------------------------------------*/
+
+bool operator&gt;=(const Time &amp; t1, const Time &amp; t2);
+/*----------------------------------------------------------------------
+   Determine if one Time object is greater than or equal to 
+   (i.e., later than or the same as) another Time object.
+
+   Precondition:  None.
+   Postcondition: true is returned if t1 is greater than or equal 
+       <a name="to t2 and false otherwise.">to t2 and false otherwise.</a>
+----------------------------------------------------------------------*/
+
+//----- Definition of operator!=() -----
+bool operator!=(const Time &amp; t1, const Time &amp; t2);
+/*----------------------------------------------------------------------
+   Determine if one Time object is not equal to another Time object.
+
+   Precondition:  None.
+   Postcondition: true is returned if t1 is not equal to t2 and
+       false otherwise.
+----------------------------------------------------------------------*/
+
+<span style="background-color: #66FF99">#<a name="endif">endif</a></span></b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure 4.5B Expanded </font><font face="Courier New" color="#0000FF">Time.cpp</font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><b><font color="#0000FF">/*-- Time.cpp------------------------------------------------------------
+ 
+   This file implements the Time member functions.
+
+-------------------------------------------------------------------------*/
+#include &lt;iostream&gt;
+using namespace std;
+
+#include &quot;Time.h&quot;
+
+<span style="background-color: #FFFF00">/*** Utility Functions -- Prototypes ***/
+</span>
+int toMilitary(unsigned hours, unsigned minutes, char am_pm);
+void toStandard(unsigned military,
+                unsigned &amp; hours, unsigned &amp; minutes, char &amp; AMPM);
+<span style="background-color: #FFFF00"><a name="//----- Definition of default constructor">//----- Definition of default constructor</a></span>
+Time::Time() 
+  : myHours(12), myMinutes(0), myAMorPM('A'), myMilTime(0)
+{
+}
+
+//----- Definition of explicit-value  constructor -----
+
+Time::Time(unsigned initHours, unsigned initMinutes, char initAMPM)
+{
+   // Check class invariant
+   if (initHours &gt;= 1 &amp;&amp; initHours &lt;= 12 &amp;&amp; 
+       initMinutes &gt;= 0 &amp;&amp; initMinutes &lt;= 59 &amp;&amp; 
+       (initAMPM == 'A' || initAMPM == 'P'))
+   {
+      myHours = initHours;
+      myMinutes = initMinutes;
+      myAMorPM = initAMPM;
+      myMilTime = toMilitary(initHours, initMinutes, initAMPM);
+   }
+   else
+      cerr &lt;&lt; &quot;*** Invalid initial values ***\n&quot;;
+}
+
+
+<a name="//----- Definition of getMinutes()">//----- Definition of getMinutes()</a>
+unsigned Time::getMinutes() const
+{ 
+   return myMinutes;
+}
+
+//----- Definition of getHours()
+unsigned Time::getHours() const
+{ 
+   return myHours;
+}
+
+//----- Definition of getAMPM()
+unsigned Time::getAMPM() const
+{ 
+   return myAMorPM;
+}
+
+//----- Definition of getMilTime()
+unsigned Time::getMilTime() const
+{ 
+   return myMilTime;
+}
+
+<a name="//----- Definition of display function -----">//----- Definition of display function -----</a>
+
+void Time::display(ostream &amp; out) const
+{
+  out &lt;&lt; myHours &lt;&lt; ':'
+      &lt;&lt; (myMinutes &lt; 10 ? &quot;0&quot; : &quot;&quot;) &lt;&lt; myMinutes 
+      &lt;&lt; ' ' &lt;&lt; myAMorPM &lt;&lt; &quot;.M.  (&quot;
+      &lt;&lt; myMilTime &lt;&lt; &quot; mil. time)&quot;;
+}
+
+//----- Definition of read function -----
+
+void Time::read(istream &amp; in)
+{
+  unsigned hours,    // Local variables to hold input values from in so
+           minutes;  //    they can be checked against the class invariant
+  char     am_pm,    //    before putting them in the data members
+           ch;       // To gobble up : and the 'M' in input
+
+  in &gt;&gt; hours &gt;&gt; ch &gt;&gt; minutes &gt;&gt; am_pm &gt;&gt; ch;
+
+  // Check the class invariant
+  if (hours &gt;= 1 &amp;&amp; hours &lt;= 12 &amp;&amp; 
+       minutes &gt;= 0 &amp;&amp; minutes &lt;= 59 &amp;&amp; 
+      (am_pm == 'A' || am_pm == 'P'))
+    {
+      myHours = hours;
+      myMinutes = minutes;
+      myAMorPM = am_pm;
+      myMilTime = toMilitary(hours, minutes, am_pm);
+    }
+  else
+    cerr &lt;&lt; &quot;*** Invalid input for Time object ***\n&quot;;
+}
+
+<a name="//----- Definition of operator&lt;&lt;()">//----- Definition of operator&lt;&lt;()</a>
+
+ostream &amp; operator&lt;&lt;(ostream &amp; out, const Time &amp; t)
+{
+  t.display(out);
+  return out;
+}
+
+//----- Definition of operator&gt;&gt;()
+
+istream &amp; operator&gt;&gt;(istream &amp; in, Time &amp; t)
+{
+  t.read(in);
+  return in;
+}
+
+<a name="//----- Definition of set function -----">//----- Definition of set function -----</a>
+
+void Time::set(unsigned hours, unsigned minutes, char am_pm)
+{ 
+   // Check class invariant
+   if (hours &gt;= 1 &amp;&amp; hours &lt;= 12 &amp;&amp; 
+       minutes &gt;= 0 &amp;&amp; minutes &lt;= 59 &amp;&amp; 
+       (am_pm == 'A' || am_pm == 'P'))
+   {
+      myHours = hours;
+      myMinutes = minutes;
+      myAMorPM = am_pm;
+      myMilTime = toMilitary(hours, minutes, am_pm);
+   }
+   else
+     cerr &lt;&lt; &quot;*** Can't set time with these values ***\n&quot;;
+   // Object's data members remain unchanged
+}
+
+<a name="//----- Definition of advance function-----"><span style="background-color: #FFFF00">//----- Definition of advance function-----</span></a>
+void Time::advance(unsigned hours, unsigned minutes)
+{
+   // Increment the myMilTime member
+   myMilTime += 100 * hours + minutes;
+
+   // Adjust to proper format
+   unsigned  milHours = myMilTime / 100,
+   milMins = myMilTime % 100;
+   milHours +=  milMins / 60;
+   milMins %= 60;
+   milHours %= 24;
+   myMilTime = 100 * milHours + milMins;
+
+   // Now set the standard time data members
+   toStandard(myMilTime, myHours, myMinutes, myAMorPM);
+}
+
+<span style="background-color: #FFFF00">/***** Relational operators *****/</span>
+bool operator&lt;(const Time &amp; t1, const Time &amp; t2)
+{
+  return t1.getMilTime() &lt; t2.getMilTime();
+}
+
+bool operator&gt;(const Time &amp; t1, const Time &amp; t2)
+{
+   return t1.getMilTime() &gt; t2.getMilTime();
+}
+
+bool operator==(const Time &amp; t1, const Time &amp; t2)
+{
+   return t1.getMilTime() == t2.getMilTime();
+}
+
+bool operator&lt;=(const Time &amp; t1, const Time &amp; t2)
+{
+   return t1.getMilTime() &lt;= t2.getMilTime();
+}
+
+bool operator&gt;=(const Time &amp; t1, const Time &amp; t2)
+{
+   return t1.getMilTime() &gt;= t2.getMilTime();
+}
+
+<a name="//----- Definition of operator!=() -----">//----- Definition of operator!=() -----</a>
+bool operator!=(const Time &amp; t1, const Time &amp; t2)
+{
+   return t1.getMilTime() != t2.getMilTime();
+}
+
+
+/<a name="*** Utility Functions -- Definitions ***/">*** Utility Functions -- Definitions ***/</a>
+int toMilitary(unsigned hours, unsigned minutes, char am_pm)
+/*-------------------------------------------------------------------------
+   Convert standard time to military time.
+
+   Precondition:  hours, minutes, am_pm satisfy the class invariant.
+   Postcondition: Military time equivalent is returned.
+-------------------------------------------------------------------------*/
+{
+   if (hours == 12)
+      hours = 0;
+
+   return hours * 100 + minutes + (am_pm == 'P' ? 1200 : 0);
+}
+
+void toStandard(unsigned military,
+                unsigned &amp; hours, unsigned &amp; minutes, char &amp; AMPM)
+/*-------------------------------------------------------------------------
+   Convert military time to standard time.
+ 
+   Receive: military, a time in military format
+   Return:  hours, minutes, AMPM -- equivalent standard time
+-------------------------------------------------------------------------*/
+{
+   hours = (military / 100) % 12;
+   if (hours == 0)
+      hours = 12;
+   minutes = military % 100;
+   AMPM = (military / 100) &lt; 12 ? 'A' : 'P';
+}&nbsp;</font></b></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</body>
+
+</html>

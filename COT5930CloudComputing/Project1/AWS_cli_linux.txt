@@ -1,0 +1,237 @@
+[chris@euclid ~]$ chmod 400 /home/chris/.ssh/myKeyPair.pem
+chmod: cannot access '/home/chris/.ssh/myKeyPair.pem': No such file or directory
+[chris@euclid ~]$ ls /home/chris/.ssh/
+MyKeyPair.pem
+[chris@euclid ~]$ chmod 400 /home/chris/.ssh/MyKeyPair.pem
+[chris@euclid ~]$ pwd
+/home/chris
+[chris@euclid ~]$ ssh -l ~/.ssh/MyKeyPair.pem ec2-user@54.244.25.86
+Warning: Permanently added '54.244.25.86' (ECDSA) to the list of known hosts.
+Permission denied (publickey).
+[chris@euclid ~]$ ssh -i ~/.ssh/MyKeyPair.pem ec2-user@54.244.25.86 
+X11 forwarding request failed on channel 0
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-ami/2016.03-release-notes/
+13 package(s) needed for security, out of 26 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@ip-172-31-38-88 ~]$ pwd
+/home/ec2-user
+[ec2-user@ip-172-31-38-88 ~]$ ls
+[ec2-user@ip-172-31-38-88 ~]$ ls -a
+.  ..  .bash_logout  .bash_profile  .bashrc  .ssh
+[ec2-user@ip-172-31-38-88 ~]$ 
+Broadcast message from root@ip-172-31-38-88
+        (unknown) at 19:44 ...
+
+The system is going down for power off NOW!
+Connection to 54.244.25.86 closed by remote host.
+Connection to 54.244.25.86 closed.
+[chris@euclid ~]$ aws configure
+sanity-check: "/home/chris/.awssecret": file is missing.  (Format: AccessKeyID\nSecretAccessKey\n)
+configure: unknown command
+Usage: aws ACTION [--help]
+        where ACTION is one of
+        ec2             add-group addgrp add-keypair addkey allocate-address allad associate-address aad
+                        attach-volume attvol authorize auth create-image cimg
+                        cancel-spot-instance-requests cancel csir confirm-product-instance
+                        create-snapshot csnap describe-spot-instance-requests dsir
+                        describe-spot-price-history dsph create-volume cvol delete-group delgrp
+                        delete-keypair delkey delete-snapshot delsnap delete-volume delvol deregister
+                        describe-addresses dad describe-availability-zones daz describe-groups dgrp
+                        describe-image-attribute describe-images dim describe-instances din
+                        describe-keypairs dkey describe-regions dreg describe-reserved-instances
+                        describe-reserved-instances-offerings describe-snapshot-attribute dsa
+                        reset-snapshot-attribute rsa modify-snapshot-attribute msa describe-snapshots
+                        dsnap describe-volumes dvol detach-volume detvol disassociate-address disad
+                        get-console-output gco purchase-reserved-instance-offering reboot-instances
+                        reboot release-address rad register-image register request-spot-instances
+                        req-spot rsi revoke run-instances run-instance run start-instances start
+                        stop-instances stop terminate-instances tin create-tags ctags describe-tags
+                        dtags delete-tags deltags
+        elb             configure-healthcheck ch create-app-cookie-stickiness-policy cacsp
+                        create-lb-cookie-stickiness-policy clbcsp create-lb clb create-lb-listeners clbl
+                        delete-lb dellb delete-lb-listeners dlbl delete-lb-policy dlbp
+                        describe-instance-health dih describe-lbs dlb disable-zones-for-lb dlbz
+                        enable-zones-for-lb elbz register-instances-with-lb rlbi
+                        deregister-instances-from-lb dlbi set-lb-listener-ssl-cert slblsc
+                        set-lb-policies-of-listener slbpol
+        iam             groupaddpolicy pgp groupadduser groupcreate cg groupdel groupdelpolicy
+                        grouplistbypath lg grouplistpolicies lgp groupgetpolicy grouplistusers gg
+                        groupmod groupremoveuser groupuploadpolicy useraddcert useraddkey cak
+                        useraddloginprofile clp useraddpolicy pup usercreate cu userdeactivatemfadevice
+                        userdel userdelcert userdelkey userdelloginprofile dlp userdelpolicy
+                        userenablemfadevice usergetattributes gu usergetloginprofile glp userlistbypath
+                        lu userlistcerts userlistgroups userlistkeys userlistmfadevices userlistpolicies
+                        lup usergetpolicy usermod usermodcert usermodkey usermodloginprofile ulp
+                        userresyncmfadevice useruploadpolicy servercertdel servercertgetattributes
+                        servercertlistbypath servercertmod servercertupload accountaliascreate caa
+                        accountaliasdelete daa accountaliaslist laa
+        s3              ls get cat head mkdir put delete rmdir rm copy cp dmo
+        sdb             create-domain cdom delete-attributes datt delete-domain ddom get-attributes gatt
+                        list-domains ldom put-attributes patt select
+        sqs             add-permission addperm change-message-visibility cmv create-queue cq
+                        delete-message dm delete-queue dq get-queue-attributes gqa list-queues lq
+                        receive-message recv remove-permission remperm send-message send
+                        set-queue-attributes sqa
+aws version: v1.75  (ec2 2010-11-15, sqs 2009-02-01, elb 2010-07-01, sdb 2009-04-15)
+[chris@euclid ~]$ sudo aws configure
+[sudo] password for chris:                                                                                                                           
+sanity-check: "/root/.awssecret": file is missing.  (Format: AccessKeyID\nSecretAccessKey\n)                                                         
+configure: unknown command                                                                                                                           
+Usage: aws ACTION [--help]                                                                                                                           
+        where ACTION is one of                                                                                                                       
+        ec2             add-group addgrp add-keypair addkey allocate-address allad associate-address aad                                             
+                        attach-volume attvol authorize auth create-image cimg                                                                        
+                        cancel-spot-instance-requests cancel csir confirm-product-instance                                                           
+                        create-snapshot csnap describe-spot-instance-requests dsir                                                                   
+                        describe-spot-price-history dsph create-volume cvol delete-group delgrp                                                      
+                        delete-keypair delkey delete-snapshot delsnap delete-volume delvol deregister                                                
+                        describe-addresses dad describe-availability-zones daz describe-groups dgrp                                                  
+                        describe-image-attribute describe-images dim describe-instances din                                                          
+                        describe-keypairs dkey describe-regions dreg describe-reserved-instances                                                     
+                        describe-reserved-instances-offerings describe-snapshot-attribute dsa                                                        
+                        reset-snapshot-attribute rsa modify-snapshot-attribute msa describe-snapshots                                                
+                        dsnap describe-volumes dvol detach-volume detvol disassociate-address disad
+                        get-console-output gco purchase-reserved-instance-offering reboot-instances
+                        reboot release-address rad register-image register request-spot-instances
+                        req-spot rsi revoke run-instances run-instance run start-instances start
+                        stop-instances stop terminate-instances tin create-tags ctags describe-tags
+                        dtags delete-tags deltags
+        elb             configure-healthcheck ch create-app-cookie-stickiness-policy cacsp
+                        create-lb-cookie-stickiness-policy clbcsp create-lb clb create-lb-listeners clbl
+                        delete-lb dellb delete-lb-listeners dlbl delete-lb-policy dlbp
+                        describe-instance-health dih describe-lbs dlb disable-zones-for-lb dlbz
+                        enable-zones-for-lb elbz register-instances-with-lb rlbi
+                        deregister-instances-from-lb dlbi set-lb-listener-ssl-cert slblsc
+                        set-lb-policies-of-listener slbpol
+        iam             groupaddpolicy pgp groupadduser groupcreate cg groupdel groupdelpolicy
+                        grouplistbypath lg grouplistpolicies lgp groupgetpolicy grouplistusers gg
+                        groupmod groupremoveuser groupuploadpolicy useraddcert useraddkey cak
+                        useraddloginprofile clp useraddpolicy pup usercreate cu userdeactivatemfadevice
+                        userdel userdelcert userdelkey userdelloginprofile dlp userdelpolicy
+                        userenablemfadevice usergetattributes gu usergetloginprofile glp userlistbypath
+                        lu userlistcerts userlistgroups userlistkeys userlistmfadevices userlistpolicies
+                        lup usergetpolicy usermod usermodcert usermodkey usermodloginprofile ulp
+                        userresyncmfadevice useruploadpolicy servercertdel servercertgetattributes
+                        servercertlistbypath servercertmod servercertupload accountaliascreate caa
+                        accountaliasdelete daa accountaliaslist laa
+        s3              ls get cat head mkdir put delete rmdir rm copy cp dmo
+        sdb             create-domain cdom delete-attributes datt delete-domain ddom get-attributes gatt
+                        list-domains ldom put-attributes patt select
+        sqs             add-permission addperm change-message-visibility cmv create-queue cq
+                        delete-message dm delete-queue dq get-queue-attributes gqa list-queues lq
+                        receive-message recv remove-permission remperm send-message send
+                        set-queue-attributes sqa
+aws version: v1.75  (ec2 2010-11-15, sqs 2009-02-01, elb 2010-07-01, sdb 2009-04-15)
+[chris@euclid ~]$ 
+[chris@euclid ~]$ curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 7114k  100 7114k    0     0  3048k      0  0:00:02  0:00:02 --:--:-- 3073k
+[chris@euclid ~]$ unzip awscli-bundle.zip
+Archive:  awscli-bundle.zip
+  inflating: awscli-bundle/install   
+  inflating: awscli-bundle/packages/botocore-1.4.56.tar.gz  
+  inflating: awscli-bundle/packages/jmespath-0.9.0.tar.gz  
+  inflating: awscli-bundle/packages/simplejson-3.3.0.tar.gz  
+  inflating: awscli-bundle/packages/s3transfer-0.1.4.tar.gz  
+  inflating: awscli-bundle/packages/ordereddict-1.1.tar.gz  
+  inflating: awscli-bundle/packages/rsa-3.4.2.tar.gz  
+  inflating: awscli-bundle/packages/futures-3.0.5.tar.gz  
+  inflating: awscli-bundle/packages/docutils-0.12.tar.gz  
+  inflating: awscli-bundle/packages/colorama-0.3.7.zip  
+  inflating: awscli-bundle/packages/argparse-1.2.1.tar.gz  
+  inflating: awscli-bundle/packages/pyasn1-0.1.9.tar.gz  
+  inflating: awscli-bundle/packages/awscli-1.10.66.tar.gz  
+  inflating: awscli-bundle/packages/virtualenv-13.0.3.tar.gz  
+  inflating: awscli-bundle/packages/python-dateutil-2.5.3.tar.gz  
+  inflating: awscli-bundle/packages/six-1.10.0.tar.gz  
+[chris@euclid ~]$ sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
+Running cmd: /usr/bin/python virtualenv.py --python /usr/bin/python /usr/local/aws
+Running cmd: /usr/local/aws/bin/pip install --no-index --find-links file:///home/chris/awscli-bundle/packages awscli-1.10.66.tar.gz
+
+You can now run: /usr/local/bin/aws --version
+[chris@euclid ~]$ 
+[chris@euclid ~]$ aws configure     
+sanity-check: "/home/chris/.awssecret": file is missing.  (Format: AccessKeyID\nSecretAccessKey\n)
+configure: unknown command
+Usage: aws ACTION [--help]
+        where ACTION is one of
+        ec2             add-group addgrp add-keypair addkey allocate-address allad associate-address aad
+                        attach-volume attvol authorize auth create-image cimg
+                        cancel-spot-instance-requests cancel csir confirm-product-instance
+                        create-snapshot csnap describe-spot-instance-requests dsir
+                        describe-spot-price-history dsph create-volume cvol delete-group delgrp
+                        delete-keypair delkey delete-snapshot delsnap delete-volume delvol deregister
+                        describe-addresses dad describe-availability-zones daz describe-groups dgrp
+                        describe-image-attribute describe-images dim describe-instances din
+                        describe-keypairs dkey describe-regions dreg describe-reserved-instances
+                        describe-reserved-instances-offerings describe-snapshot-attribute dsa
+                        reset-snapshot-attribute rsa modify-snapshot-attribute msa describe-snapshots
+                        dsnap describe-volumes dvol detach-volume detvol disassociate-address disad
+                        get-console-output gco purchase-reserved-instance-offering reboot-instances
+                        reboot release-address rad register-image register request-spot-instances
+                        req-spot rsi revoke run-instances run-instance run start-instances start
+                        stop-instances stop terminate-instances tin create-tags ctags describe-tags
+                        dtags delete-tags deltags
+        elb             configure-healthcheck ch create-app-cookie-stickiness-policy cacsp
+                        create-lb-cookie-stickiness-policy clbcsp create-lb clb create-lb-listeners clbl
+                        delete-lb dellb delete-lb-listeners dlbl delete-lb-policy dlbp
+                        describe-instance-health dih describe-lbs dlb disable-zones-for-lb dlbz
+                        enable-zones-for-lb elbz register-instances-with-lb rlbi
+                        deregister-instances-from-lb dlbi set-lb-listener-ssl-cert slblsc
+                        set-lb-policies-of-listener slbpol
+        iam             groupaddpolicy pgp groupadduser groupcreate cg groupdel groupdelpolicy
+                        grouplistbypath lg grouplistpolicies lgp groupgetpolicy grouplistusers gg
+                        groupmod groupremoveuser groupuploadpolicy useraddcert useraddkey cak
+                        useraddloginprofile clp useraddpolicy pup usercreate cu userdeactivatemfadevice
+                        userdel userdelcert userdelkey userdelloginprofile dlp userdelpolicy
+                        userenablemfadevice usergetattributes gu usergetloginprofile glp userlistbypath
+                        lu userlistcerts userlistgroups userlistkeys userlistmfadevices userlistpolicies
+                        lup usergetpolicy usermod usermodcert usermodkey usermodloginprofile ulp
+                        userresyncmfadevice useruploadpolicy servercertdel servercertgetattributes
+                        servercertlistbypath servercertmod servercertupload accountaliascreate caa
+                        accountaliasdelete daa accountaliaslist laa
+        s3              ls get cat head mkdir put delete rmdir rm copy cp dmo
+        sdb             create-domain cdom delete-attributes datt delete-domain ddom get-attributes gatt
+                        list-domains ldom put-attributes patt select
+        sqs             add-permission addperm change-message-visibility cmv create-queue cq
+                        delete-message dm delete-queue dq get-queue-attributes gqa list-queues lq
+                        receive-message recv remove-permission remperm send-message send
+                        set-queue-attributes sqa
+aws version: v1.75  (ec2 2010-11-15, sqs 2009-02-01, elb 2010-07-01, sdb 2009-04-15)
+[chris@euclid ~]$ /usr/local/bin/aws --version
+aws-cli/1.10.66 Python/3.4.4 Linux/4.7.3-desktop-1omv botocore/1.4.56
+[chris@euclid ~]$ /usr/local/bin/aws configure
+AWS Access Key ID [None]: AKIAIF5WLWX7YSFLSHYA
+AWS Secret Access Key [None]: 
+Default region name [None]: ^C                                      
+[chris@euclid ~]$ /usr/local/bin/aws configure
+AWS Access Key ID [None]: AKIAIF5WLWX7YSFLSHYA
+AWS Secret Access Key [None]: 
+Default region name [None]: ^C
+[chris@euclid ~]$ /usr/local/bin/aws configure
+AWS Access Key ID [None]: AKIAIF5WLWX7YSFLSHYA
+AWS Secret Access Key [None]: 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
+Default region name [None]: us-east-1
+Default output format [None]: json
+[chris@euclid ~]$ /usr/local/bin/aws s3 mb s3://my-first-backup-bucket
+make_bucket failed: s3://my-first-backup-bucket An error occurred (BucketAlreadyExists) when calling the CreateBucket operation: The requested bucket name is not available. The bucket namespace is shared by all users of the system. Please select a different name and try again.
+[chris@euclid ~]$ /usr/local/bin/aws s3 mb s3://cfoley3.fau.edu.my.first.backup.bucket
+make_bucket: cfoley3.fau.edu.my.first.backup.bucket
+[chris@euclid ~]$ /usr/local/bin/aws s3 cp WebRatio/'Christopher Foley'/Model.wr s3://cfoley3.fau.edu.my.first.backup.bucket
+upload: WebRatio/Christopher Foley/Model.wr to s3://cfoley3.fau.edu.my.first.backup.bucket/Model.wr
+[chris@euclid ~]$ /usr/local/bin/aws s3 ls s3://cfoley3.fau.edu.my.first.backup.bucket2016-09-25 16:53:10        380 Model.wr
+[chris@euclid ~]$ /usr/local/bin/aws s3 ls s3://cfoley3.fau.edu
+2016-09-25 15:51:51     295816 Screenshot_20160925_153630.png
+2016-09-25 15:51:52     259113 Screenshot_20160925_154205.png
+2016-09-25 15:51:53     249573 Screenshot_20160925_154234.png
+2016-09-25 15:51:54     292242 Screenshot_20160925_154439.png
+[chris@euclid ~]$ /usr/local/bin/aws s3 ls s3://
+2016-09-25 15:50:30 cfoley3.fau.edu
+2016-09-25 16:49:55 cfoley3.fau.edu.my.first.backup.bucket
+[chris@euclid ~]$ 

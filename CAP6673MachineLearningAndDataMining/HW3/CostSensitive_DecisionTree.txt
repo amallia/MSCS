@@ -1,0 +1,2060 @@
+
+ *** FIT ***
+
+Options: -cost-matrix "[0.0 0.25; 1.0 0.0]" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Classifier Model
+J48 pruned tree
+------------------
+
+TOTOTORS <= 220: nfp (54.86/2.13)
+TOTOTORS > 220: fp (133.14/18.11)
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+Cost Matrix
+ 0    0.25
+ 1    0   
+
+
+Time taken to build model: 0.5 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         153               81.383  %
+Incorrectly Classified Instances        35               18.617  %
+Kappa statistic                          0.6175
+Mean absolute error                      0.2209
+Root mean squared error                  0.3821
+Relative absolute error                 53.2454 %
+Root relative squared error             83.9963 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.744    0.018    0.990      0.744    0.850      0.662    0.863     0.918     nfp
+                 0.982    0.256    0.614      0.982    0.755      0.662    0.863     0.608     fp
+Weighted Avg.    0.814    0.088    0.880      0.814    0.822      0.662    0.863     0.827     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 99 34 |  a = nfp
+  1 54 |  b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         155               82.4468 %
+Incorrectly Classified Instances        33               17.5532 %
+Kappa statistic                          0.6186
+Mean absolute error                      0.2029
+Root mean squared error                  0.3901
+Relative absolute error                 48.8781 %
+Root relative squared error             85.7109 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.797    0.109    0.946      0.797    0.865      0.638    0.827     0.873     nfp
+                 0.891    0.203    0.645      0.891    0.748      0.638    0.831     0.671     fp
+Weighted Avg.    0.824    0.137    0.858      0.824    0.831      0.638    0.829     0.814     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 106  27 |   a = nfp
+   6  49 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 0.25; 1.0 0.0]" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Classifier Model
+J48 pruned tree
+------------------
+
+TOTOTORS <= 220: nfp (54.86/2.13)
+TOTOTORS > 220: fp (133.14/18.11)
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+Cost Matrix
+ 0    0.25
+ 1    0   
+
+
+Time taken to build model: 0.55 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         153               81.383  %
+Incorrectly Classified Instances        35               18.617  %
+Kappa statistic                          0.6175
+Mean absolute error                      0.2209
+Root mean squared error                  0.3821
+Relative absolute error                 53.2454 %
+Root relative squared error             83.9963 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.744    0.018    0.990      0.744    0.850      0.662    0.863     0.918     nfp
+                 0.982    0.256    0.614      0.982    0.755      0.662    0.863     0.608     fp
+Weighted Avg.    0.814    0.088    0.880      0.814    0.822      0.662    0.863     0.827     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 99 34 |  a = nfp
+  1 54 |  b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          74               78.7234 %
+Incorrectly Classified Instances        20               21.2766 %
+Kappa statistic                          0.5708
+Mean absolute error                      0.2433
+Root mean squared error                  0.4084
+Relative absolute error                 58.3531 %
+Root relative squared error             89.298  %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.712    0.036    0.979      0.712    0.825      0.619    0.838     0.899     nfp
+                 0.964    0.288    0.587      0.964    0.730      0.619    0.838     0.577     fp
+Weighted Avg.    0.787    0.111    0.862      0.787    0.796      0.619    0.838     0.803     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 47 19 |  a = nfp
+  1 27 |  b = fp
+
+
+ *** FIT ***
+
+Options: -cost-matrix "[0.0 0.5; 1.0 0.0]" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Classifier Model
+J48 pruned tree
+------------------
+
+LOC <= 1158
+|   VG <= 52
+|   |   NUMUANDS <= 115
+|   |   |   ELOC <= 105
+|   |   |   |   NLOGIC <= 0: nfp (81.23/1.55)
+|   |   |   |   NLOGIC > 0
+|   |   |   |   |   ELOC <= 54
+|   |   |   |   |   |   VG <= 9: nfp (10.83/1.55)
+|   |   |   |   |   |   VG > 9: fp (9.28/1.55)
+|   |   |   |   |   ELOC > 54: nfp (3.87)
+|   |   |   ELOC > 105: fp (4.64)
+|   |   NUMUANDS > 115: fp (25.53/2.32)
+|   VG > 52: nfp (4.64)
+LOC > 1158: fp (47.97/1.55)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+
+
+Cost Matrix
+ 0    0.5 
+ 1    0   
+
+
+Time taken to build model: 0.56 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         179               95.2128 %
+Incorrectly Classified Instances         9                4.7872 %
+Kappa statistic                          0.8874
+Mean absolute error                      0.0798
+Root mean squared error                  0.2065
+Relative absolute error                 19.2442 %
+Root relative squared error             45.3845 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.947    0.036    0.984      0.947    0.966      0.889    0.973     0.984     nfp
+                 0.964    0.053    0.883      0.964    0.922      0.889    0.973     0.915     fp
+Weighted Avg.    0.952    0.041    0.955      0.952    0.953      0.889    0.973     0.964     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 126   7 |   a = nfp
+   2  53 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         165               87.766  %
+Incorrectly Classified Instances        23               12.234  %
+Kappa statistic                          0.7208
+Mean absolute error                      0.1473
+Root mean squared error                  0.3216
+Relative absolute error                 35.4822 %
+Root relative squared error             70.6674 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.872    0.109    0.951      0.872    0.910      0.727    0.891     0.926     nfp
+                 0.891    0.128    0.742      0.891    0.810      0.727    0.892     0.753     fp
+Weighted Avg.    0.878    0.115    0.890      0.878    0.881      0.727    0.891     0.876     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 116  17 |   a = nfp
+   6  49 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 0.5; 1.0 0.0]" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Classifier Model
+J48 pruned tree
+------------------
+
+LOC <= 1158
+|   VG <= 52
+|   |   NUMUANDS <= 115
+|   |   |   ELOC <= 105
+|   |   |   |   NLOGIC <= 0: nfp (81.23/1.55)
+|   |   |   |   NLOGIC > 0
+|   |   |   |   |   ELOC <= 54
+|   |   |   |   |   |   VG <= 9: nfp (10.83/1.55)
+|   |   |   |   |   |   VG > 9: fp (9.28/1.55)
+|   |   |   |   |   ELOC > 54: nfp (3.87)
+|   |   |   ELOC > 105: fp (4.64)
+|   |   NUMUANDS > 115: fp (25.53/2.32)
+|   VG > 52: nfp (4.64)
+LOC > 1158: fp (47.97/1.55)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+
+
+Cost Matrix
+ 0    0.5 
+ 1    0   
+
+
+Time taken to build model: 0.52 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         179               95.2128 %
+Incorrectly Classified Instances         9                4.7872 %
+Kappa statistic                          0.8874
+Mean absolute error                      0.0798
+Root mean squared error                  0.2065
+Relative absolute error                 19.2442 %
+Root relative squared error             45.3845 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.947    0.036    0.984      0.947    0.966      0.889    0.973     0.984     nfp
+                 0.964    0.053    0.883      0.964    0.922      0.889    0.973     0.915     fp
+Weighted Avg.    0.952    0.041    0.955      0.952    0.953      0.889    0.973     0.964     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 126   7 |   a = nfp
+   2  53 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          76               80.8511 %
+Incorrectly Classified Instances        18               19.1489 %
+Kappa statistic                          0.5514
+Mean absolute error                      0.206 
+Root mean squared error                  0.4141
+Relative absolute error                 49.3972 %
+Root relative squared error             90.5528 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.848    0.286    0.875      0.848    0.862      0.552    0.742     0.833     nfp
+                 0.714    0.152    0.667      0.714    0.690      0.552    0.742     0.679     fp
+Weighted Avg.    0.809    0.246    0.813      0.809    0.810      0.552    0.742     0.787     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 56 10 |  a = nfp
+  8 20 |  b = fp
+
+
+ *** FIT ***
+
+Options: -cost-matrix "[0.0 1.0; 1.0 0.0]" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Classifier Model
+J48 pruned tree
+------------------
+
+NUMUANDS <= 115
+|   ELOC <= 50: nfp (106.0/2.0)
+|   ELOC > 50
+|   |   ELOC <= 105
+|   |   |   NLOGIC <= 0: nfp (12.0)
+|   |   |   NLOGIC > 0
+|   |   |   |   ELOC <= 54: fp (6.0/1.0)
+|   |   |   |   ELOC > 54: nfp (5.0)
+|   |   ELOC > 105: fp (5.0)
+NUMUANDS > 115
+|   VG <= 29: fp (16.0)
+|   VG > 29
+|   |   LOC <= 1158: nfp (10.0/1.0)
+|   |   LOC > 1158: fp (28.0/2.0)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+
+
+Cost Matrix
+ 0 1
+ 1 0
+
+
+Time taken to build model: 0.47 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         182               96.8085 %
+Incorrectly Classified Instances         6                3.1915 %
+Kappa statistic                          0.9229
+Mean absolute error                      0.0591
+Root mean squared error                  0.1719
+Relative absolute error                 14.2397 %
+Root relative squared error             37.7764 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.977    0.055    0.977      0.977    0.977      0.923    0.976     0.982     nfp
+                 0.945    0.023    0.945      0.945    0.945      0.923    0.976     0.948     fp
+Weighted Avg.    0.968    0.045    0.968      0.968    0.968      0.923    0.976     0.972     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 130   3 |   a = nfp
+   3  52 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         165               87.766  %
+Incorrectly Classified Instances        23               12.234  %
+Kappa statistic                          0.706 
+Mean absolute error                      0.1452
+Root mean squared error                  0.3344
+Relative absolute error                 34.9951 %
+Root relative squared error             73.4704 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.910    0.200    0.917      0.910    0.913      0.706    0.825     0.858     nfp
+                 0.800    0.090    0.786      0.800    0.793      0.706    0.825     0.739     fp
+Weighted Avg.    0.878    0.168    0.878      0.878    0.878      0.706    0.825     0.823     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 121  12 |   a = nfp
+  11  44 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 1.0; 1.0 0.0]" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Classifier Model
+J48 pruned tree
+------------------
+
+NUMUANDS <= 115
+|   ELOC <= 50: nfp (106.0/2.0)
+|   ELOC > 50
+|   |   ELOC <= 105
+|   |   |   NLOGIC <= 0: nfp (12.0)
+|   |   |   NLOGIC > 0
+|   |   |   |   ELOC <= 54: fp (6.0/1.0)
+|   |   |   |   ELOC > 54: nfp (5.0)
+|   |   ELOC > 105: fp (5.0)
+NUMUANDS > 115
+|   VG <= 29: fp (16.0)
+|   VG > 29
+|   |   LOC <= 1158: nfp (10.0/1.0)
+|   |   LOC > 1158: fp (28.0/2.0)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+
+
+Cost Matrix
+ 0 1
+ 1 0
+
+
+Time taken to build model: 0.51 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         182               96.8085 %
+Incorrectly Classified Instances         6                3.1915 %
+Kappa statistic                          0.9229
+Mean absolute error                      0.0591
+Root mean squared error                  0.1719
+Relative absolute error                 14.2397 %
+Root relative squared error             37.7764 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.977    0.055    0.977      0.977    0.977      0.923    0.976     0.982     nfp
+                 0.945    0.023    0.945      0.945    0.945      0.923    0.976     0.948     fp
+Weighted Avg.    0.968    0.045    0.968      0.968    0.968      0.923    0.976     0.972     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 130   3 |   a = nfp
+   3  52 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          80               85.1064 %
+Incorrectly Classified Instances        14               14.8936 %
+Kappa statistic                          0.6287
+Mean absolute error                      0.1629
+Root mean squared error                  0.3648
+Relative absolute error                 39.0586 %
+Root relative squared error             79.7603 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.924    0.321    0.871      0.924    0.897      0.632    0.859     0.906     nfp
+                 0.679    0.076    0.792      0.679    0.731      0.632    0.859     0.721     fp
+Weighted Avg.    0.851    0.248    0.848      0.851    0.848      0.632    0.859     0.851     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 61  5 |  a = nfp
+  9 19 |  b = fp
+
+
+ *** FIT ***
+
+Options: -cost-matrix "[0.0 2.0; 1.0 0.0]" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Classifier Model
+J48 pruned tree
+------------------
+
+LOC <= 886: nfp (155.79/9.37)
+LOC > 886: fp (32.21/9.37)
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+Cost Matrix
+ 0 2
+ 1 0
+
+
+Time taken to build model: 0.5 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         164               87.234  %
+Incorrectly Classified Instances        24               12.766  %
+Kappa statistic                          0.6779
+Mean absolute error                      0.2105
+Root mean squared error                  0.3414
+Relative absolute error                 50.7435 %
+Root relative squared error             75.0363 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.940    0.291    0.887      0.940    0.912      0.682    0.824     0.876     nfp
+                 0.709    0.060    0.830      0.709    0.765      0.682    0.824     0.674     fp
+Weighted Avg.    0.872    0.223    0.870      0.872    0.869      0.682    0.824     0.817     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 125   8 |   a = nfp
+  16  39 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         158               84.0426 %
+Incorrectly Classified Instances        30               15.9574 %
+Kappa statistic                          0.5785
+Mean absolute error                      0.1953
+Root mean squared error                  0.3739
+Relative absolute error                 47.0571 %
+Root relative squared error             82.1608 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.947    0.418    0.846      0.947    0.894      0.594    0.802     0.861     nfp
+                 0.582    0.053    0.821      0.582    0.681      0.594    0.802     0.678     fp
+Weighted Avg.    0.840    0.311    0.838      0.840    0.831      0.594    0.802     0.808     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 126   7 |   a = nfp
+  23  32 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 2.0; 1.0 0.0]" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Classifier Model
+J48 pruned tree
+------------------
+
+LOC <= 886: nfp (155.79/9.37)
+LOC > 886: fp (32.21/9.37)
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+Cost Matrix
+ 0 2
+ 1 0
+
+
+Time taken to build model: 0.49 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         164               87.234  %
+Incorrectly Classified Instances        24               12.766  %
+Kappa statistic                          0.6779
+Mean absolute error                      0.2105
+Root mean squared error                  0.3414
+Relative absolute error                 50.7435 %
+Root relative squared error             75.0363 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.940    0.291    0.887      0.940    0.912      0.682    0.824     0.876     nfp
+                 0.709    0.060    0.830      0.709    0.765      0.682    0.824     0.674     fp
+Weighted Avg.    0.872    0.223    0.870      0.872    0.869      0.682    0.824     0.817     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 125   8 |   a = nfp
+  16  39 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          80               85.1064 %
+Incorrectly Classified Instances        14               14.8936 %
+Kappa statistic                          0.6365
+Mean absolute error                      0.2255
+Root mean squared error                  0.3572
+Relative absolute error                 54.083  %
+Root relative squared error             78.103  %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.909    0.286    0.882      0.909    0.896      0.637    0.812     0.866     nfp
+                 0.714    0.091    0.769      0.714    0.741      0.637    0.812     0.635     fp
+Weighted Avg.    0.851    0.228    0.849      0.851    0.849      0.637    0.812     0.797     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 60  6 |  a = nfp
+  8 20 |  b = fp
+
+
+ *** FIT ***
+
+Options: -cost-matrix "[0.0 3.0; 1.0 0.0]" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Classifier Model
+J48 pruned tree
+------------------
+
+LOC <= 886: nfp (161.91/6.63)
+LOC > 886
+|   NUMUORS <= 42: nfp (18.63/8.7)
+|   NUMUORS > 42: fp (7.45)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+Cost Matrix
+ 0 3
+ 1 0
+
+
+Time taken to build model: 0.87 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         151               80.3191 %
+Incorrectly Classified Instances        37               19.6809 %
+Kappa statistic                          0.4077
+Mean absolute error                      0.1883
+Root mean squared error                  0.347 
+Relative absolute error                 45.3827 %
+Root relative squared error             76.2827 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.673    0.782      1.000    0.878      0.506    0.834     0.880     nfp
+                 0.327    0.000    1.000      0.327    0.493      0.506    0.834     0.729     fp
+Weighted Avg.    0.803    0.476    0.846      0.803    0.765      0.506    0.834     0.836     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  37  18 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         152               80.8511 %
+Incorrectly Classified Instances        36               19.1489 %
+Kappa statistic                          0.4942
+Mean absolute error                      0.2234
+Root mean squared error                  0.4038
+Relative absolute error                 53.8234 %
+Root relative squared error             88.7268 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.925    0.473    0.826      0.925    0.872      0.507    0.778     0.854     nfp
+                 0.527    0.075    0.744      0.527    0.617      0.507    0.778     0.628     fp
+Weighted Avg.    0.809    0.356    0.802      0.809    0.798      0.507    0.778     0.788     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 123  10 |   a = nfp
+  26  29 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 3.0; 1.0 0.0]" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Classifier Model
+J48 pruned tree
+------------------
+
+LOC <= 886: nfp (161.91/6.63)
+LOC > 886
+|   NUMUORS <= 42: nfp (18.63/8.7)
+|   NUMUORS > 42: fp (7.45)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+Cost Matrix
+ 0 3
+ 1 0
+
+
+Time taken to build model: 0.5 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         151               80.3191 %
+Incorrectly Classified Instances        37               19.6809 %
+Kappa statistic                          0.4077
+Mean absolute error                      0.1883
+Root mean squared error                  0.347 
+Relative absolute error                 45.3827 %
+Root relative squared error             76.2827 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.673    0.782      1.000    0.878      0.506    0.834     0.880     nfp
+                 0.327    0.000    1.000      0.327    0.493      0.506    0.834     0.729     fp
+Weighted Avg.    0.803    0.476    0.846      0.803    0.765      0.506    0.834     0.836     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  37  18 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          75               79.7872 %
+Incorrectly Classified Instances        19               20.2128 %
+Kappa statistic                          0.3995
+Mean absolute error                      0.1999
+Root mean squared error                  0.3557
+Relative absolute error                 47.9453 %
+Root relative squared error             77.782  %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.679    0.776      1.000    0.874      0.500    0.826     0.873     nfp
+                 0.321    0.000    1.000      0.321    0.486      0.500    0.826     0.709     fp
+Weighted Avg.    0.798    0.476    0.843      0.798    0.759      0.500    0.826     0.824     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 66  0 |  a = nfp
+ 19  9 |  b = fp
+
+
+ *** FIT ***
+
+Options: -cost-matrix "[0.0 4.0; 1.0 0.0]" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Classifier Model
+J48 pruned tree
+------------------
+
+LOC <= 886: nfp (165.26/5.12)
+LOC > 886
+|   NUMUORS <= 42: nfp (16.97/6.73)
+|   NUMUORS > 42: fp (5.76)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+Cost Matrix
+ 0 4
+ 1 0
+
+
+Time taken to build model: 0.52 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         151               80.3191 %
+Incorrectly Classified Instances        37               19.6809 %
+Kappa statistic                          0.4077
+Mean absolute error                      0.1874
+Root mean squared error                  0.3577
+Relative absolute error                 45.1714 %
+Root relative squared error             78.6261 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.673    0.782      1.000    0.878      0.506    0.834     0.880     nfp
+                 0.327    0.000    1.000      0.327    0.493      0.506    0.834     0.729     fp
+Weighted Avg.    0.803    0.476    0.846      0.803    0.765      0.506    0.834     0.836     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  37  18 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         153               81.383  %
+Incorrectly Classified Instances        35               18.617  %
+Kappa statistic                          0.4746
+Mean absolute error                      0.2017
+Root mean squared error                  0.3948
+Relative absolute error                 48.5902 %
+Root relative squared error             86.7543 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.970    0.564    0.806      0.970    0.881      0.519    0.796     0.863     nfp
+                 0.436    0.030    0.857      0.436    0.578      0.519    0.799     0.675     fp
+Weighted Avg.    0.814    0.408    0.821      0.814    0.792      0.519    0.797     0.808     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 129   4 |   a = nfp
+  31  24 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 4.0; 1.0 0.0]" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Classifier Model
+J48 pruned tree
+------------------
+
+LOC <= 886: nfp (165.26/5.12)
+LOC > 886
+|   NUMUORS <= 42: nfp (16.97/6.73)
+|   NUMUORS > 42: fp (5.76)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+Cost Matrix
+ 0 4
+ 1 0
+
+
+Time taken to build model: 0.47 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         151               80.3191 %
+Incorrectly Classified Instances        37               19.6809 %
+Kappa statistic                          0.4077
+Mean absolute error                      0.1874
+Root mean squared error                  0.3577
+Relative absolute error                 45.1714 %
+Root relative squared error             78.6261 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.673    0.782      1.000    0.878      0.506    0.834     0.880     nfp
+                 0.327    0.000    1.000      0.327    0.493      0.506    0.834     0.729     fp
+Weighted Avg.    0.803    0.476    0.846      0.803    0.765      0.506    0.834     0.836     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  37  18 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          75               79.7872 %
+Incorrectly Classified Instances        19               20.2128 %
+Kappa statistic                          0.3995
+Mean absolute error                      0.1982
+Root mean squared error                  0.365 
+Relative absolute error                 47.5288 %
+Root relative squared error             79.8042 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.679    0.776      1.000    0.874      0.500    0.826     0.873     nfp
+                 0.321    0.000    1.000      0.321    0.486      0.500    0.826     0.709     fp
+Weighted Avg.    0.798    0.476    0.843      0.798    0.759      0.500    0.826     0.824     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 66  0 |  a = nfp
+ 19  9 |  b = fp
+
+
+ *** FIT ***
+
+Options: -cost-matrix "[0.0 5.0; 1.0 0.0]" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Classifier Model
+J48 pruned tree
+------------------
+
+LOC <= 886: nfp (167.37/4.18)
+LOC > 886
+|   NLOGIC <= 9: nfp (16.19/5.74)
+|   NLOGIC > 9: fp (4.44)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+Cost Matrix
+ 0 5
+ 1 0
+
+
+Time taken to build model: 0.5 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         150               79.7872 %
+Incorrectly Classified Instances        38               20.2128 %
+Kappa statistic                          0.3876
+Mean absolute error                      0.1902
+Root mean squared error                  0.368 
+Relative absolute error                 45.8434 %
+Root relative squared error             80.8799 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.691    0.778      1.000    0.875      0.490    0.834     0.880     nfp
+                 0.309    0.000    1.000      0.309    0.472      0.490    0.834     0.726     fp
+Weighted Avg.    0.798    0.489    0.843      0.798    0.757      0.490    0.834     0.835     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  38  17 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         153               81.383  %
+Incorrectly Classified Instances        35               18.617  %
+Kappa statistic                          0.4746
+Mean absolute error                      0.1997
+Root mean squared error                  0.3997
+Relative absolute error                 48.1083 %
+Root relative squared error             87.8252 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.970    0.564    0.806      0.970    0.881      0.519    0.790     0.859     nfp
+                 0.436    0.030    0.857      0.436    0.578      0.519    0.790     0.669     fp
+Weighted Avg.    0.814    0.408    0.821      0.814    0.792      0.519    0.790     0.803     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 129   4 |   a = nfp
+  31  24 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 5.0; 1.0 0.0]" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Classifier Model
+J48 pruned tree
+------------------
+
+LOC <= 886: nfp (167.37/4.18)
+LOC > 886
+|   NLOGIC <= 9: nfp (16.19/5.74)
+|   NLOGIC > 9: fp (4.44)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+Cost Matrix
+ 0 5
+ 1 0
+
+
+Time taken to build model: 0.52 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         150               79.7872 %
+Incorrectly Classified Instances        38               20.2128 %
+Kappa statistic                          0.3876
+Mean absolute error                      0.1902
+Root mean squared error                  0.368 
+Relative absolute error                 45.8434 %
+Root relative squared error             80.8799 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.691    0.778      1.000    0.875      0.490    0.834     0.880     nfp
+                 0.309    0.000    1.000      0.309    0.472      0.490    0.834     0.726     fp
+Weighted Avg.    0.798    0.489    0.843      0.798    0.757      0.490    0.834     0.835     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  38  17 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          72               76.5957 %
+Incorrectly Classified Instances        22               23.4043 %
+Kappa statistic                          0.2769
+Mean absolute error                      0.2177
+Root mean squared error                  0.389 
+Relative absolute error                 52.192  %
+Root relative squared error             85.0628 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.786    0.750      1.000    0.857      0.401    0.821     0.870     nfp
+                 0.214    0.000    1.000      0.214    0.353      0.401    0.821     0.684     fp
+Weighted Avg.    0.766    0.552    0.824      0.766    0.707      0.401    0.821     0.815     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 66  0 |  a = nfp
+ 22  6 |  b = fp
+
+
+ *** FIT ***
+
+Options: -cost-matrix "[0.0 6.0; 1.0 0.0]" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Classifier Model
+J48 pruned tree
+------------------
+
+LOC <= 886: nfp (168.83/3.53)
+LOC > 886
+|   NLOGIC <= 9: nfp (15.43/4.85)
+|   NLOGIC > 9: fp (3.75)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+Cost Matrix
+ 0 6
+ 1 0
+
+
+Time taken to build model: 0.49 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         150               79.7872 %
+Incorrectly Classified Instances        38               20.2128 %
+Kappa statistic                          0.3876
+Mean absolute error                      0.1908
+Root mean squared error                  0.3756
+Relative absolute error                 46.0021 %
+Root relative squared error             82.5691 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.691    0.778      1.000    0.875      0.490    0.834     0.880     nfp
+                 0.309    0.000    1.000      0.309    0.472      0.490    0.834     0.726     fp
+Weighted Avg.    0.798    0.489    0.843      0.798    0.757      0.490    0.834     0.835     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  38  17 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         153               81.383  %
+Incorrectly Classified Instances        35               18.617  %
+Kappa statistic                          0.4746
+Mean absolute error                      0.199 
+Root mean squared error                  0.4032
+Relative absolute error                 47.9392 %
+Root relative squared error             88.594  %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.970    0.564    0.806      0.970    0.881      0.519    0.788     0.859     nfp
+                 0.436    0.030    0.857      0.436    0.578      0.519    0.791     0.670     fp
+Weighted Avg.    0.814    0.408    0.821      0.814    0.792      0.519    0.789     0.804     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 129   4 |   a = nfp
+  31  24 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 6.0; 1.0 0.0]" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Classifier Model
+J48 pruned tree
+------------------
+
+LOC <= 886: nfp (168.83/3.53)
+LOC > 886
+|   NLOGIC <= 9: nfp (15.43/4.85)
+|   NLOGIC > 9: fp (3.75)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+Cost Matrix
+ 0 6
+ 1 0
+
+
+Time taken to build model: 0.49 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         150               79.7872 %
+Incorrectly Classified Instances        38               20.2128 %
+Kappa statistic                          0.3876
+Mean absolute error                      0.1908
+Root mean squared error                  0.3756
+Relative absolute error                 46.0021 %
+Root relative squared error             82.5691 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.691    0.778      1.000    0.875      0.490    0.834     0.880     nfp
+                 0.309    0.000    1.000      0.309    0.472      0.490    0.834     0.726     fp
+Weighted Avg.    0.798    0.489    0.843      0.798    0.757      0.490    0.834     0.835     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  38  17 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          72               76.5957 %
+Incorrectly Classified Instances        22               23.4043 %
+Kappa statistic                          0.2769
+Mean absolute error                      0.2188
+Root mean squared error                  0.3977
+Relative absolute error                 52.4793 %
+Root relative squared error             86.9706 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.786    0.750      1.000    0.857      0.401    0.821     0.870     nfp
+                 0.214    0.000    1.000      0.214    0.353      0.401    0.821     0.684     fp
+Weighted Avg.    0.766    0.552    0.824      0.766    0.707      0.401    0.821     0.815     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 66  0 |  a = nfp
+ 22  6 |  b = fp
+
+
+ *** FIT ***
+
+Options: -cost-matrix "[0.0 7.0; 1.0 0.0]" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Classifier Model
+J48 pruned tree
+------------------
+
+LOC <= 886: nfp (169.89/3.05)
+LOC > 886
+|   NLOGIC <= 9: nfp (14.87/4.19)
+|   NLOGIC > 9: fp (3.24)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+Cost Matrix
+ 0 7
+ 1 0
+
+
+Time taken to build model: 0.49 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         150               79.7872 %
+Incorrectly Classified Instances        38               20.2128 %
+Kappa statistic                          0.3876
+Mean absolute error                      0.1915
+Root mean squared error                  0.3821
+Relative absolute error                 46.1711 %
+Root relative squared error             83.9877 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.691    0.778      1.000    0.875      0.490    0.834     0.880     nfp
+                 0.309    0.000    1.000      0.309    0.472      0.490    0.834     0.726     fp
+Weighted Avg.    0.798    0.489    0.843      0.798    0.757      0.490    0.834     0.835     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  38  17 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         153               81.383  %
+Incorrectly Classified Instances        35               18.617  %
+Kappa statistic                          0.4746
+Mean absolute error                      0.1907
+Root mean squared error                  0.4009
+Relative absolute error                 45.9475 %
+Root relative squared error             88.0824 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.970    0.564    0.806      0.970    0.881      0.519    0.814     0.873     nfp
+                 0.436    0.030    0.857      0.436    0.578      0.519    0.811     0.697     fp
+Weighted Avg.    0.814    0.408    0.821      0.814    0.792      0.519    0.813     0.821     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 129   4 |   a = nfp
+  31  24 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 7.0; 1.0 0.0]" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Classifier Model
+J48 pruned tree
+------------------
+
+LOC <= 886: nfp (169.89/3.05)
+LOC > 886
+|   NLOGIC <= 9: nfp (14.87/4.19)
+|   NLOGIC > 9: fp (3.24)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+Cost Matrix
+ 0 7
+ 1 0
+
+
+Time taken to build model: 0.5 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         150               79.7872 %
+Incorrectly Classified Instances        38               20.2128 %
+Kappa statistic                          0.3876
+Mean absolute error                      0.1915
+Root mean squared error                  0.3821
+Relative absolute error                 46.1711 %
+Root relative squared error             83.9877 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.691    0.778      1.000    0.875      0.490    0.834     0.880     nfp
+                 0.309    0.000    1.000      0.309    0.472      0.490    0.834     0.726     fp
+Weighted Avg.    0.798    0.489    0.843      0.798    0.757      0.490    0.834     0.835     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  38  17 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          72               76.5957 %
+Incorrectly Classified Instances        22               23.4043 %
+Kappa statistic                          0.2769
+Mean absolute error                      0.22  
+Root mean squared error                  0.4051
+Relative absolute error                 52.7484 %
+Root relative squared error             88.5851 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.786    0.750      1.000    0.857      0.401    0.821     0.870     nfp
+                 0.214    0.000    1.000      0.214    0.353      0.401    0.821     0.684     fp
+Weighted Avg.    0.766    0.552    0.824      0.766    0.707      0.401    0.821     0.815     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 66  0 |  a = nfp
+ 22  6 |  b = fp
+
+
+ *** FIT ***
+
+Options: -cost-matrix "[0.0 8.0; 1.0 0.0]" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Classifier Model
+J48 pruned tree
+------------------
+
+LOC <= 886: nfp (170.7/2.69)
+LOC > 886
+|   NLOGIC <= 9: nfp (14.45/3.7)
+|   NLOGIC > 9: fp (2.86)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+Cost Matrix
+ 0 8
+ 1 0
+
+
+Time taken to build model: 0.5 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         150               79.7872 %
+Incorrectly Classified Instances        38               20.2128 %
+Kappa statistic                          0.3876
+Mean absolute error                      0.1922
+Root mean squared error                  0.3876
+Relative absolute error                 46.3334 %
+Root relative squared error             85.1897 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.691    0.778      1.000    0.875      0.490    0.834     0.880     nfp
+                 0.309    0.000    1.000      0.309    0.472      0.490    0.834     0.726     fp
+Weighted Avg.    0.798    0.489    0.843      0.798    0.757      0.490    0.834     0.835     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  38  17 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         154               81.9149 %
+Incorrectly Classified Instances        34               18.0851 %
+Kappa statistic                          0.4928
+Mean absolute error                      0.1838
+Root mean squared error                  0.3979
+Relative absolute error                 44.2713 %
+Root relative squared error             87.4339 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.970    0.545    0.811      0.970    0.884      0.535    0.831     0.881     nfp
+                 0.455    0.030    0.862      0.455    0.595      0.535    0.831     0.715     fp
+Weighted Avg.    0.819    0.395    0.826      0.819    0.799      0.535    0.831     0.832     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 129   4 |   a = nfp
+  30  25 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 8.0; 1.0 0.0]" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Classifier Model
+J48 pruned tree
+------------------
+
+LOC <= 886: nfp (170.7/2.69)
+LOC > 886
+|   NLOGIC <= 9: nfp (14.45/3.7)
+|   NLOGIC > 9: fp (2.86)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+Cost Matrix
+ 0 8
+ 1 0
+
+
+Time taken to build model: 0.5 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         150               79.7872 %
+Incorrectly Classified Instances        38               20.2128 %
+Kappa statistic                          0.3876
+Mean absolute error                      0.1922
+Root mean squared error                  0.3876
+Relative absolute error                 46.3334 %
+Root relative squared error             85.1897 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.691    0.778      1.000    0.875      0.490    0.834     0.880     nfp
+                 0.309    0.000    1.000      0.309    0.472      0.490    0.834     0.726     fp
+Weighted Avg.    0.798    0.489    0.843      0.798    0.757      0.490    0.834     0.835     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  38  17 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          72               76.5957 %
+Incorrectly Classified Instances        22               23.4043 %
+Kappa statistic                          0.2769
+Mean absolute error                      0.221 
+Root mean squared error                  0.4114
+Relative absolute error                 52.9908 %
+Root relative squared error             89.9602 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.786    0.750      1.000    0.857      0.401    0.821     0.870     nfp
+                 0.214    0.000    1.000      0.214    0.353      0.401    0.821     0.684     fp
+Weighted Avg.    0.766    0.552    0.824      0.766    0.707      0.401    0.821     0.815     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 66  0 |  a = nfp
+ 22  6 |  b = fp
+
+
+ *** FIT ***
+
+Options: -cost-matrix "[0.0 9.0; 1.0 0.0]" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Classifier Model
+J48 pruned tree
+------------------
+
+LOC <= 886: nfp (171.33/2.4)
+LOC > 886
+|   NLOGIC <= 9: nfp (14.12/3.3)
+|   NLOGIC > 9: fp (2.55)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+Cost Matrix
+ 0 9
+ 1 0
+
+
+Time taken to build model: 0.48 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         150               79.7872 %
+Incorrectly Classified Instances        38               20.2128 %
+Kappa statistic                          0.3876
+Mean absolute error                      0.1928
+Root mean squared error                  0.3922
+Relative absolute error                 46.4831 %
+Root relative squared error             86.2182 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.691    0.778      1.000    0.875      0.490    0.834     0.880     nfp
+                 0.309    0.000    1.000      0.309    0.472      0.490    0.834     0.726     fp
+Weighted Avg.    0.798    0.489    0.843      0.798    0.757      0.490    0.834     0.835     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  38  17 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         154               81.9149 %
+Incorrectly Classified Instances        34               18.0851 %
+Kappa statistic                          0.4928
+Mean absolute error                      0.1833
+Root mean squared error                  0.4   
+Relative absolute error                 44.1739 %
+Root relative squared error             87.9039 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.970    0.545    0.811      0.970    0.884      0.535    0.832     0.882     nfp
+                 0.455    0.030    0.862      0.455    0.595      0.535    0.829     0.717     fp
+Weighted Avg.    0.819    0.395    0.826      0.819    0.799      0.535    0.831     0.833     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 129   4 |   a = nfp
+  30  25 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 9.0; 1.0 0.0]" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Classifier Model
+J48 pruned tree
+------------------
+
+LOC <= 886: nfp (171.33/2.4)
+LOC > 886
+|   NLOGIC <= 9: nfp (14.12/3.3)
+|   NLOGIC > 9: fp (2.55)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+Cost Matrix
+ 0 9
+ 1 0
+
+
+Time taken to build model: 0.51 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         150               79.7872 %
+Incorrectly Classified Instances        38               20.2128 %
+Kappa statistic                          0.3876
+Mean absolute error                      0.1928
+Root mean squared error                  0.3922
+Relative absolute error                 46.4831 %
+Root relative squared error             86.2182 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.691    0.778      1.000    0.875      0.490    0.834     0.880     nfp
+                 0.309    0.000    1.000      0.309    0.472      0.490    0.834     0.726     fp
+Weighted Avg.    0.798    0.489    0.843      0.798    0.757      0.490    0.834     0.835     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  38  17 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          72               76.5957 %
+Incorrectly Classified Instances        22               23.4043 %
+Kappa statistic                          0.2769
+Mean absolute error                      0.2219
+Root mean squared error                  0.4168
+Relative absolute error                 53.2062 %
+Root relative squared error             91.141  %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.786    0.750      1.000    0.857      0.401    0.821     0.870     nfp
+                 0.214    0.000    1.000      0.214    0.353      0.401    0.821     0.684     fp
+Weighted Avg.    0.766    0.552    0.824      0.766    0.707      0.401    0.821     0.815     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 66  0 |  a = nfp
+ 22  6 |  b = fp
+
+
+ *** FIT ***
+
+Options: -cost-matrix "[0.0 10.0; 1.0 0.0]" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Classifier Model
+J48 pruned tree
+------------------
+
+LOC <= 886: nfp (171.85/2.17)
+LOC > 886
+|   NLOGIC <= 9: nfp (13.85/2.99)
+|   NLOGIC > 9: fp (2.31)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+Cost Matrix
+  0 10
+  1  0
+
+
+Time taken to build model: 0.51 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         150               79.7872 %
+Incorrectly Classified Instances        38               20.2128 %
+Kappa statistic                          0.3876
+Mean absolute error                      0.1934
+Root mean squared error                  0.3963
+Relative absolute error                 46.6191 %
+Root relative squared error             87.1066 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.691    0.778      1.000    0.875      0.490    0.834     0.880     nfp
+                 0.309    0.000    1.000      0.309    0.472      0.490    0.834     0.726     fp
+Weighted Avg.    0.798    0.489    0.843      0.798    0.757      0.490    0.834     0.835     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  38  17 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         145               77.1277 %
+Incorrectly Classified Instances        43               22.8723 %
+Kappa statistic                          0.3295
+Mean absolute error                      0.2331
+Root mean squared error                  0.4548
+Relative absolute error                 56.1526 %
+Root relative squared error             99.9441 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.962    0.691    0.771      0.962    0.856      0.384    0.758     0.835     nfp
+                 0.309    0.038    0.773      0.309    0.442      0.384    0.758     0.600     fp
+Weighted Avg.    0.771    0.500    0.772      0.771    0.735      0.384    0.758     0.766     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 128   5 |   a = nfp
+  38  17 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 10.0; 1.0 0.0]" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Classifier Model
+J48 pruned tree
+------------------
+
+LOC <= 886: nfp (171.85/2.17)
+LOC > 886
+|   NLOGIC <= 9: nfp (13.85/2.99)
+|   NLOGIC > 9: fp (2.31)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+Cost Matrix
+  0 10
+  1  0
+
+
+Time taken to build model: 0.53 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         150               79.7872 %
+Incorrectly Classified Instances        38               20.2128 %
+Kappa statistic                          0.3876
+Mean absolute error                      0.1934
+Root mean squared error                  0.3963
+Relative absolute error                 46.6191 %
+Root relative squared error             87.1066 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.691    0.778      1.000    0.875      0.490    0.834     0.880     nfp
+                 0.309    0.000    1.000      0.309    0.472      0.490    0.834     0.726     fp
+Weighted Avg.    0.798    0.489    0.843      0.798    0.757      0.490    0.834     0.835     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  38  17 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          72               76.5957 %
+Incorrectly Classified Instances        22               23.4043 %
+Kappa statistic                          0.2769
+Mean absolute error                      0.2227
+Root mean squared error                  0.4215
+Relative absolute error                 53.3972 %
+Root relative squared error             92.1635 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.786    0.750      1.000    0.857      0.401    0.821     0.870     nfp
+                 0.214    0.000    1.000      0.214    0.353      0.401    0.821     0.684     fp
+Weighted Avg.    0.766    0.552    0.824      0.766    0.707      0.401    0.821     0.815     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 66  0 |  a = nfp
+ 22  6 |  b = fp
+

@@ -1,0 +1,3624 @@
+
+*** FIT ***
+
+Options: -cost-matrix "[0.0 0.25; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0    0.25
+ 1    0   
+
+
+Time taken to build model: 0.51 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         156               82.9787 %
+Incorrectly Classified Instances        32               17.0213 %
+Kappa statistic                          0.6455
+Mean absolute error                      0.218 
+Root mean squared error                  0.3575
+Relative absolute error                 52.5396 %
+Root relative squared error             78.5864 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.767    0.018    0.990      0.767    0.864      0.684    0.923     0.956     nfp
+                 0.982    0.233    0.635      0.982    0.771      0.684    0.923     0.752     fp
+Weighted Avg.    0.830    0.081    0.886      0.830    0.837      0.684    0.923     0.897     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 102  31 |   a = nfp
+   1  54 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         155               82.4468 %
+Incorrectly Classified Instances        33               17.5532 %
+Kappa statistic                          0.6293
+Mean absolute error                      0.2306
+Root mean squared error                  0.3741
+Relative absolute error                 55.5539 %
+Root relative squared error             82.1945 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.774    0.055    0.972      0.774    0.862      0.660    0.876     0.937     nfp
+                 0.945    0.226    0.634      0.945    0.759      0.660    0.876     0.658     fp
+Weighted Avg.    0.824    0.105    0.873      0.824    0.832      0.660    0.876     0.855     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 103  30 |   a = nfp
+   3  52 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 0.25; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0    0.25
+ 1    0   
+
+
+Time taken to build model: 0.56 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         156               82.9787 %
+Incorrectly Classified Instances        32               17.0213 %
+Kappa statistic                          0.6455
+Mean absolute error                      0.218 
+Root mean squared error                  0.3575
+Relative absolute error                 52.5396 %
+Root relative squared error             78.5864 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.767    0.018    0.990      0.767    0.864      0.684    0.923     0.956     nfp
+                 0.982    0.233    0.635      0.982    0.771      0.684    0.923     0.752     fp
+Weighted Avg.    0.830    0.081    0.886      0.830    0.837      0.684    0.923     0.897     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 102  31 |   a = nfp
+   1  54 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          76               80.8511 %
+Incorrectly Classified Instances        18               19.1489 %
+Kappa statistic                          0.6069
+Mean absolute error                      0.2352
+Root mean squared error                  0.384 
+Relative absolute error                 56.3917 %
+Root relative squared error             83.9575 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.742    0.036    0.980      0.742    0.845      0.648    0.897     0.936     nfp
+                 0.964    0.258    0.614      0.964    0.750      0.648    0.897     0.703     fp
+Weighted Avg.    0.809    0.102    0.871      0.809    0.817      0.648    0.897     0.867     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 49 17 |  a = nfp
+  1 27 |  b = fp
+
+
+*** FIT ***
+
+Options: -cost-matrix "[0.0 0.5; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0    0.5 
+ 1    0   
+
+
+Time taken to build model: 0.48 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         163               86.7021 %
+Incorrectly Classified Instances        25               13.2979 %
+Kappa statistic                          0.7083
+Mean absolute error                      0.207 
+Root mean squared error                  0.3222
+Relative absolute error                 49.8924 %
+Root relative squared error             70.8179 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.835    0.055    0.974      0.835    0.899      0.726    0.924     0.957     nfp
+                 0.945    0.165    0.703      0.945    0.806      0.726    0.924     0.755     fp
+Weighted Avg.    0.867    0.087    0.894      0.867    0.872      0.726    0.924     0.898     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 111  22 |   a = nfp
+   3  52 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         155               82.4468 %
+Incorrectly Classified Instances        33               17.5532 %
+Kappa statistic                          0.6223
+Mean absolute error                      0.2252
+Root mean squared error                  0.3503
+Relative absolute error                 54.2557 %
+Root relative squared error             76.9761 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.789    0.091    0.955      0.789    0.864      0.645    0.890     0.941     nfp
+                 0.909    0.211    0.641      0.909    0.752      0.645    0.890     0.687     fp
+Weighted Avg.    0.824    0.126    0.863      0.824    0.831      0.645    0.890     0.867     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 105  28 |   a = nfp
+   5  50 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 0.5; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0    0.5 
+ 1    0   
+
+
+Time taken to build model: 0.85 seconds
+Time taken to test model on training data: 0.05 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         163               86.7021 %
+Incorrectly Classified Instances        25               13.2979 %
+Kappa statistic                          0.7083
+Mean absolute error                      0.207 
+Root mean squared error                  0.3222
+Relative absolute error                 49.8924 %
+Root relative squared error             70.8179 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.835    0.055    0.974      0.835    0.899      0.726    0.924     0.957     nfp
+                 0.945    0.165    0.703      0.945    0.806      0.726    0.924     0.755     fp
+Weighted Avg.    0.867    0.087    0.894      0.867    0.872      0.726    0.924     0.898     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 111  22 |   a = nfp
+   3  52 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          78               82.9787 %
+Incorrectly Classified Instances        16               17.0213 %
+Kappa statistic                          0.6378
+Mean absolute error                      0.2267
+Root mean squared error                  0.353 
+Relative absolute error                 54.3726 %
+Root relative squared error             77.176  %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.788    0.071    0.963      0.788    0.867      0.663    0.897     0.936     nfp
+                 0.929    0.212    0.650      0.929    0.765      0.663    0.897     0.704     fp
+Weighted Avg.    0.830    0.113    0.870      0.830    0.836      0.663    0.897     0.867     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 52 14 |  a = nfp
+  2 26 |  b = fp
+
+
+*** FIT ***
+
+Options: -cost-matrix "[0.0 1.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 1
+ 1 0
+
+
+Time taken to build model: 0.49 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         163               86.7021 %
+Incorrectly Classified Instances        25               13.2979 %
+Kappa statistic                          0.6903
+Mean absolute error                      0.2111
+Root mean squared error                  0.3029
+Relative absolute error                 50.8952 %
+Root relative squared error             66.5904 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.880    0.164    0.929      0.880    0.903      0.693    0.943     0.967     nfp
+                 0.836    0.120    0.742      0.836    0.786      0.693    0.943     0.841     fp
+Weighted Avg.    0.867    0.151    0.874      0.867    0.869      0.693    0.943     0.930     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 117  16 |   a = nfp
+   9  46 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         158               84.0426 %
+Incorrectly Classified Instances        30               15.9574 %
+Kappa statistic                          0.6413
+Mean absolute error                      0.2225
+Root mean squared error                  0.3312
+Relative absolute error                 53.6043 %
+Root relative squared error             72.7675 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.835    0.145    0.933      0.835    0.881      0.650    0.901     0.942     nfp
+                 0.855    0.165    0.681      0.855    0.758      0.650    0.901     0.775     fp
+Weighted Avg.    0.840    0.151    0.859      0.840    0.845      0.650    0.901     0.893     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 111  22 |   a = nfp
+   8  47 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 1.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 1
+ 1 0
+
+
+Time taken to build model: 0.53 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         163               86.7021 %
+Incorrectly Classified Instances        25               13.2979 %
+Kappa statistic                          0.6903
+Mean absolute error                      0.2111
+Root mean squared error                  0.3029
+Relative absolute error                 50.8952 %
+Root relative squared error             66.5904 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.880    0.164    0.929      0.880    0.903      0.693    0.943     0.967     nfp
+                 0.836    0.120    0.742      0.836    0.786      0.693    0.943     0.841     fp
+Weighted Avg.    0.867    0.151    0.874      0.867    0.869      0.693    0.943     0.930     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 117  16 |   a = nfp
+   9  46 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          79               84.0426 %
+Incorrectly Classified Instances        15               15.9574 %
+Kappa statistic                          0.6508
+Mean absolute error                      0.2291
+Root mean squared error                  0.328 
+Relative absolute error                 54.9323 %
+Root relative squared error             71.7254 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.818    0.107    0.947      0.818    0.878      0.666    0.915     0.948     nfp
+                 0.893    0.182    0.676      0.893    0.769      0.666    0.915     0.768     fp
+Weighted Avg.    0.840    0.129    0.866      0.840    0.846      0.666    0.915     0.895     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 54 12 |  a = nfp
+  3 25 |  b = fp
+
+
+*** FIT ***
+
+Options: -cost-matrix "[0.0 2.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 2
+ 1 0
+
+
+Time taken to build model: 0.51 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         160               85.1064 %
+Incorrectly Classified Instances        28               14.8936 %
+Kappa statistic                          0.5874
+Mean absolute error                      0.2195
+Root mean squared error                  0.3274
+Relative absolute error                 52.9036 %
+Root relative squared error             71.9623 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.985    0.473    0.834      0.985    0.903      0.628    0.939     0.967     nfp
+                 0.527    0.015    0.935      0.527    0.674      0.628    0.939     0.837     fp
+Weighted Avg.    0.851    0.339    0.864      0.851    0.836      0.628    0.939     0.929     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 131   2 |   a = nfp
+  26  29 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         156               82.9787 %
+Incorrectly Classified Instances        32               17.0213 %
+Kappa statistic                          0.5656
+Mean absolute error                      0.2267
+Root mean squared error                  0.3433
+Relative absolute error                 54.6105 %
+Root relative squared error             75.4264 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.917    0.382    0.853      0.917    0.884      0.571    0.897     0.944     nfp
+                 0.618    0.083    0.756      0.618    0.680      0.571    0.897     0.750     fp
+Weighted Avg.    0.830    0.294    0.825      0.830    0.824      0.571    0.897     0.887     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 122  11 |   a = nfp
+  21  34 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 2.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 2
+ 1 0
+
+
+Time taken to build model: 0.56 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         160               85.1064 %
+Incorrectly Classified Instances        28               14.8936 %
+Kappa statistic                          0.5874
+Mean absolute error                      0.2195
+Root mean squared error                  0.3274
+Relative absolute error                 52.9036 %
+Root relative squared error             71.9623 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.985    0.473    0.834      0.985    0.903      0.628    0.939     0.967     nfp
+                 0.527    0.015    0.935      0.527    0.674      0.628    0.939     0.837     fp
+Weighted Avg.    0.851    0.339    0.864      0.851    0.836      0.628    0.939     0.929     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 131   2 |   a = nfp
+  26  29 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          77               81.9149 %
+Incorrectly Classified Instances        17               18.0851 %
+Kappa statistic                          0.5009
+Mean absolute error                      0.2372
+Root mean squared error                  0.3365
+Relative absolute error                 56.8687 %
+Root relative squared error             73.5755 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.970    0.536    0.810      0.970    0.883      0.542    0.919     0.950     nfp
+                 0.464    0.030    0.867      0.464    0.605      0.542    0.919     0.787     fp
+Weighted Avg.    0.819    0.385    0.827      0.819    0.800      0.542    0.919     0.902     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 64  2 |  a = nfp
+ 15 13 |  b = fp
+
+
+*** FIT ***
+
+Options: -cost-matrix "[0.0 3.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 3
+ 1 0
+
+
+Time taken to build model: 0.55 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         159               84.5745 %
+Incorrectly Classified Instances        29               15.4255 %
+Kappa statistic                          0.57  
+Mean absolute error                      0.2186
+Root mean squared error                  0.3417
+Relative absolute error                 52.6968 %
+Root relative squared error             75.1115 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.985    0.491    0.829      0.985    0.900      0.614    0.932     0.963     nfp
+                 0.509    0.015    0.933      0.509    0.659      0.614    0.932     0.843     fp
+Weighted Avg.    0.846    0.352    0.860      0.846    0.830      0.614    0.932     0.928     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 131   2 |   a = nfp
+  27  28 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         154               81.9149 %
+Incorrectly Classified Instances        34               18.0851 %
+Kappa statistic                          0.5167
+Mean absolute error                      0.2302
+Root mean squared error                  0.3603
+Relative absolute error                 55.4514 %
+Root relative squared error             79.1785 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.940    0.473    0.828      0.940    0.880      0.535    0.909     0.960     nfp
+                 0.527    0.060    0.784      0.527    0.630      0.535    0.909     0.742     fp
+Weighted Avg.    0.819    0.352    0.815      0.819    0.807      0.535    0.909     0.897     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 125   8 |   a = nfp
+  26  29 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 3.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 3
+ 1 0
+
+
+Time taken to build model: 0.52 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         159               84.5745 %
+Incorrectly Classified Instances        29               15.4255 %
+Kappa statistic                          0.57  
+Mean absolute error                      0.2186
+Root mean squared error                  0.3417
+Relative absolute error                 52.6968 %
+Root relative squared error             75.1115 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.985    0.491    0.829      0.985    0.900      0.614    0.932     0.963     nfp
+                 0.509    0.015    0.933      0.509    0.659      0.614    0.932     0.843     fp
+Weighted Avg.    0.846    0.352    0.860      0.846    0.830      0.614    0.932     0.928     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 131   2 |   a = nfp
+  27  28 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          77               81.9149 %
+Incorrectly Classified Instances        17               18.0851 %
+Kappa statistic                          0.5009
+Mean absolute error                      0.228 
+Root mean squared error                  0.341 
+Relative absolute error                 54.6728 %
+Root relative squared error             74.5677 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.970    0.536    0.810      0.970    0.883      0.542    0.912     0.942     nfp
+                 0.464    0.030    0.867      0.464    0.605      0.542    0.912     0.799     fp
+Weighted Avg.    0.819    0.385    0.827      0.819    0.800      0.542    0.912     0.899     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 64  2 |  a = nfp
+ 15 13 |  b = fp
+
+
+*** FIT ***
+
+Options: -cost-matrix "[0.0 4.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 4
+ 1 0
+
+
+Time taken to build model: 0.5 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         156               82.9787 %
+Incorrectly Classified Instances        32               17.0213 %
+Kappa statistic                          0.5166
+Mean absolute error                      0.2234
+Root mean squared error                  0.3583
+Relative absolute error                 53.8408 %
+Root relative squared error             78.753  %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.985    0.545    0.814      0.985    0.891      0.570    0.931     0.962     nfp
+                 0.455    0.015    0.926      0.455    0.610      0.570    0.931     0.839     fp
+Weighted Avg.    0.830    0.390    0.847      0.830    0.809      0.570    0.931     0.926     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 131   2 |   a = nfp
+  30  25 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         146               77.6596 %
+Incorrectly Classified Instances        42               22.3404 %
+Kappa statistic                          0.3321
+Mean absolute error                      0.2348
+Root mean squared error                  0.3772
+Relative absolute error                 56.5653 %
+Root relative squared error             82.8753 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.977    0.709    0.769      0.977    0.861      0.405    0.902     0.955     nfp
+                 0.291    0.023    0.842      0.291    0.432      0.405    0.902     0.752     fp
+Weighted Avg.    0.777    0.508    0.791      0.777    0.736      0.405    0.902     0.895     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 130   3 |   a = nfp
+  39  16 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 4.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 4
+ 1 0
+
+
+Time taken to build model: 0.54 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         156               82.9787 %
+Incorrectly Classified Instances        32               17.0213 %
+Kappa statistic                          0.5166
+Mean absolute error                      0.2234
+Root mean squared error                  0.3583
+Relative absolute error                 53.8408 %
+Root relative squared error             78.753  %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.985    0.545    0.814      0.985    0.891      0.570    0.931     0.962     nfp
+                 0.455    0.015    0.926      0.455    0.610      0.570    0.931     0.839     fp
+Weighted Avg.    0.830    0.390    0.847      0.830    0.809      0.570    0.931     0.926     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 131   2 |   a = nfp
+  30  25 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          76               80.8511 %
+Incorrectly Classified Instances        18               19.1489 %
+Kappa statistic                          0.4652
+Mean absolute error                      0.2351
+Root mean squared error                  0.3585
+Relative absolute error                 56.3668 %
+Root relative squared error             78.398  %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.970    0.571    0.800      0.970    0.877      0.512    0.909     0.941     nfp
+                 0.429    0.030    0.857      0.429    0.571      0.512    0.909     0.792     fp
+Weighted Avg.    0.809    0.410    0.817      0.809    0.786      0.512    0.909     0.897     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 64  2 |  a = nfp
+ 16 12 |  b = fp
+
+
+*** FIT ***
+
+Options: -cost-matrix "[0.0 5.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 5
+ 1 0
+
+
+Time taken to build model: 0.44 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         160               85.1064 %
+Incorrectly Classified Instances        28               14.8936 %
+Kappa statistic                          0.5874
+Mean absolute error                      0.2177
+Root mean squared error                  0.3631
+Relative absolute error                 52.4809 %
+Root relative squared error             79.8138 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.985    0.473    0.834      0.985    0.903      0.628    0.939     0.969     nfp
+                 0.527    0.015    0.935      0.527    0.674      0.628    0.939     0.849     fp
+Weighted Avg.    0.851    0.339    0.864      0.851    0.836      0.628    0.939     0.934     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 131   2 |   a = nfp
+  26  29 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         147               78.1915 %
+Incorrectly Classified Instances        41               21.8085 %
+Kappa statistic                          0.3348
+Mean absolute error                      0.2369
+Root mean squared error                  0.3905
+Relative absolute error                 57.0779 %
+Root relative squared error             85.797  %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.992    0.727    0.767      0.992    0.866      0.432    0.898     0.938     nfp
+                 0.273    0.008    0.938      0.273    0.423      0.432    0.898     0.804     fp
+Weighted Avg.    0.782    0.517    0.817      0.782    0.736      0.432    0.898     0.899     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 132   1 |   a = nfp
+  40  15 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 5.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 5
+ 1 0
+
+
+Time taken to build model: 0.57 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         160               85.1064 %
+Incorrectly Classified Instances        28               14.8936 %
+Kappa statistic                          0.5874
+Mean absolute error                      0.2177
+Root mean squared error                  0.3631
+Relative absolute error                 52.4809 %
+Root relative squared error             79.8138 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.985    0.473    0.834      0.985    0.903      0.628    0.939     0.969     nfp
+                 0.527    0.015    0.935      0.527    0.674      0.628    0.939     0.849     fp
+Weighted Avg.    0.851    0.339    0.864      0.851    0.836      0.628    0.939     0.934     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 131   2 |   a = nfp
+  26  29 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          76               80.8511 %
+Incorrectly Classified Instances        18               19.1489 %
+Kappa statistic                          0.4652
+Mean absolute error                      0.233 
+Root mean squared error                  0.3752
+Relative absolute error                 55.8836 %
+Root relative squared error             82.0402 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.970    0.571    0.800      0.970    0.877      0.512    0.911     0.941     nfp
+                 0.429    0.030    0.857      0.429    0.571      0.512    0.911     0.821     fp
+Weighted Avg.    0.809    0.410    0.817      0.809    0.786      0.512    0.911     0.905     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 64  2 |  a = nfp
+ 16 12 |  b = fp
+
+
+*** FIT ***
+
+Options: -cost-matrix "[0.0 6.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 6
+ 1 0
+
+
+Time taken to build model: 0.52 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         157               83.5106 %
+Incorrectly Classified Instances        31               16.4894 %
+Kappa statistic                          0.5347
+Mean absolute error                      0.2194
+Root mean squared error                  0.3738
+Relative absolute error                 52.8899 %
+Root relative squared error             82.16   %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.985    0.527    0.819      0.985    0.894      0.585    0.938     0.969     nfp
+                 0.473    0.015    0.929      0.473    0.627      0.585    0.938     0.846     fp
+Weighted Avg.    0.835    0.377    0.851      0.835    0.816      0.585    0.938     0.933     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 131   2 |   a = nfp
+  29  26 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         143               76.0638 %
+Incorrectly Classified Instances        45               23.9362 %
+Kappa statistic                          0.2497
+Mean absolute error                      0.241 
+Root mean squared error                  0.4037
+Relative absolute error                 58.0682 %
+Root relative squared error             88.6996 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.992    0.800    0.750      0.992    0.854      0.358    0.875     0.925     nfp
+                 0.200    0.008    0.917      0.200    0.328      0.358    0.875     0.761     fp
+Weighted Avg.    0.761    0.568    0.799      0.761    0.700      0.358    0.875     0.877     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 132   1 |   a = nfp
+  44  11 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 6.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 6
+ 1 0
+
+
+Time taken to build model: 0.51 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         157               83.5106 %
+Incorrectly Classified Instances        31               16.4894 %
+Kappa statistic                          0.5347
+Mean absolute error                      0.2194
+Root mean squared error                  0.3738
+Relative absolute error                 52.8899 %
+Root relative squared error             82.16   %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.985    0.527    0.819      0.985    0.894      0.585    0.938     0.969     nfp
+                 0.473    0.015    0.929      0.473    0.627      0.585    0.938     0.846     fp
+Weighted Avg.    0.835    0.377    0.851      0.835    0.816      0.585    0.938     0.933     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 131   2 |   a = nfp
+  29  26 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          76               80.8511 %
+Incorrectly Classified Instances        18               19.1489 %
+Kappa statistic                          0.4652
+Mean absolute error                      0.2314
+Root mean squared error                  0.3813
+Relative absolute error                 55.4982 %
+Root relative squared error             83.3701 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.970    0.571    0.800      0.970    0.877      0.512    0.911     0.940     nfp
+                 0.429    0.030    0.857      0.429    0.571      0.512    0.911     0.816     fp
+Weighted Avg.    0.809    0.410    0.817      0.809    0.786      0.512    0.911     0.903     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 64  2 |  a = nfp
+ 16 12 |  b = fp
+
+
+*** FIT ***
+
+Options: -cost-matrix "[0.0 7.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 7
+ 1 0
+
+
+Time taken to build model: 0.51 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         150               79.7872 %
+Incorrectly Classified Instances        38               20.2128 %
+Kappa statistic                          0.3876
+Mean absolute error                      0.2232
+Root mean squared error                  0.3871
+Relative absolute error                 53.8122 %
+Root relative squared error             85.0813 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.691    0.778      1.000    0.875      0.490    0.943     0.971     nfp
+                 0.309    0.000    1.000      0.309    0.472      0.490    0.943     0.871     fp
+Weighted Avg.    0.798    0.489    0.843      0.798    0.757      0.490    0.943     0.942     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  38  17 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         140               74.4681 %
+Incorrectly Classified Instances        48               25.5319 %
+Kappa statistic                          0.1828
+Mean absolute error                      0.2413
+Root mean squared error                  0.41  
+Relative absolute error                 58.1408 %
+Root relative squared error             90.0968 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.992    0.855    0.737      0.992    0.846      0.294    0.884     0.938     nfp
+                 0.145    0.008    0.889      0.145    0.250      0.294    0.884     0.783     fp
+Weighted Avg.    0.745    0.607    0.782      0.745    0.672      0.294    0.884     0.892     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 132   1 |   a = nfp
+  47   8 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 7.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 7
+ 1 0
+
+
+Time taken to build model: 0.56 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         150               79.7872 %
+Incorrectly Classified Instances        38               20.2128 %
+Kappa statistic                          0.3876
+Mean absolute error                      0.2232
+Root mean squared error                  0.3871
+Relative absolute error                 53.8122 %
+Root relative squared error             85.0813 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.691    0.778      1.000    0.875      0.490    0.943     0.971     nfp
+                 0.309    0.000    1.000      0.309    0.472      0.490    0.943     0.871     fp
+Weighted Avg.    0.798    0.489    0.843      0.798    0.757      0.490    0.943     0.942     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  38  17 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          73               77.6596 %
+Incorrectly Classified Instances        21               22.3404 %
+Kappa statistic                          0.3188
+Mean absolute error                      0.2292
+Root mean squared error                  0.3842
+Relative absolute error                 54.9532 %
+Root relative squared error             84.0161 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.750    0.759      1.000    0.863      0.435    0.914     0.941     nfp
+                 0.250    0.000    1.000      0.250    0.400      0.435    0.914     0.843     fp
+Weighted Avg.    0.777    0.527    0.831      0.777    0.725      0.435    0.914     0.912     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 66  0 |  a = nfp
+ 21  7 |  b = fp
+
+
+*** FIT ***
+
+Options: -cost-matrix "[0.0 8.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 8
+ 1 0
+
+
+Time taken to build model: 0.52 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         133               70.7447 %
+Incorrectly Classified Instances        55               29.2553 %
+Kappa statistic                          0     
+Mean absolute error                      0.2367
+Root mean squared error                  0.4073
+Relative absolute error                 57.0499 %
+Root relative squared error             89.5266 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.707      1.000    0.829      0.000    0.939     0.969     nfp
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.939     0.846     fp
+Weighted Avg.    0.707    0.707    0.500      0.707    0.586      0.000    0.939     0.933     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  55   0 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         143               76.0638 %
+Incorrectly Classified Instances        45               23.9362 %
+Kappa statistic                          0.2392
+Mean absolute error                      0.2401
+Root mean squared error                  0.4139
+Relative absolute error                 57.8572 %
+Root relative squared error             90.9467 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.818    0.747      1.000    0.855      0.369    0.893     0.940     nfp
+                 0.182    0.000    1.000      0.182    0.308      0.369    0.893     0.805     fp
+Weighted Avg.    0.761    0.579    0.821      0.761    0.695      0.369    0.893     0.901     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  45  10 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 8.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 8
+ 1 0
+
+
+Time taken to build model: 0.54 seconds
+Time taken to test model on training data: 0.04 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         133               70.7447 %
+Incorrectly Classified Instances        55               29.2553 %
+Kappa statistic                          0     
+Mean absolute error                      0.2367
+Root mean squared error                  0.4073
+Relative absolute error                 57.0499 %
+Root relative squared error             89.5266 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.707      1.000    0.829      0.000    0.939     0.969     nfp
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.939     0.846     fp
+Weighted Avg.    0.707    0.707    0.500      0.707    0.586      0.000    0.939     0.933     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  55   0 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          66               70.2128 %
+Incorrectly Classified Instances        28               29.7872 %
+Kappa statistic                          0     
+Mean absolute error                      0.2409
+Root mean squared error                  0.4053
+Relative absolute error                 57.7711 %
+Root relative squared error             88.6216 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.702      1.000    0.825      0.000    0.918     0.945     nfp
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.918     0.852     fp
+Weighted Avg.    0.702    0.702    0.493      0.702    0.579      0.000    0.918     0.917     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 66  0 |  a = nfp
+ 28  0 |  b = fp
+
+
+*** FIT ***
+
+Options: -cost-matrix "[0.0 9.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 9
+ 1 0
+
+
+Time taken to build model: 0.55 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         133               70.7447 %
+Incorrectly Classified Instances        55               29.2553 %
+Kappa statistic                          0     
+Mean absolute error                      0.2333
+Root mean squared error                  0.4044
+Relative absolute error                 56.2293 %
+Root relative squared error             88.8855 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.707      1.000    0.829      0.000    0.914     0.945     nfp
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.914     0.824     fp
+Weighted Avg.    0.707    0.707    0.500      0.707    0.586      0.000    0.914     0.910     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  55   0 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         142               75.5319 %
+Incorrectly Classified Instances        46               24.4681 %
+Kappa statistic                          0.2168
+Mean absolute error                      0.2409
+Root mean squared error                  0.4183
+Relative absolute error                 58.0444 %
+Root relative squared error             91.9156 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.836    0.743      1.000    0.853      0.349    0.902     0.947     nfp
+                 0.164    0.000    1.000      0.164    0.281      0.349    0.902     0.817     fp
+Weighted Avg.    0.755    0.592    0.818      0.755    0.685      0.349    0.902     0.909     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  46   9 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 9.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 9
+ 1 0
+
+
+Time taken to build model: 0.51 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         133               70.7447 %
+Incorrectly Classified Instances        55               29.2553 %
+Kappa statistic                          0     
+Mean absolute error                      0.2333
+Root mean squared error                  0.4044
+Relative absolute error                 56.2293 %
+Root relative squared error             88.8855 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.707      1.000    0.829      0.000    0.914     0.945     nfp
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.914     0.824     fp
+Weighted Avg.    0.707    0.707    0.500      0.707    0.586      0.000    0.914     0.910     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  55   0 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          66               70.2128 %
+Incorrectly Classified Instances        28               29.7872 %
+Kappa statistic                          0     
+Mean absolute error                      0.2365
+Root mean squared error                  0.4   
+Relative absolute error                 56.7214 %
+Root relative squared error             87.4617 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.702      1.000    0.825      0.000    0.920     0.949     nfp
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.920     0.833     fp
+Weighted Avg.    0.702    0.702    0.493      0.702    0.579      0.000    0.920     0.914     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 66  0 |  a = nfp
+ 28  0 |  b = fp
+
+
+*** FIT ***
+
+Options: -cost-matrix "[0.0 10.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+  0 10
+  1  0
+
+
+Time taken to build model: 0.56 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         146               77.6596 %
+Incorrectly Classified Instances        42               22.3404 %
+Kappa statistic                          0.3046
+Mean absolute error                      0.2234
+Root mean squared error                  0.3968
+Relative absolute error                 53.8503 %
+Root relative squared error             87.2094 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.764    0.760      1.000    0.864      0.424    0.918     0.948     nfp
+                 0.236    0.000    1.000      0.236    0.382      0.424    0.918     0.846     fp
+Weighted Avg.    0.777    0.540    0.830      0.777    0.723      0.424    0.918     0.918     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  42  13 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         142               75.5319 %
+Incorrectly Classified Instances        46               24.4681 %
+Kappa statistic                          0.2168
+Mean absolute error                      0.2383
+Root mean squared error                  0.4174
+Relative absolute error                 57.4182 %
+Root relative squared error             91.7234 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.836    0.743      1.000    0.853      0.349    0.914     0.955     nfp
+                 0.164    0.000    1.000      0.164    0.281      0.349    0.914     0.823     fp
+Weighted Avg.    0.755    0.592    0.818      0.755    0.685      0.349    0.914     0.917     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  46   9 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 10.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+  0 10
+  1  0
+
+
+Time taken to build model: 0.54 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         146               77.6596 %
+Incorrectly Classified Instances        42               22.3404 %
+Kappa statistic                          0.3046
+Mean absolute error                      0.2234
+Root mean squared error                  0.3968
+Relative absolute error                 53.8503 %
+Root relative squared error             87.2094 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.764    0.760      1.000    0.864      0.424    0.918     0.948     nfp
+                 0.236    0.000    1.000      0.236    0.382      0.424    0.918     0.846     fp
+Weighted Avg.    0.777    0.540    0.830      0.777    0.723      0.424    0.918     0.918     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  42  13 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          71               75.5319 %
+Incorrectly Classified Instances        23               24.4681 %
+Kappa statistic                          0.2339
+Mean absolute error                      0.2311
+Root mean squared error                  0.3995
+Relative absolute error                 55.4204 %
+Root relative squared error             87.3635 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.821    0.742      1.000    0.852      0.364    0.907     0.937     nfp
+                 0.179    0.000    1.000      0.179    0.303      0.364    0.907     0.830     fp
+Weighted Avg.    0.755    0.577    0.819      0.755    0.688      0.364    0.907     0.905     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 66  0 |  a = nfp
+ 23  5 |  b = fp
+
+
+*** FIT ***
+
+Options: -cost-matrix "[0.0 0.25; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 25 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0    0.25
+ 1    0   
+
+
+Time taken to build model: 0.54 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         156               82.9787 %
+Incorrectly Classified Instances        32               17.0213 %
+Kappa statistic                          0.6455
+Mean absolute error                      0.2164
+Root mean squared error                  0.3547
+Relative absolute error                 52.1748 %
+Root relative squared error             77.9588 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.767    0.018    0.990      0.767    0.864      0.684    0.924     0.957     nfp
+                 0.982    0.233    0.635      0.982    0.771      0.684    0.924     0.753     fp
+Weighted Avg.    0.830    0.081    0.886      0.830    0.837      0.684    0.924     0.897     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 102  31 |   a = nfp
+   1  54 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         156               82.9787 %
+Incorrectly Classified Instances        32               17.0213 %
+Kappa statistic                          0.6389
+Mean absolute error                      0.2378
+Root mean squared error                  0.3713
+Relative absolute error                 57.3045 %
+Root relative squared error             81.5794 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.782    0.055    0.972      0.782    0.867      0.668    0.886     0.941     nfp
+                 0.945    0.218    0.642      0.945    0.765      0.668    0.886     0.679     fp
+Weighted Avg.    0.830    0.102    0.875      0.830    0.837      0.668    0.886     0.864     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 104  29 |   a = nfp
+   3  52 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 0.25; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 25 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0    0.25
+ 1    0   
+
+
+Time taken to build model: 0.6 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         156               82.9787 %
+Incorrectly Classified Instances        32               17.0213 %
+Kappa statistic                          0.6455
+Mean absolute error                      0.2164
+Root mean squared error                  0.3547
+Relative absolute error                 52.1748 %
+Root relative squared error             77.9588 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.767    0.018    0.990      0.767    0.864      0.684    0.924     0.957     nfp
+                 0.982    0.233    0.635      0.982    0.771      0.684    0.924     0.753     fp
+Weighted Avg.    0.830    0.081    0.886      0.830    0.837      0.684    0.924     0.897     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 102  31 |   a = nfp
+   1  54 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          76               80.8511 %
+Incorrectly Classified Instances        18               19.1489 %
+Kappa statistic                          0.6069
+Mean absolute error                      0.2373
+Root mean squared error                  0.3856
+Relative absolute error                 56.896  %
+Root relative squared error             84.3195 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.742    0.036    0.980      0.742    0.845      0.648    0.896     0.936     nfp
+                 0.964    0.258    0.614      0.964    0.750      0.648    0.896     0.702     fp
+Weighted Avg.    0.809    0.102    0.871      0.809    0.817      0.648    0.896     0.866     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 49 17 |  a = nfp
+  1 27 |  b = fp
+
+
+*** FIT ***
+
+Options: -cost-matrix "[0.0 0.5; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 25 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0    0.5 
+ 1    0   
+
+
+Time taken to build model: 0.6 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         157               83.5106 %
+Incorrectly Classified Instances        31               16.4894 %
+Kappa statistic                          0.6518
+Mean absolute error                      0.2106
+Root mean squared error                  0.3251
+Relative absolute error                 50.7712 %
+Root relative squared error             71.463  %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.782    0.036    0.981      0.782    0.870      0.684    0.922     0.957     nfp
+                 0.964    0.218    0.646      0.964    0.774      0.684    0.922     0.753     fp
+Weighted Avg.    0.835    0.090    0.883      0.835    0.842      0.684    0.922     0.897     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 104  29 |   a = nfp
+   2  53 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         154               81.9149 %
+Incorrectly Classified Instances        34               18.0851 %
+Kappa statistic                          0.609 
+Mean absolute error                      0.229 
+Root mean squared error                  0.3464
+Relative absolute error                 55.176  %
+Root relative squared error             76.1213 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.789    0.109    0.946      0.789    0.861      0.629    0.887     0.942     nfp
+                 0.891    0.211    0.636      0.891    0.742      0.629    0.887     0.662     fp
+Weighted Avg.    0.819    0.139    0.855      0.819    0.826      0.629    0.887     0.860     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 105  28 |   a = nfp
+   6  49 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 0.5; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 25 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0    0.5 
+ 1    0   
+
+
+Time taken to build model: 0.6 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         157               83.5106 %
+Incorrectly Classified Instances        31               16.4894 %
+Kappa statistic                          0.6518
+Mean absolute error                      0.2106
+Root mean squared error                  0.3251
+Relative absolute error                 50.7712 %
+Root relative squared error             71.463  %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.782    0.036    0.981      0.782    0.870      0.684    0.922     0.957     nfp
+                 0.964    0.218    0.646      0.964    0.774      0.684    0.922     0.753     fp
+Weighted Avg.    0.835    0.090    0.883      0.835    0.842      0.684    0.922     0.897     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 104  29 |   a = nfp
+   2  53 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          77               81.9149 %
+Incorrectly Classified Instances        17               18.0851 %
+Kappa statistic                          0.6254
+Mean absolute error                      0.228 
+Root mean squared error                  0.3522
+Relative absolute error                 54.6637 %
+Root relative squared error             77.0207 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.758    0.036    0.980      0.758    0.855      0.663    0.897     0.937     nfp
+                 0.964    0.242    0.628      0.964    0.761      0.663    0.897     0.704     fp
+Weighted Avg.    0.819    0.097    0.875      0.819    0.827      0.663    0.897     0.867     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 50 16 |  a = nfp
+  1 27 |  b = fp
+
+
+*** FIT ***
+
+Options: -cost-matrix "[0.0 1.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 25 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 1
+ 1 0
+
+
+Time taken to build model: 0.55 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         163               86.7021 %
+Incorrectly Classified Instances        25               13.2979 %
+Kappa statistic                          0.7025
+Mean absolute error                      0.2153
+Root mean squared error                  0.3071
+Relative absolute error                 51.9046 %
+Root relative squared error             67.5102 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.850    0.091    0.958      0.850    0.900      0.714    0.941     0.970     nfp
+                 0.909    0.150    0.714      0.909    0.800      0.714    0.941     0.847     fp
+Weighted Avg.    0.867    0.108    0.886      0.867    0.871      0.714    0.941     0.934     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 113  20 |   a = nfp
+   5  50 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         157               83.5106 %
+Incorrectly Classified Instances        31               16.4894 %
+Kappa statistic                          0.6275
+Mean absolute error                      0.2252
+Root mean squared error                  0.3319
+Relative absolute error                 54.2467 %
+Root relative squared error             72.9225 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.835    0.164    0.925      0.835    0.877      0.635    0.902     0.955     nfp
+                 0.836    0.165    0.676      0.836    0.748      0.635    0.902     0.710     fp
+Weighted Avg.    0.835    0.164    0.852      0.835    0.840      0.635    0.902     0.884     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 111  22 |   a = nfp
+   9  46 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 1.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 25 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 1
+ 1 0
+
+
+Time taken to build model: 0.53 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         163               86.7021 %
+Incorrectly Classified Instances        25               13.2979 %
+Kappa statistic                          0.7025
+Mean absolute error                      0.2153
+Root mean squared error                  0.3071
+Relative absolute error                 51.9046 %
+Root relative squared error             67.5102 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.850    0.091    0.958      0.850    0.900      0.714    0.941     0.970     nfp
+                 0.909    0.150    0.714      0.909    0.800      0.714    0.941     0.847     fp
+Weighted Avg.    0.867    0.108    0.886      0.867    0.871      0.714    0.941     0.934     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 113  20 |   a = nfp
+   5  50 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          79               84.0426 %
+Incorrectly Classified Instances        15               15.9574 %
+Kappa statistic                          0.6573
+Mean absolute error                      0.2288
+Root mean squared error                  0.3259
+Relative absolute error                 54.8691 %
+Root relative squared error             71.2567 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.803    0.071    0.964      0.803    0.876      0.679    0.923     0.955     nfp
+                 0.929    0.197    0.667      0.929    0.776      0.679    0.923     0.800     fp
+Weighted Avg.    0.840    0.109    0.875      0.840    0.846      0.679    0.923     0.909     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 53 13 |  a = nfp
+  2 26 |  b = fp
+
+
+*** FIT ***
+
+Options: -cost-matrix "[0.0 2.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 25 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 2
+ 1 0
+
+
+Time taken to build model: 0.58 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         163               86.7021 %
+Incorrectly Classified Instances        25               13.2979 %
+Kappa statistic                          0.6735
+Mean absolute error                      0.2238
+Root mean squared error                  0.3278
+Relative absolute error                 53.9529 %
+Root relative squared error             72.0536 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.917    0.255    0.897      0.917    0.907      0.674    0.936     0.969     nfp
+                 0.745    0.083    0.788      0.745    0.766      0.674    0.936     0.836     fp
+Weighted Avg.    0.867    0.204    0.865      0.867    0.866      0.674    0.936     0.930     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 122  11 |   a = nfp
+  14  41 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         157               83.5106 %
+Incorrectly Classified Instances        31               16.4894 %
+Kappa statistic                          0.5816
+Mean absolute error                      0.2269
+Root mean squared error                  0.3402
+Relative absolute error                 54.6746 %
+Root relative squared error             74.7531 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.917    0.364    0.859      0.917    0.887      0.586    0.919     0.968     nfp
+                 0.636    0.083    0.761      0.636    0.693      0.586    0.919     0.762     fp
+Weighted Avg.    0.835    0.281    0.830      0.835    0.830      0.586    0.919     0.907     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 122  11 |   a = nfp
+  20  35 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 2.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 25 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 2
+ 1 0
+
+
+Time taken to build model: 0.61 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         163               86.7021 %
+Incorrectly Classified Instances        25               13.2979 %
+Kappa statistic                          0.6735
+Mean absolute error                      0.2238
+Root mean squared error                  0.3278
+Relative absolute error                 53.9529 %
+Root relative squared error             72.0536 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.917    0.255    0.897      0.917    0.907      0.674    0.936     0.969     nfp
+                 0.745    0.083    0.788      0.745    0.766      0.674    0.936     0.836     fp
+Weighted Avg.    0.867    0.204    0.865      0.867    0.866      0.674    0.936     0.930     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 122  11 |   a = nfp
+  14  41 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          81               86.1702 %
+Incorrectly Classified Instances        13               13.8298 %
+Kappa statistic                          0.6659
+Mean absolute error                      0.2381
+Root mean squared error                  0.3372
+Relative absolute error                 57.0919 %
+Root relative squared error             73.7215 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.909    0.250    0.896      0.909    0.902      0.666    0.924     0.955     nfp
+                 0.750    0.091    0.778      0.750    0.764      0.666    0.924     0.802     fp
+Weighted Avg.    0.862    0.203    0.860      0.862    0.861      0.666    0.924     0.909     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 60  6 |  a = nfp
+  7 21 |  b = fp
+
+
+*** FIT ***
+
+Options: -cost-matrix "[0.0 3.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 25 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 3
+ 1 0
+
+
+Time taken to build model: 0.67 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         157               83.5106 %
+Incorrectly Classified Instances        31               16.4894 %
+Kappa statistic                          0.5347
+Mean absolute error                      0.2235
+Root mean squared error                  0.3423
+Relative absolute error                 53.8852 %
+Root relative squared error             75.2501 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.985    0.527    0.819      0.985    0.894      0.585    0.941     0.971     nfp
+                 0.473    0.015    0.929      0.473    0.627      0.585    0.941     0.854     fp
+Weighted Avg.    0.835    0.377    0.851      0.835    0.816      0.585    0.941     0.937     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 131   2 |   a = nfp
+  29  26 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         154               81.9149 %
+Incorrectly Classified Instances        34               18.0851 %
+Kappa statistic                          0.4864
+Mean absolute error                      0.2319
+Root mean squared error                  0.3571
+Relative absolute error                 55.8619 %
+Root relative squared error             78.4711 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.977    0.564    0.807      0.977    0.884      0.537    0.924     0.970     nfp
+                 0.436    0.023    0.889      0.436    0.585      0.537    0.924     0.774     fp
+Weighted Avg.    0.819    0.405    0.831      0.819    0.797      0.537    0.924     0.913     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 130   3 |   a = nfp
+  31  24 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 3.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 25 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 3
+ 1 0
+
+
+Time taken to build model: 0.54 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         157               83.5106 %
+Incorrectly Classified Instances        31               16.4894 %
+Kappa statistic                          0.5347
+Mean absolute error                      0.2235
+Root mean squared error                  0.3423
+Relative absolute error                 53.8852 %
+Root relative squared error             75.2501 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.985    0.527    0.819      0.985    0.894      0.585    0.941     0.971     nfp
+                 0.473    0.015    0.929      0.473    0.627      0.585    0.941     0.854     fp
+Weighted Avg.    0.835    0.377    0.851      0.835    0.816      0.585    0.941     0.937     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 131   2 |   a = nfp
+  29  26 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          77               81.9149 %
+Incorrectly Classified Instances        17               18.0851 %
+Kappa statistic                          0.5009
+Mean absolute error                      0.2343
+Root mean squared error                  0.3457
+Relative absolute error                 56.1844 %
+Root relative squared error             75.5839 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.970    0.536    0.810      0.970    0.883      0.542    0.926     0.957     nfp
+                 0.464    0.030    0.867      0.464    0.605      0.542    0.926     0.810     fp
+Weighted Avg.    0.819    0.385    0.827      0.819    0.800      0.542    0.926     0.913     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 64  2 |  a = nfp
+ 15 13 |  b = fp
+
+
+*** FIT ***
+
+Options: -cost-matrix "[0.0 4.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 25 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 4
+ 1 0
+
+
+Time taken to build model: 0.55 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         156               82.9787 %
+Incorrectly Classified Instances        32               17.0213 %
+Kappa statistic                          0.5166
+Mean absolute error                      0.2215
+Root mean squared error                  0.3551
+Relative absolute error                 53.3836 %
+Root relative squared error             78.0433 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.985    0.545    0.814      0.985    0.891      0.570    0.942     0.971     nfp
+                 0.455    0.015    0.926      0.455    0.610      0.570    0.942     0.863     fp
+Weighted Avg.    0.830    0.390    0.847      0.830    0.809      0.570    0.942     0.939     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 131   2 |   a = nfp
+  30  25 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         147               78.1915 %
+Incorrectly Classified Instances        41               21.8085 %
+Kappa statistic                          0.3437
+Mean absolute error                      0.2382
+Root mean squared error                  0.3766
+Relative absolute error                 57.3778 %
+Root relative squared error             82.7477 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.985    0.709    0.771      0.985    0.865      0.427    0.916     0.966     nfp
+                 0.291    0.015    0.889      0.291    0.438      0.427    0.916     0.778     fp
+Weighted Avg.    0.782    0.506    0.805      0.782    0.740      0.427    0.916     0.911     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 131   2 |   a = nfp
+  39  16 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 4.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 25 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 4
+ 1 0
+
+
+Time taken to build model: 0.53 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         156               82.9787 %
+Incorrectly Classified Instances        32               17.0213 %
+Kappa statistic                          0.5166
+Mean absolute error                      0.2215
+Root mean squared error                  0.3551
+Relative absolute error                 53.3836 %
+Root relative squared error             78.0433 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.985    0.545    0.814      0.985    0.891      0.570    0.942     0.971     nfp
+                 0.455    0.015    0.926      0.455    0.610      0.570    0.942     0.863     fp
+Weighted Avg.    0.830    0.390    0.847      0.830    0.809      0.570    0.942     0.939     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 131   2 |   a = nfp
+  30  25 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          76               80.8511 %
+Incorrectly Classified Instances        18               19.1489 %
+Kappa statistic                          0.4652
+Mean absolute error                      0.2323
+Root mean squared error                  0.3582
+Relative absolute error                 55.694  %
+Root relative squared error             78.3337 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.970    0.571    0.800      0.970    0.877      0.512    0.930     0.959     nfp
+                 0.429    0.030    0.857      0.429    0.571      0.512    0.930     0.854     fp
+Weighted Avg.    0.809    0.410    0.817      0.809    0.786      0.512    0.930     0.928     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 64  2 |  a = nfp
+ 16 12 |  b = fp
+
+
+*** FIT ***
+
+Options: -cost-matrix "[0.0 5.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 25 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 5
+ 1 0
+
+
+Time taken to build model: 0.61 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         151               80.3191 %
+Incorrectly Classified Instances        37               19.6809 %
+Kappa statistic                          0.4155
+Mean absolute error                      0.225 
+Root mean squared error                  0.3695
+Relative absolute error                 54.2419 %
+Root relative squared error             81.2218 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.992    0.655    0.786      0.992    0.877      0.499    0.942     0.971     nfp
+                 0.345    0.008    0.950      0.345    0.507      0.499    0.942     0.865     fp
+Weighted Avg.    0.803    0.465    0.834      0.803    0.769      0.499    0.942     0.940     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 132   1 |   a = nfp
+  36  19 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         143               76.0638 %
+Incorrectly Classified Instances        45               23.9362 %
+Kappa statistic                          0.26  
+Mean absolute error                      0.2394
+Root mean squared error                  0.3879
+Relative absolute error                 57.6726 %
+Root relative squared error             85.2351 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.985    0.782    0.753      0.985    0.853      0.352    0.915     0.962     nfp
+                 0.218    0.015    0.857      0.218    0.348      0.352    0.915     0.801     fp
+Weighted Avg.    0.761    0.557    0.783      0.761    0.706      0.352    0.915     0.915     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 131   2 |   a = nfp
+  43  12 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 5.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 25 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 5
+ 1 0
+
+
+Time taken to build model: 0.57 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         151               80.3191 %
+Incorrectly Classified Instances        37               19.6809 %
+Kappa statistic                          0.4155
+Mean absolute error                      0.225 
+Root mean squared error                  0.3695
+Relative absolute error                 54.2419 %
+Root relative squared error             81.2218 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.992    0.655    0.786      0.992    0.877      0.499    0.942     0.971     nfp
+                 0.345    0.008    0.950      0.345    0.507      0.499    0.942     0.865     fp
+Weighted Avg.    0.803    0.465    0.834      0.803    0.769      0.499    0.942     0.940     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 132   1 |   a = nfp
+  36  19 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          75               79.7872 %
+Incorrectly Classified Instances        19               20.2128 %
+Kappa statistic                          0.3995
+Mean absolute error                      0.2366
+Root mean squared error                  0.3755
+Relative absolute error                 56.7422 %
+Root relative squared error             82.0991 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.679    0.776      1.000    0.874      0.500    0.928     0.958     nfp
+                 0.321    0.000    1.000      0.321    0.486      0.500    0.928     0.859     fp
+Weighted Avg.    0.798    0.476    0.843      0.798    0.759      0.500    0.928     0.929     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 66  0 |  a = nfp
+ 19  9 |  b = fp
+
+
+*** FIT ***
+
+Options: -cost-matrix "[0.0 6.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 25 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 6
+ 1 0
+
+
+Time taken to build model: 0.48 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         133               70.7447 %
+Incorrectly Classified Instances        55               29.2553 %
+Kappa statistic                          0     
+Mean absolute error                      0.228 
+Root mean squared error                  0.3809
+Relative absolute error                 54.9518 %
+Root relative squared error             83.7193 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.707      1.000    0.829      0.000    0.942     0.971     nfp
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.942     0.880     fp
+Weighted Avg.    0.707    0.707    0.500      0.707    0.586      0.000    0.942     0.944     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  55   0 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         136               72.3404 %
+Incorrectly Classified Instances        52               27.6596 %
+Kappa statistic                          0.102 
+Mean absolute error                      0.2424
+Root mean squared error                  0.4001
+Relative absolute error                 58.4075 %
+Root relative squared error             87.9124 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.985    0.909    0.724      0.985    0.834      0.182    0.914     0.964     nfp
+                 0.091    0.015    0.714      0.091    0.161      0.182    0.914     0.790     fp
+Weighted Avg.    0.723    0.648    0.721      0.723    0.637      0.182    0.914     0.913     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 131   2 |   a = nfp
+  50   5 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 6.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 25 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 6
+ 1 0
+
+
+Time taken to build model: 0.6 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         133               70.7447 %
+Incorrectly Classified Instances        55               29.2553 %
+Kappa statistic                          0     
+Mean absolute error                      0.228 
+Root mean squared error                  0.3809
+Relative absolute error                 54.9518 %
+Root relative squared error             83.7193 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.707      1.000    0.829      0.000    0.942     0.971     nfp
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.942     0.880     fp
+Weighted Avg.    0.707    0.707    0.500      0.707    0.586      0.000    0.942     0.944     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  55   0 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          66               70.2128 %
+Incorrectly Classified Instances        28               29.7872 %
+Kappa statistic                          0     
+Mean absolute error                      0.2354
+Root mean squared error                  0.3819
+Relative absolute error                 56.4547 %
+Root relative squared error             83.5132 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.702      1.000    0.825      0.000    0.929     0.959     nfp
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.929     0.860     fp
+Weighted Avg.    0.702    0.702    0.493      0.702    0.579      0.000    0.929     0.929     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 66  0 |  a = nfp
+ 28  0 |  b = fp
+
+
+*** FIT ***
+
+Options: -cost-matrix "[0.0 7.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 25 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 7
+ 1 0
+
+
+Time taken to build model: 0.52 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         133               70.7447 %
+Incorrectly Classified Instances        55               29.2553 %
+Kappa statistic                          0     
+Mean absolute error                      0.2318
+Root mean squared error                  0.3924
+Relative absolute error                 55.8777 %
+Root relative squared error             86.2449 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.707      1.000    0.829      0.000    0.943     0.972     nfp
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.943     0.880     fp
+Weighted Avg.    0.707    0.707    0.500      0.707    0.586      0.000    0.943     0.945     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  55   0 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         139               73.9362 %
+Incorrectly Classified Instances        49               26.0638 %
+Kappa statistic                          0.1598
+Mean absolute error                      0.2438
+Root mean squared error                  0.4083
+Relative absolute error                 58.7366 %
+Root relative squared error             89.715  %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.992    0.873    0.733      0.992    0.843      0.270    0.917     0.966     nfp
+                 0.127    0.008    0.875      0.127    0.222      0.270    0.917     0.804     fp
+Weighted Avg.    0.739    0.620    0.775      0.739    0.662      0.270    0.917     0.918     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 132   1 |   a = nfp
+  48   7 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 7.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 25 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 7
+ 1 0
+
+
+Time taken to build model: 0.51 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         133               70.7447 %
+Incorrectly Classified Instances        55               29.2553 %
+Kappa statistic                          0     
+Mean absolute error                      0.2318
+Root mean squared error                  0.3924
+Relative absolute error                 55.8777 %
+Root relative squared error             86.2449 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.707      1.000    0.829      0.000    0.943     0.972     nfp
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.943     0.880     fp
+Weighted Avg.    0.707    0.707    0.500      0.707    0.586      0.000    0.943     0.945     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  55   0 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          66               70.2128 %
+Incorrectly Classified Instances        28               29.7872 %
+Kappa statistic                          0     
+Mean absolute error                      0.2381
+Root mean squared error                  0.3916
+Relative absolute error                 57.0912 %
+Root relative squared error             85.6366 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.702      1.000    0.825      0.000    0.931     0.959     nfp
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.931     0.866     fp
+Weighted Avg.    0.702    0.702    0.493      0.702    0.579      0.000    0.931     0.931     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 66  0 |  a = nfp
+ 28  0 |  b = fp
+
+
+*** FIT ***
+
+Options: -cost-matrix "[0.0 8.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 25 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 8
+ 1 0
+
+
+Time taken to build model: 0.53 seconds
+Time taken to test model on training data: 0.04 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         133               70.7447 %
+Incorrectly Classified Instances        55               29.2553 %
+Kappa statistic                          0     
+Mean absolute error                      0.2404
+Root mean squared error                  0.4084
+Relative absolute error                 57.9591 %
+Root relative squared error             89.7675 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.707      1.000    0.829      0.000    0.943     0.972     nfp
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.943     0.876     fp
+Weighted Avg.    0.707    0.707    0.500      0.707    0.586      0.000    0.943     0.944     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  55   0 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         135               71.8085 %
+Incorrectly Classified Instances        53               28.1915 %
+Kappa statistic                          0.0646
+Mean absolute error                      0.2454
+Root mean squared error                  0.4158
+Relative absolute error                 59.1252 %
+Root relative squared error             91.3668 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.992    0.945    0.717      0.992    0.833      0.148    0.907     0.955     nfp
+                 0.055    0.008    0.750      0.055    0.102      0.148    0.907     0.796     fp
+Weighted Avg.    0.718    0.671    0.727      0.718    0.619      0.148    0.907     0.908     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 132   1 |   a = nfp
+  52   3 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 8.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 25 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 8
+ 1 0
+
+
+Time taken to build model: 0.6 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         133               70.7447 %
+Incorrectly Classified Instances        55               29.2553 %
+Kappa statistic                          0     
+Mean absolute error                      0.2404
+Root mean squared error                  0.4084
+Relative absolute error                 57.9591 %
+Root relative squared error             89.7675 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.707      1.000    0.829      0.000    0.943     0.972     nfp
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.943     0.876     fp
+Weighted Avg.    0.707    0.707    0.500      0.707    0.586      0.000    0.943     0.944     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  55   0 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          66               70.2128 %
+Incorrectly Classified Instances        28               29.7872 %
+Kappa statistic                          0     
+Mean absolute error                      0.2463
+Root mean squared error                  0.4074
+Relative absolute error                 59.0587 %
+Root relative squared error             89.0779 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.702      1.000    0.825      0.000    0.926     0.956     nfp
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.926     0.865     fp
+Weighted Avg.    0.702    0.702    0.493      0.702    0.579      0.000    0.926     0.929     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 66  0 |  a = nfp
+ 28  0 |  b = fp
+
+
+*** FIT ***
+
+Options: -cost-matrix "[0.0 9.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 25 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 9
+ 1 0
+
+
+Time taken to build model: 0.55 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         133               70.7447 %
+Incorrectly Classified Instances        55               29.2553 %
+Kappa statistic                          0     
+Mean absolute error                      0.2417
+Root mean squared error                  0.4131
+Relative absolute error                 58.2748 %
+Root relative squared error             90.8047 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.707      1.000    0.829      0.000    0.943     0.972     nfp
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.943     0.877     fp
+Weighted Avg.    0.707    0.707    0.500      0.707    0.586      0.000    0.943     0.944     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  55   0 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         137               72.8723 %
+Incorrectly Classified Instances        51               27.1277 %
+Kappa statistic                          0.0999
+Mean absolute error                      0.2456
+Root mean squared error                  0.4212
+Relative absolute error                 59.18   %
+Root relative squared error             92.5634 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.927    0.723      1.000    0.839      0.229    0.915     0.961     nfp
+                 0.073    0.000    1.000      0.073    0.136      0.229    0.915     0.814     fp
+Weighted Avg.    0.729    0.656    0.804      0.729    0.633      0.229    0.915     0.918     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  51   4 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 9.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 25 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+ 0 9
+ 1 0
+
+
+Time taken to build model: 0.59 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         133               70.7447 %
+Incorrectly Classified Instances        55               29.2553 %
+Kappa statistic                          0     
+Mean absolute error                      0.2417
+Root mean squared error                  0.4131
+Relative absolute error                 58.2748 %
+Root relative squared error             90.8047 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.707      1.000    0.829      0.000    0.943     0.972     nfp
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.943     0.877     fp
+Weighted Avg.    0.707    0.707    0.500      0.707    0.586      0.000    0.943     0.944     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  55   0 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          66               70.2128 %
+Incorrectly Classified Instances        28               29.7872 %
+Kappa statistic                          0     
+Mean absolute error                      0.2481
+Root mean squared error                  0.413 
+Relative absolute error                 59.4987 %
+Root relative squared error             90.3048 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.702      1.000    0.825      0.000    0.933     0.961     nfp
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.933     0.862     fp
+Weighted Avg.    0.702    0.702    0.493      0.702    0.579      0.000    0.933     0.932     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 66  0 |  a = nfp
+ 28  0 |  b = fp
+
+
+*** FIT ***
+
+Options: -cost-matrix "[0.0 10.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 25 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+  0 10
+  1  0
+
+
+Time taken to build model: 0.61 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         133               70.7447 %
+Incorrectly Classified Instances        55               29.2553 %
+Kappa statistic                          0     
+Mean absolute error                      0.2388
+Root mean squared error                  0.4126
+Relative absolute error                 57.5705 %
+Root relative squared error             90.6844 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.707      1.000    0.829      0.000    0.944     0.973     nfp
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.944     0.878     fp
+Weighted Avg.    0.707    0.707    0.500      0.707    0.586      0.000    0.944     0.945     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  55   0 |   b = fp
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         136               72.3404 %
+Incorrectly Classified Instances        52               27.6596 %
+Kappa statistic                          0.0889
+Mean absolute error                      0.2448
+Root mean squared error                  0.4225
+Relative absolute error                 58.984  %
+Root relative squared error             92.8323 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.992    0.927    0.721      0.992    0.835      0.184    0.919     0.962     nfp
+                 0.073    0.008    0.800      0.073    0.133      0.184    0.919     0.815     fp
+Weighted Avg.    0.723    0.658    0.744      0.723    0.630      0.184    0.919     0.919     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 132   1 |   a = nfp
+  51   4 |   b = fp
+
+
+ **** TEST ****
+
+Options: -cost-matrix "[0.0 10.0; 1.0 0.0]" -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump 
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 25 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+Bagging with 25 iterations and base learner
+
+weka.classifiers.trees.DecisionStump 
+
+Cost Matrix
+  0 10
+  1  0
+
+
+Time taken to build model: 0.6 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         133               70.7447 %
+Incorrectly Classified Instances        55               29.2553 %
+Kappa statistic                          0     
+Mean absolute error                      0.2388
+Root mean squared error                  0.4126
+Relative absolute error                 57.5705 %
+Root relative squared error             90.6844 %
+Total Number of Instances              188     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.707      1.000    0.829      0.000    0.944     0.973     nfp
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.944     0.878     fp
+Weighted Avg.    0.707    0.707    0.500      0.707    0.586      0.000    0.944     0.945     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133   0 |   a = nfp
+  55   0 |   b = fp
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          66               70.2128 %
+Incorrectly Classified Instances        28               29.7872 %
+Kappa statistic                          0     
+Mean absolute error                      0.2468
+Root mean squared error                  0.4154
+Relative absolute error                 59.1767 %
+Root relative squared error             90.8233 %
+Total Number of Instances               94     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.702      1.000    0.825      0.000    0.932     0.961     nfp
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.932     0.863     fp
+Weighted Avg.    0.702    0.702    0.493      0.702    0.579      0.000    0.932     0.932     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 66  0 |  a = nfp
+ 28  0 |  b = fp
+

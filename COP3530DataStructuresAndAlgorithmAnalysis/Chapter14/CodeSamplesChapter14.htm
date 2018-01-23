@@ -1,0 +1,845 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Figure 12</title>
+</head>
+
+<body bgcolor="#FFFFCC">
+
+<p align="center"><font face="Arial">Nyhoff, ADTs, Data Structures and Problem
+Solving with C++, Second Edition,&nbsp;<br>
+© 2005 Pearson Education, Inc. All rights reserved. 0-13-140909-3&nbsp;</font> </p>
+<p align="center">&nbsp; </p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 14.1">Figure
+        14.1</a> </font><font color="#0000FF" face="Courier New"><b>BoundedStack</b></font><font color="#FF0000">
+        -- Interface</font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>#include &lt;iostream&gt;
+#include &quot;LStackT.h&quot;       // A class template version of our
+                           // linked stack class from Section 7.3
+#ifndef BOUNDED_STACK
+#define BOUNDED_STACK
+template &lt;typename ElementType&gt;
+class BoundedStack : public Stack&lt;ElementType&gt;
+{
+ public:
+  /***** Function Members *****/
+  BoundedStack(int limit = 0);
+  /* --- Constructor ------------------------------------------------------
+    Precondition:  limit (default 0) is an upper bound on the size of the
+        bounded stack.
+    Postcondition: A BoundedStack has been constructed as an empty stack
+        with mySize initialized to 0 and myLimit initialized to limit
+        (default 0).
+   -----------------------------------------------------------------------*/
+
+  void push(const ElementType &amp; value);
+  /*--- Add a value to the stack if there is room -------------------------
+    Precondition:  None. 
+    Postcondition: value was added at the top of this BoundedStack and
+        mySize was incremented by 1 provided there was room; if there 
+        wasn't, an overflow message was displayed.
+   -----------------------------------------------------------------------*/
+
+ private:
+  /***** Data Members *****/
+   int mySize,
+       myLimit;
+};  // end of class template declaration
+
+//--- Definition of Constructor ---
+template &lt;typename ElementType&gt;
+inline BoundedStack&lt;ElementType&gt;::BoundedStack(int limit)
+: Stack&lt;ElementType&gt;(), mySize(0), myLimit(limit)
+{ }
+
+//--- Definition of push() ---
+template &lt;typename ElementType&gt;
+inline void BoundedStack&lt;ElementType&gt;::push(const ElementType &amp; value)
+{
+  if (mySize &lt; myLimit)
+  {
+    Stack&lt;ElementType&gt;::push(value);
+    mySize++;
+  }
+  else
+    cerr &lt;&lt; &quot;*** Bounded stack overflow ***\n&quot;;
+}
+
+#endif&nbsp;</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 14.2">Figure
+        14.2</a> Conversion from Base 10 to Base 2&nbsp;<br>
+        Using a </font><font face="Courier New" color="#0000FF"><b>BoundedStack</b></font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>/*--------------------------------------------------------------------------
+  Program to convert the base-ten representation of a positive integer to
+  base two.  A BoundedStack stores the remainders produced by the repeated-
+  division algorithm.
+ -------------------------------------------------------------------------*/
+
+#include &lt;iostream&gt;
+using namespace std;
+#include &quot;BoundedStack.h&quot;
+
+int main()
+{
+  const int STACK_BOUND = 16;          // bound on number of stack elements
+  unsigned number,                     // the number to be converted
+           remainder;                  // remainder of number divided by 2
+  char response;                       // user response
+  do
+  {
+    BoundedStack&lt;short int&gt;
+      stackOfRemainders(STACK_BOUND);   // bounded stack of remainders
+    cout &lt;&lt; &quot;Enter positive integer to convert: &quot;;
+    cin &gt;&gt; number;
+    while (number != 0)
+    {
+      remainder = number % 2;
+      stackOfRemainders.push(remainder);
+      number /= 2;
+    }
+    cout &lt;&lt; &quot;Base-two representation: &quot;;
+    while (!stackOfRemainders.empty())
+    {
+      remainder = stackOfRemainders.top();
+      stackOfRemainders.pop();
+      cout &lt;&lt; remainder;
+    }
+    cout &lt;&lt; endl;
+    cout &lt;&lt; &quot;WARNING:  If a bounded stack overflow occurred,\n&quot;
+            &quot;          some bits are missing in the representation.\n&quot;;
+
+    cout &lt;&lt; &quot;\nMore (Y or N)? &quot;;
+    cin &gt;&gt; response;
+  }
+  while (response == 'Y' || response == 'y');
+}&nbsp;</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 14.3A">Figure
+        14.3A</a> </font><font color="#0000FF" face="Courier New"><b>Employee.h</b></font><font color="#FF0000">&nbsp;
+        -&nbsp; Version 1</font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>/* Employee.h --------------------------------------------------------------
+   Header file for a class Employee that encapsulates the attributes common
+   to all employees.
+   Operations are:  A constructor and an output operation.
+   -----------------------------------------------------------------------*/
+#include &lt;iostream&gt;
+
+#ifndef EMPLOYEE
+#define EMPLOYEE
+
+class Employee
+{
+ public:
+   Employee(long id = 0, string last = &quot;&quot;, string first = &quot;&quot;, 
+	        char initial = ' ', int dept = 0);
+  /*-----------------------------------------------------------------------
+    Employee constructor.
+    Preconditions:  None.
+    Postconditions: myIdNum is initialized to id (default 0), myLastName 
+        to last (default empty string), myFirstName to first (default 
+        empty string), myMiddleInitial to initial (default blank char),
+        and myDeptCode to dept (default 0). 
+    ----------------------------------------------------------------------*/ 
+
+  void display(ostream &amp; out) const;
+  /*-----------------------------------------------------------------------
+    Output function member.
+    Precondition:  ostream out is open.
+    Postcondition: A text representation of this Employee object has 
+        been output to out.
+  ------------------------------------------------------------------------*/ 
+
+  // ... Other employee operations ...
+
+ private:
+  long myIdNum;             // Employee's id number
+  string myLastName,        //     &quot;      last name
+         myFirstName;       //     &quot;      first name
+  char myMiddleInitial;     //     &quot;      middle initial
+  int myDeptCode;           //     &quot;      department code
+  // ... other attributes common to all employees
+};
+
+
+//--- Definition of Employee's Constructor
+inline Employee::Employee(long id, string last, string first, 
+                          char initial, int dept)
+: myIdNum(id), myLastName(last), myFirstName(first),
+  myMiddleInitial(initial), myDeptCode(dept)
+{ }
+
+//--- Definition of Employee's display()
+inline void Employee::display(ostream &amp; out) const
+{
+  out &lt;&lt; myIdNum &lt;&lt; ' ' &lt;&lt; myLastName &lt;&lt; &quot;, &quot;       
+      &lt;&lt; myFirstName &lt;&lt; ' ' &lt;&lt; myMiddleInitial &lt;&lt; &quot;  &quot; 
+      &lt;&lt; myDeptCode &lt;&lt; endl;
+}
+
+//--- Definition of output operator &lt;&lt;
+inline ostream &amp; operator&lt;&lt;(ostream &amp; out, const Employee &amp; emp)
+{
+  emp.display(out);
+  return out;
+};
+
+#endif&nbsp;</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 14.3B">Figure
+        14.3B</a> </font><font color="#0000FF" face="Courier New"><b>SalariedEmployee.h</b></font><font color="#FF0000">
+        -Version 1</font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>/* SalariedEmployee.h ----------------------------------------------------
+   Header file for a class SalariedEmployee derived from Employee that
+   adds the attributes unique to salaried employees. 
+   Operations are:  A constructor and an output operation.
+   ----------------------------------------------------------------------*/
+#include &quot;Employee.h&quot;
+
+#ifndef SALARIED_EMPLOYEE
+#define SALARIED_EMPLOYEE
+
+class SalariedEmployee : public Employee
+{
+ public:
+   SalariedEmployee (long id = 0, string last = &quot;&quot;, 
+                    string first = &quot;&quot;, char initial = ' ',
+                    int dept = 0, double salary = 0);
+  /*-----------------------------------------------------------------------
+    Salaried Employee constructor.
+    Preconditions:  None.
+    Postconditions: Data members myIdNum, myLastName, myFirstName,
+       myMiddleInitial, and myDeptCode are initialized by the Employee
+       constructor; mySalary is initialized to salary (default 0).
+   -----------------------------------------------------------------------*/ 
+
+  void display(ostream &amp; out) const;
+  /*-----------------------------------------------------------------------
+    Output function member.
+    Precondition:  ostream out is open.
+    Postcondition: A text representation of this SalariedEmployee 
+        object has been output to out.
+   -----------------------------------------------------------------------*/ 
+
+  // ... Other salaried employee operations ...
+
+ private:
+  double mySalary;
+};
+
+//--- Definition of SalariedEmployee's Constructor
+inline SalariedEmployee::SalariedEmployee
+                   (long id, string last, string first, char initial,
+                    int dept, double sal)
+: Employee(id, last, first, initial, dept), 
+  mySalary(sal)
+{ }
+
+//--- Definition of SalariedEmployee's display()
+inline void SalariedEmployee::display(ostream &amp; out) const
+{
+  Employee::display(out);            //inherited members
+  out &lt;&lt; &quot;$&quot; &lt;&lt; mySalary &lt;&lt; endl;    //local members
+}
+#endif&nbsp;</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 14.3C">Figure
+        14.3C</a> </font><font color="#0000FF" face="Courier New"><b>HourlyEmployee.h</b></font><font color="#FF0000">
+        -Version 1</font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>/* HourlyEmployee.h -------------------------------------------------------
+   Header file for a class HourlyEmployee derived from Employee that
+   adds the attributes unique to hourly employees. 
+   Operations are:  A constructor and an output operation.
+   -----------------------------------------------------------------------*/
+#include &quot;Employee.h&quot;
+
+#ifndef HOURLY_EMPLOYEE
+#define HOURLY_EMPLOYEE
+
+class HourlyEmployee : public Employee
+{
+ public:
+   HourlyEmployee (long id = 0, string last = &quot;&quot;, string first = &quot;&quot;, 
+		   char initial = ' ', int dept = 0, double weeklyWage = 0,
+		   double hoursWorked = 0, double overTimeFactor = 1.5);
+   /*----------------------------------------------------------------------
+    Hourly Employee constructor.
+    Preconditions:  None.
+    Postconditions: Data members myIdNum, myLastName, myFirstName,
+       myMiddleInitial, and myDeptCode are initialized by the Employee
+       constructor; myWeeklyWage is initialized to weeklyWage (default 
+       0), myHoursWorked to hoursWorked (default 0), and 
+       myOverTimeFactor to overTimeFactor (default 1.5).
+   -----------------------------------------------------------------------*/ 
+
+  void display(ostream &amp; out) const;
+  /*-----------------------------------------------------------------------
+    Output function member.
+    Precondition:  ostream out is open.
+    Postcondition: A text representation of this HourlyEmployee 
+        object has been output to out.
+   -----------------------------------------------------------------------*/ 
+
+  // ... Other hourly employee operations ...
+
+ private:
+  double myWeeklyWage,
+         myHoursWorked,
+         myOverTimeFactor;
+};
+
+//--- Definition of HourlyEmployee's Constructor
+inline HourlyEmployee::HourlyEmployee 
+                 (long id, string last, string first, char initial,
+                  int dept, double weeklyWage, double hoursWorked, 
+                  double overTimeFactor)
+: Employee(id, last, first, initial, dept),
+  myWeeklyWage(weeklyWage), myHoursWorked(hoursWorked),
+  myOverTimeFactor(overTimeFactor)
+{ }
+
+//--- Definition of HourlyEmployee's display()
+inline void HourlyEmployee::display(ostream &amp; out) const
+{
+  Employee::display(out);              //inherited members
+  out &lt;&lt; &quot;$&quot; &lt;&lt; myWeeklyWage &lt;&lt; endl   //local members
+      &lt;&lt; myHoursWorked &lt;&lt; endl 
+      &lt;&lt; myOverTimeFactor &lt;&lt; endl;
+}
+#endif&nbsp;</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 14.3D">Figure
+        14.3D</a> Driver Program for Employee Classes</font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>/*-------------------------------------------------------------------------
+  Driver program to test Employee class and derived classes 
+  SalariedEmployee and HourlyEmployee.
+ -------------------------------------------------------------------------*/
+#include &lt;iostream&gt;
+using namespace std;
+#include &quot;Employee.h&quot;
+#include &quot;SalariedEmployee.h&quot;
+#include &quot;HourlyEmployee.h&quot;
+
+int main()
+{
+  Employee emp(11111, &quot;Doe&quot;, &quot;John&quot;, 'J', 11);
+  SalariedEmployee empSal(22222, &quot;Smith&quot;, &quot;Mary&quot;, 'M', 22, 59900);
+  HourlyEmployee empHr(33333, &quot;Jones&quot;, &quot;Jay&quot;, 'J', 33, 15.25, 40);
+
+  emp.display(cout); cout &lt;&lt; endl;
+  empSal.display(cout); cout &lt;&lt; endl; 
+  empHr.display(cout); cout &lt;&lt; endl;
+}&nbsp;</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 14.4A">Figure
+        14.4A</a> Employee Class Hierarchy - Version 2</font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>/* Employee.h --------------------------------------------------------------
+   Header file for a class Employee that encapsulates the attributes common
+   to all employees.
+   Operations are:  A constructor and an output operation.
+   -----------------------------------------------------------------------*/
+#include &lt;iostream&gt;
+
+#ifndef EMPLOYEE
+#define EMPLOYEE
+
+class Employee
+{
+ public:
+   Employee(long id = 0, string last = &quot;&quot;, string first = &quot;&quot;, 
+	        char initial = ' ', int dept = 0);
+  /*-----------------------------------------------------------------------
+    Employee constructor.
+    Preconditions:  None.
+    Postconditions: myIdNum is initialized to id (default 0), myLastName 
+        to last (default empty string), myFirstName to first (default 
+        empty string), myMiddleInitial to initial (default blank char),
+        and myDeptCode to dept (default 0). 
+    ----------------------------------------------------------------------*/ 
+
+  virtual void display(ostream &amp; out) const;
+  /*-----------------------------------------------------------------------
+    Output function member.
+    Precondition:  ostream out is open.
+    Postcondition: A text representation of this Employee object has 
+        been output to out.
+  ------------------------------------------------------------------------*/ 
+
+  // ... Other employee operations ...
+
+ private:
+  long myIdNum;             // Employee's id number
+  string myLastName,        //     &quot;      last name
+         myFirstName;       //     &quot;      first name
+  char myMiddleInitial;     //     &quot;      middle initial
+  int myDeptCode;           //     &quot;      department code
+  // ... other attributes common to all employees
+};
+
+
+//--- Definition of Employee's Constructor
+inline Employee::Employee(long id, string last, string first, 
+                          char initial, int dept)
+: myIdNum(id), myLastName(last), myFirstName(first),
+  myMiddleInitial(initial), myDeptCode(dept)
+{ }
+
+<span style="background-color: #00FFFF"><a name="//--- Definition of Employee's display()">//--- Definition of Employee's display()</a>
+inline void Employee::display(ostream &amp; out) const
+{
+  out &lt;&lt; myIdNum &lt;&lt; ' ' &lt;&lt; myLastName &lt;&lt; &quot;, &quot;       
+      &lt;&lt; myFirstName &lt;&lt; ' ' &lt;&lt; myMiddleInitial &lt;&lt; &quot;  &quot; 
+      &lt;&lt; myDeptCode &lt;&lt; endl;
+}
+
+//--- Definition of output operator &lt;&lt;
+inline ostream &amp; operator&lt;&lt;(ostream &amp; out, const Employee &amp; emp)
+{
+  emp.display(out);
+  return out;
+};</span>
+
+#endif&nbsp;</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 14.4B">Figure
+        14.4B</a> Driver Program for Employee and Derived Classes </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>/*------------------------------------------------------------------------
+  Driver program to test Employee class and derived classes 
+  SalariedEmployee and HourlyEmployee.
+ -----------------------------------------------------------------------*/
+#include &lt;iostream&gt;
+using namespace std;
+#include &quot;Employee.h&quot;
+#include &quot;SalariedEmployee.h&quot;
+#include &quot;HourlyEmployee.h&quot;
+
+int main()
+{
+  Employee emp(11111, &quot;Doe&quot;, &quot;John&quot;, 'J', 11);
+  SalariedEmployee empSal(22222, &quot;Smith&quot;, &quot;Mary&quot;, 'M', 22, 59900);
+  HourlyEmployee empHr(33333, &quot;Jones&quot;, &quot;Jay&quot;, 'J', 33, 15.25, 40);
+
+  cout &lt;&lt; emp &lt;&lt; endl &lt;&lt; empSal &lt;&lt; endl &lt;&lt; empHr &lt;&lt; endl;
+}&nbsp;</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 14.5">Figure
+        14.5</a> Conversion from Base 10 to Base 2 Using a </font><font face="Courier New" color="#0000FF"><b>BoundedStack</b></font><font color="#FF0000">
+        - Version 3</font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>/*--------------------------------------------------------------------
+  Program to convert the base-ten representation of a positive integer to
+  base two.  A BoundedStack stores the remainders produced by the 
+  repeated-division algorithm.
+ --------------------------------------------------------------------*/
+#include &lt;iostream&gt;
+using namespace std;
+#include &quot;BoundedStack.h&quot;
+
+//--- NOTE:  push() must be virtual in LStack.h for this 
+//---        program to work correctly.
+
+int main()
+{
+  const int STACK_BOUND = 16;    // bound on number of stack elements
+  int numBits;                   // number of bits in binary rep.
+  cout &lt;&lt; &quot;How many bits do you want in the binary representations? &quot;;
+  cin &gt;&gt; numBits;
+  unsigned number,               // the number to be converted
+           remainder;            // remainder of number divided by 2
+  char response;                 // user response
+  do
+  {
+    BoundedStack&lt;unsigned&gt;       // bounded stack of remainders   
+      stackOfRemainders(STACK_BOUND);
+    cout &lt;&lt; &quot;Enter positive integer to convert: &quot;;
+    cin &gt;&gt; number;
+    int count = 0;               // counts bits in binary representation
+    while (number != 0)
+    {
+      remainder = number % 2;
+      stackOfRemainders.push(remainder);
+      count++;
+      number /= 2;
+    }
+    stackOfRemainders.repeatedPush (0, numBits - count);
+    cout &lt;&lt; &quot;Base-two representation: &quot;;
+    while (!stackOfRemainders.empty() )
+    {
+      remainder = stackOfRemainders.top();
+      stackOfRemainders.pop();
+      cout &lt;&lt; remainder;
+    }
+    cout &lt;&lt; endl;
+    cout &lt;&lt; &quot;WARNING:  If a bounded stack overflow occurred,\n&quot;
+            &quot;          some bits are missing in the representation.\n&quot;;
+
+    cout &lt;&lt; &quot;\nMore (Y or N)? &quot;;
+    cin &gt;&gt; response;
+  }
+  while (response == 'Y' || response == 'y');
+}&nbsp;</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 14.6A">Figure
+        14.6A</a>&nbsp;&nbsp; A Heterogeneous Data Structure</font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>/* Manager.h --------------------------------------------------------------
+   Header file for a class Manager derived from SalariedEmployee that adds
+   the attributes unique to managers. 
+   Operations are:  A constructor and a virtual output operation.
+   -----------------------------------------------------------------------*/
+#include &quot;SalariedEmployee.h&quot;
+
+#ifndef MANAGER
+#define MANAGER
+
+class Manager : public SalariedEmployee
+{
+public:
+  Manager(long id = 0, string last = &quot;&quot;, string first = &quot;&quot;,
+    char initial = ' ', int dept = 0, double sal = 0, int numEmps = 0);
+   /*----------------------------------------------------------------------
+    Manager constructor.
+    Preconditions:  None.
+    Postconditions: Data members myIdNum, myLastName, myFirstName,
+       myMiddleInitial, myDeptCode, mySalary are initialized by the  
+       SalariedEmployee constructor; myNumEmps is initialized to 
+       numEmps (default 0).
+   -----------------------------------------------------------------------*/ 
+
+  virtual void display(ostream &amp; out) const;
+  /*-----------------------------------------------------------------------
+    Output function member.
+    Precondition:  ostream out is open.
+    Postcondition: A text representation of this Manager object has been
+        output to out.
+   -----------------------------------------------------------------------*/ 
+ 
+ // ... Other Manager operations ...
+
+private:
+  int myNumEmps;
+};
+
+//--- Definition of Manager's Constructor
+inline Manager::Manager(long id, string last, string first, char initial, 
+                        int dept, double sal, int numEmps)
+  : SalariedEmployee(id, last, first, initial, dept, sal), 
+     myNumEmps(numEmps) 
+{}
+
+//--- Definition of Manager's display()
+inline void Manager::display(ostream &amp; out) const
+{ 
+  SalariedEmployee::display(out);
+  out &lt;&lt; myNumEmps &lt;&lt; endl;
+}
+
+#endif&nbsp;</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 14.6B">Figure
+        14.6B</a> Driver Program</font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>/*--------------------------------------------------------------------------
+      Driver program to process a list of pointers to employee objects.
+ -------------------------------------------------------------------------*/
+
+#include &lt;iostream&gt;
+#include &lt;list&gt;
+using namespace std;
+#include &quot;Employee.h&quot;
+#include &quot;SalariedEmployee.h&quot;
+#include &quot;HourlyEmployee.h&quot;
+#include &quot;Manager.h&quot;
+
+int main()
+{
+  Employee * ptr;
+  list&lt;Employee*&gt; empList;
+  ptr = new Employee(11111, &quot;Doe&quot;, &quot;John&quot;, 'J', 11);
+  empList.push_back(ptr);
+  ptr = new SalariedEmployee(22222, &quot;Smith&quot;, &quot;Mary&quot;, 'M', 22, 59900);
+  empList.push_back(ptr); 
+  ptr = new HourlyEmployee(33333, &quot;Jones&quot;, &quot;Jay&quot;, 'J', 33, 15.25, 40);
+  empList.push_back(ptr); 
+  ptr = new Manager(22222, &quot;Brown&quot;, &quot;Betty&quot;, 'B', 25, 60000, 13);
+  empList.push_back(ptr); 
+
+  for (list&lt;Employee*&gt;::iterator it = empList.begin();
+                                 it!= empList.end(); it++)
+  {
+    ptr = *it;
+    cout &lt;&lt; *ptr &lt;&lt; endl;
+  }
+ 
+}&nbsp;</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Sample Abstract Class">Sample
+        Abstract Class</a></font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><b><font color="#0000FF">class Document
+{
+public:
+   /*** Function Members ***/
+   virtual void display (ostream &amp; out) const = 0;
+   virtual void read (istream &amp; in) = 0;
+   // --- Other operations on documents
+private:
+   /*** Data Members ***/
+}; // end of abstract declaration
+
+// Output operator
+inline ostream &amp; operator&lt;&lt;(ostream &amp; out,
+                           const Document &amp; doc)
+{ doc.display(out); return out; }
+
+// Input operator
+inline istream &amp; operator&gt;&gt;(istream &amp; in,
+                            Document &amp; doc)
+{ doc.read(in); return in; }&nbsp;</font></b></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Sample Class Derived from Abstract Class">Sample
+        Class Derived from Abstract Class</a></font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>class License : public Document
+{
+public:
+/*** Fnction Members ***/
+virtual void display (ostream &amp; out) const;
+// --- Other operations on licenses
+
+private:
+/*** Data Members ***/
+};
+
+// Definition of Display
+void License::display(ostream &amp; out) const
+{
+   out &lt;&lt; myIdNum &lt;&lt; &quot; &quot;
+       &lt;&lt; myFirstName &lt;&lt; &quot;  &quot; &lt;&lt; myMiddleInitial&lt;&lt; &quot;.
+       &lt;&lt; myLastName
+       &lt;&lt; &quot;\nAge: &quot;&lt;&lt;myAge &lt;&lt; &quot;  Birthdate: &quot;
+       &lt;&lt; myBirthDate; // assumes &lt;&lt; defined for Data
+}&nbsp;</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+
+</body>
+
+</html>

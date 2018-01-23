@@ -1,0 +1,770 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Figure 12</title>
+</head>
+
+<body bgcolor="#FFFFCC">
+
+<p align="center"><font face="Arial">Nyhoff, ADTs, Data Structures and Problem Solving with C++, Second Edition,&nbsp;<br>
+ © 2005 Pearson Education, Inc. All rights reserved. 0-13-140909-3&nbsp;</font> </p>
+<p align="center">&nbsp; </p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 5-1 Demonstration of file I/O">Figure
+        5-1 Demonstration of file I/O</a></font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>/*--------------------------------------------------------------------------
+   Read numeric data stored in a file, compute the minimum, maximum, and
+   average of the numbers, and write these statistics to an output file.
+ 
+   Input(keyboard): names of the input and output files
+   Input(file):     a sequence of numeric values
+   Output(file):    a count of the values, the minimum value,
+                     the maximum value, and the average value
+--------------------------------------------------------------------------*/
+
+#include &lt;iostream&gt;                   // cin, cout
+#include &lt;fstream&gt;                    // ifstream, ofstream
+#include &lt;string&gt;                     // string, getline()
+#include &lt;cassert&gt;                    // assert()
+#include &lt;cfloat&gt;                     // DBL_MIN and DBL_MAX
+using namespace std;
+
+int main()
+{
+   cout &lt;&lt; &quot;This program computes the number, maximum, minimum, and\n&quot;
+           &quot;average of an input list of numbers in one file,\n&quot;
+           &quot;and places its results in another file.\n\n&quot;;
+
+   // ----------- Input Section -----------------------------------
+
+   cout &lt;&lt; &quot;Enter the name of the input file: &quot;;
+   string inputFileName;
+   getline(cin, inputFileName);           // get name of input file
+                                          // open an input stream 
+   ifstream fin;                          //  to the input file,
+   fin.open(inputFileName.data());        //  establish a connection,
+   assert( fin.is_open() );               //  and check for success
+
+   int count = 0;                         // number of values
+   double reading,                        // value being processed
+          maximum = DBL_MIN,              // largest seen so far
+          minimum = DBL_MAX,              // smallest seen so far
+          sum = 0.0;                      // running total 
+
+   for (;;)                               // loop:
+   {
+      fin &gt;&gt; reading;                     //  read a value from file
+
+      if ( fin.eof() ) break;             //  if eof, quit
+
+      count++;                            //  update: count,
+      sum += reading;                     //          sum,
+      if (reading &lt; minimum)    
+         minimum = reading;               //          minimum,
+      if (reading &gt; maximum)
+         maximum = reading;               //          maximum
+   }                                      // end loop
+
+   fin.close();                           // close the connection
+
+   // ------------ Output Section ---------------------------------
+
+   cout &lt;&lt; &quot;Enter the name of the output file: &quot;;
+   string outputFileName;
+   getline(cin, outputFileName);
+                                          // open an output stream
+   ofstream fout(outputFileName.data());  //  to the output file,
+                                          //  establish a connection,
+   assert( fout.is_open() );              //  and check for success
+                                          // write results to file
+   fout &lt;&lt; &quot;\n--&gt; There were &quot; &lt;&lt; count &lt;&lt; &quot; values&quot;;
+
+   if (count &gt; 0)
+      fout &lt;&lt; &quot;\n    ranging from &quot; &lt;&lt; minimum
+                &lt;&lt; &quot; to &quot; &lt;&lt; maximum
+                &lt;&lt; &quot;\n    and their average is &quot; &lt;&lt; sum / count
+                &lt;&lt; endl;
+
+   fout.close();                       // close the stream
+
+   cout &lt;&lt; &quot;Processing complete.\n&quot;;
+}&nbsp;</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 5.2 String Stream Demo">Figure
+        5.2 String Stream Demo</a> </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+#include &lt;iomanip&gt;
+#include &lt;cassert&gt;
+#include &lt;sstream&gt;
+using namespace std;
+
+int main()
+{
+   string date = &quot;U.S. independence:  July 4, 1776&quot;;
+
+   istringstream istr(date);
+
+   string word1, word2, month;
+   int day, year;
+   char comma;
+
+   istr &gt;&gt; word1 &gt;&gt; word2 &gt;&gt; month &gt;&gt; day &gt;&gt; comma &gt;&gt; year;
+   cout &lt;&lt; &quot;Contents of string stream istr, one word per line:\n&quot;
+        &lt;&lt; word1 &lt;&lt; '\n' &lt;&lt; word2 &lt;&lt; '\n' &lt;&lt; month &lt;&lt; '\n' 
+        &lt;&lt; day &lt;&lt; comma &lt;&lt; '\n' &lt;&lt; year &lt;&lt; '\n' &lt;&lt; endl;
+
+   const int Y2K = 1999;
+   ofstream outfile(&quot;file5-2.out&quot;);
+   assert(outfile.is_open());
+
+   ostringstream ostr;
+
+   ostr &lt;&lt; word1 &lt;&lt; &quot;bicentennial: &quot; &lt;&lt; month 
+        &lt;&lt; setw(2) &lt;&lt; day &lt;&lt; &quot;, &quot; &lt;&lt; year + 200 &lt;&lt; endl;
+   
+   cout &lt;&lt;  &quot;Contents of string stream ostr:\n&quot; &lt;&lt; ostr.str();
+   outfile &lt;&lt; ostr.str();
+}&nbsp;</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 5.3A">Figure
+        5.3A</a> Text Editor Declaration </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><b><font color="#0000FF">/*-- TextEditor.h ---------------------------------------------------------
+ 
+  This header file defines the data type TextEditor for editing text files.
+  Basic operations are:
+     Constructor:  Construct a TextEditor object for given files
+     run()         Run the editor
+     showMenu():   Display the menu of editing &quot;hot keys&quot;
+     insert():     Insert a string in a line of text
+     erase():      Remove a string from a line of text
+     replace():    Replace a string by another string in a line of text
+     next():       Output edited line and get next line to edit
+     quit():       Wrap up editing
+ -------------------------------------------------------------------------*/
+
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;fstream&gt;
+
+class TextEditor
+{
+ public:
+  /******** Function Members ********/
+  TextEditor(string inputFile, string outputFile);
+  /*----------------------------------------------------------------------
+    Construct a text editor for files named inputFile and outputFile.
+
+    Precondition:  inputFile is the file to be edited.
+    Postcondition: outputFile contains the edited text.
+    ----------------------------------------------------------------------*/ 
+ 
+  void run();
+  /*----------------------------------------------------------------------
+    Run the editor.
+
+    Precondition:  None.
+    Postcondition: Text from inputFile has been edited and output to 
+        outputFile.
+  ----------------------------------------------------------------------*/ 
+
+  void showMenu();
+  /*----------------------------------------------------------------------
+    Display menu of editing commands.
+
+    Precondition:  None.
+    Postcondition: Menu has been output to cout.
+    ----------------------------------------------------------------------*/ 
+ 
+  void insert(string str1, string str2);
+  /*----------------------------------------------------------------------
+    Insert a string into a line of text.
+
+    Precondition:  None.
+    Postcondition: str1 has been inserted before str2 in myLine if 
+        str2 is found in myLine; otherwise, myLine is unchanged.
+  ----------------------------------------------------------------------*/ 
+
+  void erase(string str);
+  /*----------------------------------------------------------------------
+    Remove a string from a line of text.
+
+    Preconditions: None.
+    Postcondition: str has been removed from myLine if str is found 
+        in myLine; otherwise, myLine is unchanged.
+  ----------------------------------------------------------------------*/ 
+
+  void replace(string str1, string str2);
+  /*----------------------------------------------------------------------
+    Replace one string with another in a line of text.
+
+    Precondition:  None.
+    Postcondition: str1 has been replaced with str2 in myLine if str1 
+        is found in myLine; otherwise, myLine is unchanged.
+  -----------------------------------------------------------------------*/ 
+
+  void next();
+  /*----------------------------------------------------------------------
+    Move on to next line of text to edit.
+
+    Precondition:  None.
+    Postcondition: String that was in myLine has been output to 
+        myOutstream and a new line read from myInstream into myLine.
+   ----------------------------------------------------------------------*/ 
+
+  void quit();
+  /*----------------------------------------------------------------------
+    Quit editing.
+
+    Precondition:  None.
+    Postcondition: String that was in myLine has been output to
+        outputFile and any lines remaining in inputFile have been
+        copied to outputFile.
+   ----------------------------------------------------------------------*/ 
+
+ private:
+  /******** Data Members ********/
+  ifstream myInstream;
+  ofstream myOutstream;
+  string myLine;
+};&nbsp;</font></b></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 5.3B">Figure
+        5.3B</a> Text Editor Definitions </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>/*-- TextEditor.cpp -------------------------------------------------------
+
+   Contains definitions of the function members of class TextEditor.
+ -------------------------------------------------------------------------*/
+
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;cctype&gt;
+using namespace std;
+
+#include &quot;TextEditor.h&quot;
+
+//--- Utility function to eat spaces from cin
+void eatBlanks()
+{
+  char blank;
+  while (cin.peek() == ' ')
+    cin.get(blank);
+}
+
+//--- Definition of constructor
+TextEditor::TextEditor(string inputFile, string outputFile)
+{
+  myInstream.open(inputFile.data());
+  myOutstream.open(outputFile.data());
+  if (!myInstream.is_open() || !myOutstream.is_open())
+  {
+    cerr &lt;&lt; &quot;Error in opening files.&quot;;
+    exit(-1);
+  }
+}
+
+//--- Definition of run()
+void TextEditor::run()
+{
+  showMenu();
+  cout &lt;&lt; &quot;Enter an editing command following each prompt &gt;\n\n&quot;;
+  getline(myInstream, myLine);
+  cout &lt;&lt; &quot;TEXT: &quot;  &lt;&lt; myLine &lt;&lt; endl;
+  char command;
+  string str1, str2;
+  for (;;)
+  {
+    if (myInstream.eof()) break;
+    cout &lt;&lt; '&gt;';
+    cin &gt;&gt; command; 
+    cin.ignore(1, '\n');
+    switch(toupper(command))
+    {
+      case 'I' : eatBlanks();
+                 getline(cin, str1);
+                 cout &lt;&lt; &quot;Insert before what string? &quot;; 
+                 getline(cin, str2);
+                 insert(str1, str2);
+                 break;
+      case 'D' : eatBlanks();
+                 getline(cin, str1);
+                 erase(str1);
+                 break;
+      case 'R' : eatBlanks();
+                 getline(cin, str1);
+                 cout &lt;&lt; &quot;With what? &quot;; 
+                 getline(cin, str2);
+                 replace(str1, str2);
+                 break;
+      case 'N' : next();
+                 break;
+      case 'Q' : quit();
+                 break;
+      default :  cout &lt;&lt; &quot;\n*** Illegal command ***\n&quot;;
+                 showMenu();
+                 cout &lt;&lt; &quot;TEXT:&quot; &lt;&lt; myLine &lt;&lt; endl;
+    }// end of switch
+
+    if (!myInstream.eof())
+      cout &lt;&lt; &quot;TEXT: &quot; &lt;&lt; myLine &lt;&lt; endl;
+  }
+  cout &lt;&lt; &quot;\n*** Editing complete ***\n&quot;;
+}
+
+//--- Definition of showMenu
+void TextEditor::showMenu()
+{
+  cout &lt;&lt; &quot;Editing commands are:\n&quot;
+          &quot;  I str: Insert string str before another string\n&quot;
+          &quot;  D str:   Delete string str\n&quot;
+          &quot;  R str:   Replace string str with another string\n&quot;
+          &quot;  N :      Get next line of text\n&quot;
+          &quot;  Q :      Quit editing\n&quot;;
+}
+
+//--- Definition of insert()
+void TextEditor::insert(string str1, string str2)
+{
+  int position = myLine.find(str2);
+  if (position != string::npos)
+    myLine.insert(position, str1);
+  else
+    cout &lt;&lt; str2 &lt;&lt; &quot; not found\n&quot;;
+}
+
+//--- Definition of erase()
+void TextEditor::erase(string str)
+{
+  int position = myLine.find(str);
+  if (position != string::npos)
+    myLine.erase(position, str.length());
+  else
+    cout &lt;&lt; str &lt;&lt; &quot; not found\n&quot;;
+}
+
+//--- Definition of replace()
+void TextEditor::replace(string str1, string str2)
+{
+  int position = myLine.find(str1);
+  if (position != string::npos)
+    myLine.replace(position, str1.length(), str2);
+  else
+    cout &lt;&lt; str1 &lt;&lt; &quot; not found\n&quot;;
+}
+
+//--- Definition of next()
+void TextEditor::next()
+{
+  myOutstream &lt;&lt; myLine &lt;&lt; endl;
+  getline(myInstream, myLine);
+  cout &lt;&lt; &quot;\nNext line:\n&quot;;
+}
+
+//--- Definition of quit()
+void TextEditor::quit()
+{
+  myOutstream &lt;&lt; myLine &lt;&lt; endl;
+  for (;;)
+  {
+    getline(myInstream, myLine);
+    if (myInstream.eof()) break;
+    myOutstream &lt;&lt; myLine &lt;&lt; endl;
+  }
+}&nbsp;</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000"><a name="Figure 5.3C">Figure
+        5.3C</a> Text Editor Driver Program</font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre><font color="#0000FF"><b>/*-- Fig4-3.cpp -----------------------------------------------------------
+  Driver program for TextEditor class.  It gets the name of a file to
+  be edited from the user, appends &quot;.out&quot; for the output file, builds
+  a TextEditor object editor for these files, and sends it the run()
+  message.
+ -------------------------------------------------------------------------*/
+
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+#include &quot;TextEditor.h&quot;
+int main()
+{
+  string inFileName,
+         outFileName;
+  cout &lt;&lt; &quot;Enter the name of the input file: &quot;;
+  getline(cin, inFileName);
+  outFileName = inFileName +&quot;.out&quot;;
+  cout &lt;&lt; &quot;The output file is &quot; &lt;&lt; outFileName &lt;&lt; &quot;\n\n&quot;;
+  TextEditor editor(inFileName, outFileName);
+  editor.run();
+}&nbsp;</b></font></pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp; </p>
+<div align="center">
+  <center>
+  <table border="1" width="79%">
+    <tr>
+      <td width="100%">
+        <h2 align="center"><font color="#FF0000">Figure </font></h2>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+        <pre>&nbsp;</pre>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+[chris@euclid ~]$ eclipse&
+[1] 5889
+[chris@euclid ~]$ OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+CompilerOracle: exclude org/eclipse/core/internal/dtree/DataTreeNode.forwardDeltaWith
+CompilerOracle: exclude org/eclipse/jdt/internal/compiler/lookup/ParameterizedMethodBinding.<init>
+CompilerOracle: exclude org/eclipse/cdt/internal/core/dom/parser/cpp/semantics/CPPTemplates.instantiateTemplate
+CompilerOracle: exclude org/eclipse/cdt/internal/core/pdom/dom/cpp/PDOMCPPLinkage.addBinding
+CompilerOracle: exclude org/python/pydev/editor/codecompletion/revisited/PythonPathHelper.isValidSourceFile
+CompilerOracle: exclude org/eclipse/tycho/core/osgitools/EquinoxResolver.newState
+
+(java:5904): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",
+
+(java:5904): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",
+log4j:WARN No appenders could be found for logger (org.eclipse.xtext.ui.internal.Activator).
+log4j:WARN Please initialize the log4j system properly.
+### Excluding compile: org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage::addBinding
+### Excluding compile: org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage::addBinding
+cd Dropbox/MSCS/COT6405*
+[chris@euclid COT6405AnalysisOfAlgorithms]$ ls
+ 28179_1254861_lecture7.pdf                            lecture8_LinearProgramming.pdf
+ 28179_1369774_lecture8_LinearProgramming.pdf          lecture9_Greedy.pdf
+ 28179_1428470_lecture10_DynamicProgramming.pdf        notes01-Jan11.pdf
+ 28179_1431273_notes20-March29.pdf                     notes02-Jan13.pdf
+ 28179_1516431_notes24-April12.pdf                     notes03-Jan18.pdf
+ backtracking.pdf                                      notes04-Jan20.pdf
+'COT6405Christopher foley.docx'                        notes05-Jan25.pdf
+'COT6405Christopher foley.odt'                         notes06-Jan27.pdf
+ COT6405ChristopherFoleyProjectProposal.pdf            notes07-Feb1.pdf
+ DesignAndAnalysisOfAlgorithms_Levitin.pdf             notes08-Feb3.pdf
+ Exam01                                                notes09-Feb8.pdf
+ FinalProject                                          notes10-Feb10.pdf
+ introduction.pdf                                      notes11-Feb15.pdf
+ Introduction.to.Algorithms.3rd.Edition.Sep.2010.pdf   notes12-Feb17.pdf
+ kleinbergbook.pdf                                     notes13-Feb22.pdf
+ lecture1.pdf                                          notes14-Feb24.pdf
+'lecture1.pdf - OneDrive.pdf'                          notes15-March1.pdf
+ lecture2.pdf                                          notes16-March15.pdf
+ lecture3_BSTreview.pdf                                notes17-March17.pdf
+ lecture3_Btree.pdf                                    notes18-March22.pdf
+ lecture4_BruteForce.pdf                               notes19-March24.pdf
+ lecture5-1.pdf                                        Quiz01
+ lecture5.pdf                                          Quiz02
+ lecture6.pdf                                          Quiz03
+'lecture7 (1).pdf'                                    'Quiz1 - answers.pdf'
+ lecture7.pdf                                          strstr.c
+[chris@euclid COT6405AnalysisOfAlgorithms]$ cd FinalProject
+[chris@euclid FinalProject]$ ls
+CharChar.txt  strstrData.txt
+[chris@euclid FinalProject]$ cat *.txt
+size: 1024 Elapsed time: 457 us. fill: 26 us.
+size: 2048 Elapsed time: 1693 us. fill: 49 us.
+size: 4096 Elapsed time: 1225 us. fill: 92 us.
+size: 8192 Elapsed time: 2292 us. fill: 188 us.
+size: 16384 Elapsed time: 4652 us. fill: 458 us.
+size: 32768 Elapsed time: 12518 us. fill: 836 us.
+size: 65536 Elapsed time: 19296 us. fill: 1455 us.
+size: 131072 Elapsed time: 45898 us. fill: 2963 us.
+size: 262144 Elapsed time: 91029 us. fill: 5968 us.
+size: 524288 Elapsed time: 258463 us. fill: 17820 us.
+size: 1048576 Elapsed time: 376302 us. fill: 105439 us.
+size: 2097152 Elapsed time: 584351 us. fill: 111389 us.
+size: 4194304 Elapsed time: 1116676 us. fill: 106025 us.
+size: 8388608 Elapsed time: 2206566 us. fill: 228964 us.
+size: 16777216 Elapsed time: 4380854 us. fill: 382416 us.
+size: 33554432 Elapsed time: 8728781 us. fill: 759383 us.
+size: 67108864 Elapsed time: 17200740 us. fill: 1560446 us.
+size: 134217728 Elapsed time: 34572603 us. fill: 3037329 us.
+size: 268435456 Elapsed time: 69861548 us. fill: 6136355 us.
+size: 536870912 Elapsed time: 139853099 us. fill: 12997774 us.
+size: 1073741824 Elapsed time: 279219120 us. fill: 87200663 us.
+Hello world
+size: 1024 Elapsed time: 190 us. fill: 25 us.
+size: 2048 Elapsed time: 196 us. fill: 48 us.
+size: 4096 Elapsed time: 267 us. fill: 94 us.
+size: 8192 Elapsed time: 250 us. fill: 919 us.
+size: 16384 Elapsed time: 319 us. fill: 355 us.
+size: 32768 Elapsed time: 460 us. fill: 766 us.
+size: 65536 Elapsed time: 665 us. fill: 5214 us.
+size: 131072 Elapsed time: 26557 us. fill: 3048 us.
+size: 262144 Elapsed time: 2295 us. fill: 29290 us.
+size: 524288 Elapsed time: 16143 us. fill: 54942 us.
+size: 1048576 Elapsed time: 38144 us. fill: 93850 us.
+size: 2097152 Elapsed time: 54406 us. fill: 136482 us.
+size: 4194304 Elapsed time: 89394 us. fill: 239119 us.
+size: 8388608 Elapsed time: 258137 us. fill: 421122 us.
+size: 16777216 Elapsed time: 467777 us. fill: 1214843 us.
+size: 33554432 Elapsed time: 581710 us. fill: 2060204 us.
+size: 67108864 Elapsed time: 633251 us. fill: 1632081 us.
+size: 134217728 Elapsed time: 1316857 us. fill: 3223431 us.
+size: 268435456 Elapsed time: 2640157 us. fill: 6364780 us.
+size: 536870912 Elapsed time: 5150678 us. fill: 12885025 us.
+size: 1073741824 Elapsed time: 9579136 us. fill: 25543042 us.
+Hello world
+
+[chris@euclid FinalProject]$ vi RabinKarp.txt
+[chris@euclid FinalProject]$ vi RabinKarp.txt
+[chris@euclid FinalProject]$ vi KMP.txt
+[chris@euclid FinalProject]$ vi RabinKarp.txt
+[chris@euclid FinalProject]$ vi KMP.txt      
+[chris@euclid FinalProject]$ 
+[chris@euclid FinalProject]$ vi KMP.txt
+[chris@euclid FinalProject]$ ls                                                                                                                      
+CharChar.txt  KMP.txt  RabinKarp.txt  strstrData.txt                                                                                                 
+[chris@euclid FinalProject]$ cd ..                                                                                                                   
+[chris@euclid COT6405AnalysisOfAlgorithms]$ cd ..
+[chris@euclid MSCS]$ cd ../../workspace
+[chris@euclid workspace]$ ls                                                                                                                         
+COT6405  Port  RemoteSystemsTempFiles                                                                                                                
+[chris@euclid workspace]$ cd COT6405
+[chris@euclid COT6405]$ ls                                                                                                                           
+Debug  Release  StringMatch.cpp  StringMatch.h  strstr.cpp  strstr.h  strstrKMP.cpp  strstrKMP.h  strstrRK.cpp  strstrRK.h                           
+[chris@euclid COT6405]$ ls Release                                                                                                                   
+COT6405   objects.mk  StringMatch.d  strstr.d     strstrKMP.o  strstrRK.d  subdir.mk                                                                 
+makefile  sources.mk  StringMatch.o  strstrKMP.d  strstr.o     strstrRK.o                                                                            
+[chris@euclid COT6405]$                                                                                                                              
+[chris@euclid COT6405]$ for i=1 to 16 do
+bash: syntax error near unexpected token `to'                                                                                                        
+[chris@euclid COT6405]$ for i=1..16 do    
+> echo i
+> end
+> ;
+bash: syntax error near unexpected token `;'
+[chris@euclid COT6405]$ for i=1..16 do echo i; end; ;
+bash: syntax error near unexpected token `;'
+[chris@euclid COT6405]$ for i=1..16 do echo i; endfor
+> 
+> ;
+bash: syntax error near unexpected token `;'
+[chris@euclid COT6405]$ for i=1..16 do echo i; endfor;  
+> echo i
+> 
+> .
+> exit
+> C^C
+[chris@euclid COT6405]$ 
+[chris@euclid COT6405]$ 
+[chris@euclid COT6405]$ 
+[chris@euclid COT6405]$ ls
+Debug  Release  StringMatch.cpp  StringMatch.h  strstr.cpp  strstr.h  strstrKMP.cpp  strstrKMP.h  strstrRK.cpp  strstrRK.h
+[chris@euclid COT6405]$ ./Release/COT6405
+size: 1024 Elapsed time: 123 us. fill: 21 us.
+size: 2048 Elapsed time: 175 us. fill: 40 us.
+size: 4096 Elapsed time: 283 us. fill: 80 us.
+size: 8192 Elapsed time: 485 us. fill: 182 us.
+size: 16384 Elapsed time: 916 us. fill: 326 us.
+size: 32768 Elapsed time: 1788 us. fill: 761 us.
+size: 65536 Elapsed time: 3530 us. fill: 1422 us.
+size: 131072 Elapsed time: 7544 us. fill: 2883 us.
+size: 262144 Elapsed time: 14728 us. fill: 5381 us.
+size: 524288 Elapsed time: 32589 us. fill: 10873 us.
+size: 1048576 Elapsed time: 57559 us. fill: 21318 us.
+size: 2097152 Elapsed time: 111984 us. fill: 41949 us.
+size: 4194304 Elapsed time: 214406 us. fill: 85822 us.
+size: 8388608 Elapsed time: 406140 us. fill: 169099 us.
+size: 16777216 Elapsed time: 867237 us. fill: 329687 us.
+size: 33554432 Elapsed time: 1627688 us. fill: 657792 us.
+size: 67108864 Elapsed time: 3246341 us. fill: 1314585 us.
+size: 134217728 Elapsed time: 6381524 us. fill: 3024880 us.
+size: 268435456 Elapsed time: 13021036 us. fill: 5922778 us.
+size: 536870912 Elapsed time: 25852590 us. fill: 10655216 us.
+size: 1073741824 Elapsed time: 51457339 us. fill: 21933435 us.
+Hello world
+[chris@euclid COT6405]$ ./Release/COT6405
+size: 1024 Elapsed time: 121 us. fill: 21 us.
+size: 2048 Elapsed time: 177 us. fill: 36 us.
+size: 4096 Elapsed time: 283 us. fill: 75 us.
+size: 8192 Elapsed time: 487 us. fill: 176 us.
+size: 16384 Elapsed time: 960 us. fill: 302 us.
+size: 32768 Elapsed time: 1844 us. fill: 612 us.
+size: 65536 Elapsed time: 3709 us. fill: 1221 us.
+size: 131072 Elapsed time: 6903 us. fill: 2938 us.
+size: 262144 Elapsed time: 14051 us. fill: 5432 us.
+size: 524288 Elapsed time: 31449 us. fill: 15496 us.
+size: 1048576 Elapsed time: 55435 us. fill: 23737 us.
+size: 2097152 Elapsed time: 112157 us. fill: 43265 us.
+size: 4194304 Elapsed time: 212089 us. fill: 88472 us.
+size: 8388608 Elapsed time: 402667 us. fill: 174321 us.
+size: 16777216 Elapsed time: 855409 us. fill: 349410 us.
+size: 33554432 Elapsed time: 1620372 us. fill: 703709 us.
+size: 67108864 Elapsed time: 3226679 us. fill: 1403407 us.
+size: 134217728 Elapsed time: 6468743 us. fill: 2795076 us.
+size: 268435456 Elapsed time: 12919341 us. fill: 5615069 us.
+size: 536870912 Elapsed time: 25880007 us. fill: 11438399 us.
+size: 1073741824 Elapsed time: 51592110 us. fill: 22752890 us.
+Hello world
+[chris@euclid COT6405]$ ./Release/COT6405
+size: 1024 Elapsed time: 125 us. fill: 21 us.
+size: 2048 Elapsed time: 202 us. fill: 36 us.
+size: 4096 Elapsed time: 287 us. fill: 79 us.
+size: 8192 Elapsed time: 502 us. fill: 149 us.
+size: 16384 Elapsed time: 935 us. fill: 302 us.
+size: 32768 Elapsed time: 1816 us. fill: 608 us.
+size: 65536 Elapsed time: 3475 us. fill: 1234 us.
+size: 131072 Elapsed time: 6916 us. fill: 2491 us.
+size: 262144 Elapsed time: 13873 us. fill: 4957 us.
+size: 524288 Elapsed time: 32109 us. fill: 13012 us.
+size: 1048576 Elapsed time: 58762 us. fill: 21540 us.
+size: 2097152 Elapsed time: 112041 us. fill: 40947 us.
+size: 4194304 Elapsed time: 208887 us. fill: 82063 us.
+size: 8388608 Elapsed time: 402753 us. fill: 162488 us.
+size: 16777216 Elapsed time: 855256 us. fill: 326740 us.
+size: 33554432 Elapsed time: 1613023 us. fill: 652493 us.
+size: 67108864 Elapsed time: 3226489 us. fill: 1301819 us.
+size: 134217728 Elapsed time: 6447134 us. fill: 2625523 us.
+size: 268435456 Elapsed time: 12894473 us. fill: 5331648 us.
+size: 536870912 Elapsed time: 25890361 us. fill: 11355179 us.
+size: 1073741824 Elapsed time: 53899582 us. fill: 21707433 us.
+Hello world
+[chris@euclid COT6405]$ 
