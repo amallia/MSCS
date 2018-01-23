@@ -1,0 +1,329 @@
+[chris@Euclid ~]$ ls
+1033promo.jpg        DorothyParker.ps     Music             Videos
+AnotherDarnRepo      Downloads            nltk_data         waldlongtermdata.csv
+argouml-0.34         Dropbox              OODesignHW1.ps    weka-3-8-1
+backup               eclipse-workspace    OpenSSL           wekafiles
+backup.sh            email_clamscan.sh    Pictures          Weka.sh
+bin                  git                  signserver        wildfly-openssl
+CFAssig1COP5339.pdf  k7                   SimpleCLI.props   workspace
+CFAssig1COP5339.ps   LUCKYGUESS.txt       Spock             workspace_save
+ChipmunkBASIC        MAT1033-20181-I.pdf  TelitGitTraining  wumpus
+Desktop              ML_HW3.sh            Templates
+Documents            mozilla.pdf          test
+[chris@Euclid ~]$ cd wumpus
+[chris@Euclid wumpus]$ bin/wumpus --config=wumpus.cfg TCP_PORT=12345
++-----------------------------------------------------------------------------+
+| Wumpus Search Engine [2011-11-10] - Copyright (c) 2011 by Stefan Buettcher. |
+|                                                                             |
+| This is free software according to the GNU General Public License (GPL).    |
+|  - http://www.gnu.org/philosophy/free-sw.html                               |
+|  - http://www.gnu.org/copyleft/gpl.html                                     |
++-----------------------------------------------------------------------------+
+@0-Index loaded. Enter @exit or ^D to end the session.
+@addfile /home/chris/Documents/Shakespeare/*.xml
+@0-Ok. 37/37 files added. (648 ms)
+
+@1-Empty query. (0 ms)
+@help
+-------------------------------------------------------------------------------
+List of available commands:
+
+  about - Prints copyright information.
+  addfile - Adds the contents of the given file to the index.
+  bm25 - Performs Okapi BM25 relevance ranking.
+  bm25f - Performs ranked retrieval step according to BM25F (BM25 + weighted fields).
+  bm25tera - Performs Okapi BM25 relevance ranking on a frequency index or a standard
+    schema-independent index.
+  cdr - Cover density ranking.
+  chapter6 - Performs BM15 relevance ranking on a frequency index.
+  count - Returns the number of matches for a given GCL expression.
+  desktop - Used to realize desktop search queries.
+  dfr - Performs a ranked retrieval step based on divergence from randomness.
+  dictionarysize - Prints the size of the internal dictionary (# of terms).
+  documents - Returns the number of doc's in a given TREC-formatted collection.
+  documentsContaining - Prints the number of doc's matching a given GCL expr'n.
+  experimental - Experimental relevance ranking.
+  fileinfo - Prints type and name of the file corresponding to an index offset.
+  files - Prints the number of visible files in the collection.
+  filestats - Prints a summary of files in the index, split up by file type.
+  gcl - Runs a standard GCL query against the data in the index.
+  get - Prints the text stored at a given index range.
+  get_synonyms - Gets a list of synonyms for the given term in the given context.
+  help - Prints help information about various query types.
+  histogram - Prints statistical info about passages matching a GCL expression.
+  lm - Performs a ranked retrieval step based on language modeling.
+  qap - Performs MultiText QAP passage-based relevance ranking.
+  query - Has no functionality, but provides modifiers to other query commands.
+  rank - Runs a general ranked query on the current index.
+  removefile - Removes a previously indexed file from the index.
+  rename - Informs Wumpus that the name or path of the given file has changed.
+  size - Prints the size of the collection.
+  stem - Prints the stemmed version of the given token sequence.
+  summary - Prints a summary of file systems managed by the index.
+  sync - Syncs the in-memory index with the on-disk index.
+  system - Executes a given command line via system(3).
+  updateattr - Makes Wumpus update its internal information about a given file.
+  vectorspace - Performs ranked retrieval based on the vector space model.
+  xpath - Executes an XPath query against the index.
+
+For information about a specific command, type "@help command-name".
+-------------------------------------------------------------------------------
+@0-Ok. (24 ms)
+@quit
+Merging index files. Please wait.
+[chris@Euclid wumpus]$ bin/wumpus --config=wumpus.cfg TCP_PORT=12345
++-----------------------------------------------------------------------------+
+| Wumpus Search Engine [2011-11-10] - Copyright (c) 2011 by Stefan Buettcher. |
+|                                                                             |
+| This is free software according to the GNU General Public License (GPL).    |
+|  - http://www.gnu.org/philosophy/free-sw.html                               |
+|  - http://www.gnu.org/copyleft/gpl.html                                     |
++-----------------------------------------------------------------------------+
+@0-Index loaded. Enter @exit or ^D to end the session.
+@help
+-------------------------------------------------------------------------------
+List of available commands:
+
+  about - Prints copyright information.
+  addfile - Adds the contents of the given file to the index.
+  bm25 - Performs Okapi BM25 relevance ranking.
+  bm25f - Performs ranked retrieval step according to BM25F (BM25 + weighted fields).
+  bm25tera - Performs Okapi BM25 relevance ranking on a frequency index or a standard
+    schema-independent index.
+  cdr - Cover density ranking.
+  chapter6 - Performs BM15 relevance ranking on a frequency index.
+  count - Returns the number of matches for a given GCL expression.
+  desktop - Used to realize desktop search queries.
+  dfr - Performs a ranked retrieval step based on divergence from randomness.
+  dictionarysize - Prints the size of the internal dictionary (# of terms).
+  documents - Returns the number of doc's in a given TREC-formatted collection.
+  documentsContaining - Prints the number of doc's matching a given GCL expr'n.
+  experimental - Experimental relevance ranking.
+  fileinfo - Prints type and name of the file corresponding to an index offset.
+  files - Prints the number of visible files in the collection.
+  filestats - Prints a summary of files in the index, split up by file type.
+  gcl - Runs a standard GCL query against the data in the index.
+  get - Prints the text stored at a given index range.
+  get_synonyms - Gets a list of synonyms for the given term in the given context.
+  help - Prints help information about various query types.
+  histogram - Prints statistical info about passages matching a GCL expression.
+  lm - Performs a ranked retrieval step based on language modeling.
+  qap - Performs MultiText QAP passage-based relevance ranking.
+  query - Has no functionality, but provides modifiers to other query commands.
+  rank - Runs a general ranked query on the current index.
+  removefile - Removes a previously indexed file from the index.
+  rename - Informs Wumpus that the name or path of the given file has changed.
+  size - Prints the size of the collection.
+  stem - Prints the stemmed version of the given token sequence.
+  summary - Prints a summary of file systems managed by the index.
+  sync - Syncs the in-memory index with the on-disk index.
+  system - Executes a given command line via system(3).
+  updateattr - Makes Wumpus update its internal information about a given file.
+  vectorspace - Performs ranked retrieval based on the vector space model.
+  xpath - Executes an XPath query against the index.
+
+For information about a specific command, type "@help command-name".
+-------------------------------------------------------------------------------
+@0-Ok. (0 ms)
+@gcl [get] ("<play>".."</play>") > "Caesar"
+39963 80445 "<PLAY> <TITLE>The Tragedy of Antony and Cleopatra</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied a"
+80459 115504 "<PLAY> <TITLE>All's Well That Ends Well</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied and distrib"
+115531 147863 "<PLAY> <TITLE>As You Like It</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied and distributed worldw"
+213403 254924 "<PLAY> <TITLE>Cymbeline</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied and distributed worldwide.<"
+279291 325575 "<PLAY> <TITLE>The Tragedy of Hamlet, Prince of Denmark</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely cop"
+362011 401099 "<PLAY> <TITLE>The Second Part of Henry the Fourth</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied a"
+401115 439200 "<PLAY> <TITLE>The Life of Henry the Fifth</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied and distr"
+439227 471527 "<PLAY> <TITLE>The First Part of Henry the Sixth</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied and"
+471547 509223 "<PLAY> <TITLE>The Second Part of Henry the Sixth</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied an"
+509243 545900 "<PLAY> <TITLE>The Third Part of Henry the Sixth</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied and"
+582491 612700 "<PLAY> <TITLE>The Tragedy of Julius Caesar</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied and dist"
+683467 717117 "<PLAY> <TITLE>Love's Labor's Lost</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied and distributed w"
+717131 750565 "<PLAY> <TITLE>Measure for Measure</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied and distributed w"
+750587 784762 "<PLAY> <TITLE>The Merry Wives of Windsor</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied and distri"
+784779 811559 "<PLAY> <TITLE>The Tragedy of Macbeth</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied and distribute"
+875003 916044 "<PLAY> <TITLE>The Tragedy of Othello, the Moor of Venice</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely c"
+981099 1013888 "<PLAY> <TITLE>The Tragedy of King Richard the Second</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copie"
+1013915 1058677 "<PLAY> <TITLE>The Tragedy of Richard the Third</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied and"
+1176427 1206637 "<PLAY> <TITLE>The Tragedy of Titus Andronicus</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied and d"
+@0-Ok. (1441 ms)
+        
+@1-Empty query. (0 ms)                                                                                                                              
+                                                                                                                                                    
+@1-Empty query. (0 ms)                                                                                                                              
+                                                                                                                                                    
+@1-Empty query. (0 ms)                                                                                                                              
+@gpl [get] ("<play>".."</play>") > "Caesar"                                                                                                         
+@1-Invalid command. (1 ms)                                                                                                                          
+                                                                                                                                                    
+@1-Empty query. (0 ms)                                                                                                                              
+@clear                                                                                                                                              
+@1-Invalid command. (0 ms)                                                                                                                          
+                                                                                                                                                    
+@1-Empty query. (0 ms)                                                                                                                              
+@gcl [get] ("<play>".."</play>") > "Caesar"                                                                                                         
+39963 80445 "<PLAY> <TITLE>The Tragedy of Antony and Cleopatra</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied a"
+80459 115504 "<PLAY> <TITLE>All's Well That Ends Well</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied and distrib"
+115531 147863 "<PLAY> <TITLE>As You Like It</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied and distributed worldw"
+213403 254924 "<PLAY> <TITLE>Cymbeline</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied and distributed worldwide.<"
+279291 325575 "<PLAY> <TITLE>The Tragedy of Hamlet, Prince of Denmark</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely cop"
+362011 401099 "<PLAY> <TITLE>The Second Part of Henry the Fourth</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied a"
+401115 439200 "<PLAY> <TITLE>The Life of Henry the Fifth</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied and distr"
+439227 471527 "<PLAY> <TITLE>The First Part of Henry the Sixth</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied and"
+471547 509223 "<PLAY> <TITLE>The Second Part of Henry the Sixth</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied an"
+509243 545900 "<PLAY> <TITLE>The Third Part of Henry the Sixth</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied and"
+582491 612700 "<PLAY> <TITLE>The Tragedy of Julius Caesar</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied and dist"
+683467 717117 "<PLAY> <TITLE>Love's Labor's Lost</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied and distributed w"
+717131 750565 "<PLAY> <TITLE>Measure for Measure</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied and distributed w"
+750587 784762 "<PLAY> <TITLE>The Merry Wives of Windsor</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied and distri"
+784779 811559 "<PLAY> <TITLE>The Tragedy of Macbeth</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied and distribute"
+875003 916044 "<PLAY> <TITLE>The Tragedy of Othello, the Moor of Venice</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely c"
+981099 1013888 "<PLAY> <TITLE>The Tragedy of King Richard the Second</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copie"
+1013915 1058677 "<PLAY> <TITLE>The Tragedy of Richard the Third</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied and"
+1176427 1206637 "<PLAY> <TITLE>The Tragedy of Titus Andronicus</TITLE>  <FM> <P>Text placed in the public domain by Moby Lexical Tools, 1992.</P> <P>SGML markup by Jon Bosak, 1992-1994.</P> <P>XML version by Jon Bosak, 1996-1998.</P> <P>This work may be freely copied and d"
+@0-Ok. (218 ms)
+@count ("mother"+"father")
+1468
+@0-Ok. (2 ms)
+@count [size=true] ("mother"+"father")
+1468
+@0-Ok. (1 ms)
+@count "death"
+871
+@0-Ok. (1 ms)
+@count "death", "die", "sleep"
+871, 470, 269
+@0-Ok. (1 ms)
+@count "$death", "die$", "$sleep"
+1471, 470, 398
+@0-Ok. (3 ms)
+@gcl [get] ([6].."mother")..[6]
+3840 3852 "machinist at Phoenix Armour. Parker's mother died        in 1898. Jacob married in"
+6140 6152 "all are proud to know        As mother, wife, and authoress-        Thank God, I"
+10634 10646 "light my pipe, an' reach fer Mother's hand,        An' I wouldn't"
+13868 13880 "have him back!'         I hope        Her mother washed her mouth with soap.        Dorothy"
+16643 16655 "You'd know he was his mother's son.        'It's queer that"
+49020 49032 "Thou hast a sister by the mother's side,</LINE> <LINE>Admired Octavia:"
+53527 53539 "were at blows,</LINE> <LINE>Your mother came to Sicily and did find"
+80564 80576 "Page. </PERSONA> <PERSONA>COUNTESS OF ROUSILLON, mother to Bertram. </PERSONA> <PERSONA>HELENA, a"
+81532 81544 "Be comfortable</LINE> <LINE>to my mother, your mistress, and make much of"
+82543 82555 "a thousand loves,</LINE> <LINE>A mother and a mistress and a friend,"
+85721 85733 "Helen,</LINE> <LINE>I am a mother to you.</LINE> </SPEECH>  <SPEECH> <SPEAKER>"
+85743 85755 "<SPEAKER>COUNTESS</SPEAKER> <LINE>Nay, a mother:</LINE> <LINE>Why not a mother?"
+85749 85761 "mother:</LINE> <LINE>Why not a mother? When I said 'a mother,'</LINE>"
+85754 85766 "a mother? When I said 'a mother,'</LINE> <LINE>Methought you saw a"
+85765 85777 "saw a serpent: what's in 'mother,'</LINE> <LINE>That you start at"
+85827 85839 "er oppress'd me with a mother's groan,</LINE> <LINE>Yet I"
+85838 85850 "Yet I express to you a mother's care:</LINE> <LINE>God's"
+85859 85871 "<LINE>To say I am thy mother? What's the matter,</LINE> <LINE>"
+85914 85926 "<LINE>I say, I am your mother.</LINE> </SPEECH>  <SPEECH> <SPEAKER>HELENA</SPEAKER>"
+85993 86005 "COUNTESS</SPEAKER> <LINE>Nor I your mother?</LINE> </SPEECH>  <SPEECH> <SPEAKER>HELENA</SPEAKER>"
+@0-Ok. (8 ms)
+@addfile /home/chris/Documents/COT6405AnalysisOfAlgorithms/*.pdf
+@14-Internal error. (0 ms)
+@addfile /home/chris/Documents/MSCS/COT6405AnalysisOfAlgorithms/*.pdf
+@0-Ok. 57/57 files added. (21223 ms)
+@addfile /home/chris/Documents/MSCS/CAP6673MachineLearningAndDataMining/*.odt
+@0-Ok. 0/5 files added. (1674 ms)
+@addfile /home/chris/Documents/MSCS/CAP6673MachineLearningAndDataMining/*.docx
+@0-Ok. 0/4 files added. (2023 ms)
+@addfie /home/chris/Documents/MSCS/CAP6673MachineLearningAndDataMining/ChristopherFoley*.*
+@1-Invalid command. (0 ms)
+
+@1-Empty query. (0 ms)
+@help gcl
+-------------------------------------------------------------------------------
+gcl - Runs a standard GCL query against the data in the index.
+
+For a thorough description of the GCL query language, have a look at
+Clarke et al., "An Algebra for Structured Text Search and a Framework for
+its Implementation". The Computer Journal, 38(1):43-56, 1995.
+@gcl is the standard query type. That is, if unspecified, @gcl is assumed.
+
+Examples:
+
+  @gcl[get][count=3] ("because"^"of")<[5]
+  1158 1161 "because the window of"
+  1569 1573 "of R.H. Macy because"
+  1573 1574 "because of"
+  @0-Ok. (124 ms)
+  "later that day"
+  2880204 2880206
+  3560135 3560137
+  3897696 3897698
+  @0-Ok. (3 ms)
+
+Operators supported:
+
+  "^" (Boolean AND), "+" (Boolean OR), ">" (CONTAINS),
+  "/>" (DOES-NOT-CONTAIN), "<" (CONTAINED-IN), "/<" (NOT-CONTAINED-IN),
+  ".." (FOLLOWED-BY), [N] (window of N char's), N (absolute index address)
+
+In addition to the canonical GCL operators, Wumpus also understands extended
+restrictions based on file-related meta-data, for example:
+
+  {filetype=text/xml} matches all files of type text/xml
+  {filesize > 100000} matches all files bigger than 100,000 bytes
+  {filepath=/home/wumpus/*} matches all files below the given directory
+  "<file!>" returns the start offset of all visible files
+  "</file!>" returns the end offset of all visible files
+
+Query modifiers supported:
+
+  boolean get (default: false)
+    returns the text at each matching index position
+  boolean filtered (default: false)
+    to be used in conjunction with [get]: does not return the original text,
+    but the text after being run through Wumpus' input tokenizer
+  boolean getxpath (default: false)
+    prints an XPath expression for each given index position returned; only
+    works if the ENABLE_XPATH configuration variable was set when building
+    the index
+  For further modifiers, see "@help query".
+-------------------------------------------------------------------------------
+@0-Ok. (0 ms)
+@help
+-------------------------------------------------------------------------------
+List of available commands:
+
+  about - Prints copyright information.
+  addfile - Adds the contents of the given file to the index.
+  bm25 - Performs Okapi BM25 relevance ranking.
+  bm25f - Performs ranked retrieval step according to BM25F (BM25 + weighted fields).
+  bm25tera - Performs Okapi BM25 relevance ranking on a frequency index or a standard
+    schema-independent index.
+  cdr - Cover density ranking.
+  chapter6 - Performs BM15 relevance ranking on a frequency index.
+  count - Returns the number of matches for a given GCL expression.
+  desktop - Used to realize desktop search queries.
+  dfr - Performs a ranked retrieval step based on divergence from randomness.
+  dictionarysize - Prints the size of the internal dictionary (# of terms).
+  documents - Returns the number of doc's in a given TREC-formatted collection.
+  documentsContaining - Prints the number of doc's matching a given GCL expr'n.
+  experimental - Experimental relevance ranking.
+  fileinfo - Prints type and name of the file corresponding to an index offset.
+  files - Prints the number of visible files in the collection.
+  filestats - Prints a summary of files in the index, split up by file type.
+  gcl - Runs a standard GCL query against the data in the index.
+  get - Prints the text stored at a given index range.
+  get_synonyms - Gets a list of synonyms for the given term in the given context.
+  help - Prints help information about various query types.
+  histogram - Prints statistical info about passages matching a GCL expression.
+  lm - Performs a ranked retrieval step based on language modeling.
+  qap - Performs MultiText QAP passage-based relevance ranking.
+  query - Has no functionality, but provides modifiers to other query commands.
+  rank - Runs a general ranked query on the current index.
+  removefile - Removes a previously indexed file from the index.
+  rename - Informs Wumpus that the name or path of the given file has changed.
+  size - Prints the size of the collection.
+  stem - Prints the stemmed version of the given token sequence.
+  summary - Prints a summary of file systems managed by the index.
+  sync - Syncs the in-memory index with the on-disk index.
+  system - Executes a given command line via system(3).
+  updateattr - Makes Wumpus update its internal information about a given file.
+  vectorspace - Performs ranked retrieval based on the vector space model.
+  xpath - Executes an XPath query against the index.
+
+For information about a specific command, type "@help command-name".
+-------------------------------------------------------------------------------
+@0-Ok. (1 ms)
+
