@@ -1,0 +1,7 @@
+# This is an example Wumpus password file. The format of a password line is:
+# uid:username:password
+
+9999:wumpus:wumpus
+1001:chris:chris
+9998:guest:guest
+1234:skroob:1234

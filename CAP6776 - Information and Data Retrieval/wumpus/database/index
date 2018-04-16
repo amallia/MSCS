@@ -1,0 +1,14 @@
+# This is a Wumpus index file. Unless you know exactly what you are doing,
+# please do not modify any of the information stored in this file.
+
+STEMMING_LEVEL = 1
+BIGRAM_INDEXING = false
+DIRECTORY_COUNT = 8
+FILE_COUNT = 294
+INODE_COUNT = 294
+UPDATE_OPERATIONS = 294
+DOCUMENT_LEVEL_INDEXING = 0
+USED_ADDRESS_SPACE = 1817358
+DELETED_ADDRESS_SPACE = 5
+BIGGEST_OFFSET = 1819856
+IS_CONSISTENT = true
