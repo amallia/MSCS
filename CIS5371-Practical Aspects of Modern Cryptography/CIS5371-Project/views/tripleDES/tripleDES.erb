@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title><%= controller()->name() + ": " + controller()->activeAction() %></title>
+</head>
+<body>
+
+<h1>(En/De)crypt Selection Menu</h1>
+
+
+<br />
+<div>
+  <input type="radio" id="des" name="cipher" value="des"
+         checked>
+  <label for="des">DES</label>
+</div>
+
+<div>
+  <input type="radio" id="3des" name="cipher" value="3des">
+  <label for="3des">Triple DES</label>
+</div>
+
+<div>
+  <input type="radio" id="elgamal" name="cipher" value="elgamal">
+  <label for="elgamal">ElGamal</label>
+</div>
+<%== formTag(urla("des"), Tf::Post) %>
+  <p>
+    <input type="submit" value="des" />
+  </p>
+</form>
+<%== formTag(urla("3des"), Tf::Post) %>
+  <p>
+    <input type="submit" value="3des" />
+  </p>
+</form>
+<%== formTag(urla("elgamal"), Tf::Post) %>
+  <p>
+    <input type="submit" value="elgamal" />
+  </p>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<%#include "DES.h" %>
+<% tfetch(QVariantMap, DES); %>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title><%= controller()->name() + ": " + controller()->activeAction() %></title>
+</head>
+<body>
+
+<h1>DES (En/De)crypt Selection Menu</h1>
+
+
+<br />
+<div>
+  <input type="radio" id="ECB" name="ciphermode" value="ecb"
+         checked>
+  <label for="des">DES</label>
+</div>
+
+<div>
+  <input type="radio" id="3des" name="ciphermode" value="3des">
+  <label for="3des">Triple DES</label>
+</div>
+
+<%== formTag(urla("DES"), Tf::Post) %>
+  <p>
+    <label>Key<br /><input name="Key:" value="<%= DES["key"] %>" /></label>
+  </p>
+  <p>
+    <label>Plaintext<br /><input name="plaintext" value="<%= DES["plantext"] %>" /></label>
+  </p>
+  <p>
+    <label>Ciphertext<br /><input name="ciphertext" value="<%= DES["ciphertext"] %>" /></label>
+  </p>
+  <p>
+    <input type="submit" value="process" />
+  </p>
+</form>
+
+<%== linkTo("Back", urla("index")) %>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chris/Dropbox/MSCS/CIS5371-Practical Aspects of Modern Cryptography/CIS5371-Project/models/model_autogen/mocs_compilation.cpp
+

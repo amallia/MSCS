@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>   
+  <meta charset="UTF-8">
+  <title><%= controller()->name() + ": " + controller()->activeAction() %></title>
+</head>
+<body>
+
+<h1>(En/De)crypt Selection Menu</h1>
+
+
+<br />
+ 
+<%== formTag(urla("des"), Tf::Post) %>
+  <p> 
+    <input type="submit" value="des" />
+  </p>
+</form>
+<%== formTag(urla("tripleDES"), Tf::Post) %>
+  <p>
+    <input type="submit" value="tripleDES" />
+  </p>
+</form>
+<%== formTag(urla("elgamal"), Tf::Post) %>
+  <p>
+    <input type="submit" value="elgamal" />
+  </p>
+</form>
+</div>
+</body>
+</html>

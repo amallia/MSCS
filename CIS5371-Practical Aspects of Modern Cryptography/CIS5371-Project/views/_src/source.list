@@ -1,0 +1,25 @@
+HEADERS += des_desView.moc
+SOURCES += des_desView.cpp
+HEADERS += elgamal_elgamalView.moc
+SOURCES += elgamal_elgamalView.cpp
+HEADERS += project_desView.moc
+SOURCES += project_desView.cpp
+HEADERS += project_elgamalView.moc
+SOURCES += project_elgamalView.cpp
+HEADERS += project_indexView.moc
+SOURCES += project_indexView.cpp
+HEADERS += project_tripleDESView.moc
+SOURCES += project_tripleDESView.cpp
+HEADERS += tripleDES_tripleDESView.moc
+SOURCES += tripleDES_tripleDESView.cpp
+
+# include view files in the project
+views.files += ../des/des.erb
+views.files += ../elgamal/elgamal.erb
+views.files += ../project/des.erb
+views.files += ../project/elgamal.erb
+views.files += ../project/index.erb
+views.files += ../project/tripleDES.erb
+views.files += ../tripleDES/tripleDES.erb
+views.path = .dummy
+INSTALLS += views

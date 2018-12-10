@@ -1,0 +1,1 @@
+endian.o: ../endian.cpp
